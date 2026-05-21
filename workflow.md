@@ -1,217 +1,151 @@
 # Website Creation Workflow
 
-This workflow defines how a website project moves from a client questionnaire to a Codex-built website.
+Workflow name: `website_creation_workflow`
 
-The process is intentionally sequential. Each agent produces a structured output, the user reviews and approves that output, and only then does the next agent receive it as input.
+Use this workflow when the user asks Codex to create a website through an approval-gated agent process.
 
-## Workflow Overview
+## Core Rules
 
-1. Client submits a questionnaire.
-2. `agents/discovery_strategy_agent.md` reviews the questionnaire and creates a Client Discovery Summary.
-3. User reviews and approves the Client Discovery Summary.
-4. `agents/ui_strategy_agent.md` receives the approved discovery output and creates a UI/UX Strategy Summary.
-5. User reviews and approves the UI/UX Strategy Summary.
-6. `agents/codex_handoff_agent.md` receives the approved discovery and UI/UX outputs and creates a Codex Technical Implementation Handoff.
-7. User reviews and approves the Codex handoff.
-8. Codex starts building the website code from the approved handoff.
+- Run one stage at a time.
+- Stop after each stage and wait for explicit user approval.
+- Save every stage output as an editable markdown document.
+- Read the latest saved documents before continuing, because the user may edit them manually.
+- Use user-provided links, screenshots, attached images, assets, and notes as context.
+- Do not build code until the Codex handoff document is approved.
 
-## Stage 1: Questionnaire Intake
+## Project Structure
 
-### Input
-
-The workflow begins when the user submits a completed website questionnaire.
-
-The questionnaire may include:
-
-- business information
-- services or products
-- target audience
-- website goals
-- desired pages or sections
-- branding notes
-- visual references
-- competitor links
-- inspiration websites
-- images or asset notes
-- contact or booking details
-
-### Output
-
-The raw questionnaire becomes the input for the Discovery Strategy Agent.
-
-No code should be created during this stage.
-
-## Stage 2: Discovery Strategy Agent
-
-### Agent
-
-`agents/discovery_strategy_agent.md`
-
-### Trigger
-
-This agent is triggered first after the questionnaire is submitted.
-
-### Input
-
-- raw questionnaire answers
-- any client notes
-- any reference links or assets provided by the user
-
-### Output
-
-The agent must create a `Client Discovery Summary`.
-
-This output should clarify:
-
-- what the business does
-- who the website is for
-- what the website should achieve
-- what pages or sections are likely needed
-- what brand personality and website vibe make sense
-- what content and assets are available
-- what assumptions need user confirmation
-
-### Approval Gate
-
-The user must review and approve the Client Discovery Summary before the workflow continues.
-
-If the user requests changes, revise the discovery output first. Do not move to the UI/UX Strategy Agent until the user approves the discovery output.
-
-## Stage 3: UI/UX Strategy Agent
-
-### Agent
-
-`agents/ui_strategy_agent.md`
-
-### Trigger
-
-This agent is triggered only after the user approves the Client Discovery Summary.
-
-### Input
-
-- approved Client Discovery Summary
-- original questionnaire if needed for context
-- visual references or inspiration links
-- any user feedback from the discovery review
-
-### Output
-
-The agent must create a `UI/UX Strategy Summary`.
-
-This output should define:
-
-- overall UX direction
-- visual style direction
-- navigation strategy
-- recommended website structure
-- page-by-page UX breakdown
-- responsive UX considerations
-- interaction and animation direction
-- reusable UI components or sections
-- one-page or multi-page architecture recommendation
-
-### Approval Gate
-
-The user must review and approve the UI/UX Strategy Summary before the workflow continues.
-
-If the user requests changes, revise the UI/UX output first. Do not move to the Codex Handoff Agent until the user approves the UI/UX strategy.
-
-## Stage 4: Codex Handoff Agent
-
-### Agent
-
-`agents/codex_handoff_agent.md`
-
-### Trigger
-
-This agent is triggered only after the user approves the UI/UX Strategy Summary.
-
-### Input
-
-- approved Client Discovery Summary
-- approved UI/UX Strategy Summary
-- original questionnaire if needed for context
-- any final user notes before implementation
-
-### Output
-
-The agent must create a `Codex Technical Implementation Handoff`.
-
-This output should define:
-
-- technical stack
-- project folder structure
-- page and routing structure
-- component breakdown
-- section breakdown
-- SCSS architecture
-- responsive implementation rules
-- animation implementation rules
-- accessibility requirements
-- implementation checklist
-
-### Approval Gate
-
-The user must review and approve the Codex Technical Implementation Handoff before Codex starts writing code.
-
-If the user requests changes, revise the handoff first. Do not start implementation until the handoff is approved.
-
-## Stage 5: Codex Website Build
-
-### Trigger
-
-Codex starts building only after the user approves the Codex Technical Implementation Handoff.
-
-### Input
-
-- approved Codex Technical Implementation Handoff
-- approved UI/UX Strategy Summary
-- approved Client Discovery Summary
-- project assets, references, and content provided by the user
-
-### Implementation Rules
-
-Codex should:
-
-- create the website inside `website-projects/`
-- follow the approved technical handoff
-- use the specified stack unless the user approves a change
-- keep the structure clean and component-based
-- follow the responsive and accessibility requirements
-- run available checks before final delivery
-- ask for approval before making major scope or design changes
-
-## Human Review Rules
-
-Each stage requires explicit user approval before continuing.
-
-Approved outputs become the source of truth for the next stage.
-
-If an earlier strategy changes after approval, all later outputs affected by that change should be reviewed and updated.
-
-## Recommended Project Output Location
-
-New website builds should be created under:
+For a project named `project-name`, use:
 
 ```text
-website-projects/
+website-projects/project-name/
+  documents/
+    00-questionnaire.md
+    01-client-discovery-summary.md
+    02-ui-ux-strategy-summary.md
+    03-codex-technical-handoff.md
+    04-build-summary.md
 ```
 
-Each website should have its own folder:
+## Stage Order
+
+### 1. Discovery
+
+Agent:
+
+```text
+agents/discovery_strategy_agent.md
+```
+
+Input:
+
+```text
+website-projects/project-name/documents/00-questionnaire.md
+```
+
+Output:
+
+```text
+website-projects/project-name/documents/01-client-discovery-summary.md
+```
+
+Stop after creating or updating the output. Wait for approval.
+
+### 2. UI/UX Strategy
+
+Agent:
+
+```text
+agents/ui_strategy_agent.md
+```
+
+Input:
+
+```text
+website-projects/project-name/documents/00-questionnaire.md
+website-projects/project-name/documents/01-client-discovery-summary.md
+```
+
+Also use any visual references, links, screenshots, or attached images provided by the user.
+
+Output:
+
+```text
+website-projects/project-name/documents/02-ui-ux-strategy-summary.md
+```
+
+Stop after creating or updating the output. Wait for approval.
+
+### 3. Codex Handoff
+
+Agent:
+
+```text
+agents/codex_handoff_agent.md
+```
+
+Input:
+
+```text
+website-projects/project-name/documents/00-questionnaire.md
+website-projects/project-name/documents/01-client-discovery-summary.md
+website-projects/project-name/documents/02-ui-ux-strategy-summary.md
+```
+
+Output:
+
+```text
+website-projects/project-name/documents/03-codex-technical-handoff.md
+```
+
+Stop after creating or updating the output. Wait for approval.
+
+### 4. Website Build
+
+Trigger this only after `03-codex-technical-handoff.md` is approved.
+
+Build the website inside:
 
 ```text
 website-projects/project-name/
 ```
 
-## Agent Chain
+Use these approved documents as source of truth:
 
 ```text
-Questionnaire
-  -> Discovery Strategy Agent
-  -> User Approval
-  -> UI/UX Strategy Agent
-  -> User Approval
-  -> Codex Handoff Agent
-  -> User Approval
-  -> Codex Website Build
+website-projects/project-name/documents/01-client-discovery-summary.md
+website-projects/project-name/documents/02-ui-ux-strategy-summary.md
+website-projects/project-name/documents/03-codex-technical-handoff.md
 ```
+
+After building, save a summary here:
+
+```text
+website-projects/project-name/documents/04-build-summary.md
+```
+
+## Trigger Behavior
+
+If the user says `Run website_creation_workflow` with new project input:
+
+1. Identify the project name.
+2. Create `website-projects/project-name/documents/`.
+3. Save the project input as `00-questionnaire.md`.
+4. Run the Discovery stage.
+5. Stop for approval.
+
+If the user says `Approved. Continue website_creation_workflow`:
+
+1. Inspect the existing project documents.
+2. Continue to the next incomplete stage.
+3. Stop after that stage.
+
+If the user gives revision notes before approval:
+
+1. Update the current stage document.
+2. Stop for approval again.
+
+If the user manually edits a document:
+
+1. Read the edited document.
+2. Use it as the current source of truth.
