@@ -11,7 +11,22 @@ Use this workflow when the user asks Codex to create a website through an approv
 - Save every stage output as an editable markdown document.
 - Read the latest saved documents before continuing, because the user may edit them manually.
 - Use user-provided links, screenshots, attached images, assets, and notes as context.
+- Use the global skills listed in this workflow during their assigned stages.
 - Do not build code until the Codex handoff document is approved.
+
+## Global Skill Usage
+
+Use these globally installed skills when their stage is active:
+
+```text
+/Users/athenanexis/.codex/skills/frontend-design/SKILL.md
+/Users/athenanexis/.codex/skills/web-typography/SKILL.md
+/Users/athenanexis/.codex/skills/senior-frontend-qa/SKILL.md
+```
+
+- Use `frontend-design` during the UI/UX Strategy stage to make the visual direction more distinctive, polished, and production-grade.
+- Use `web-typography` during the UI/UX Strategy stage to define type hierarchy, font pairing, readability rules, responsive typography, and font-loading considerations.
+- Use `senior-frontend-qa` during the Website Build stage after implementation and before writing the build summary.
 
 ## Project Structure
 
@@ -68,6 +83,22 @@ website-projects/project-name/documents/01-client-discovery-summary.md
 
 Also use any visual references, links, screenshots, or attached images provided by the user.
 
+Required skills for this stage:
+
+```text
+/Users/athenanexis/.codex/skills/frontend-design/SKILL.md
+/Users/athenanexis/.codex/skills/web-typography/SKILL.md
+```
+
+When writing `02-ui-ux-strategy-summary.md`, apply these skills to improve:
+
+- aesthetic direction and visual differentiation
+- layout composition and design personality
+- typography selection and pairing
+- type hierarchy and readable measurements
+- responsive typography behavior
+- motion, spacing, color, and interaction guidance
+
 Output:
 
 ```text
@@ -117,6 +148,14 @@ website-projects/project-name/documents/01-client-discovery-summary.md
 website-projects/project-name/documents/02-ui-ux-strategy-summary.md
 website-projects/project-name/documents/03-codex-technical-handoff.md
 ```
+
+Required QA skill for this stage:
+
+```text
+/Users/athenanexis/.codex/skills/senior-frontend-qa/SKILL.md
+```
+
+After implementation, use `senior-frontend-qa` to check functionality, code quality, UI accuracy, responsive behavior, accessibility, performance, maintainability, and production readiness before finalizing the build summary.
 
 After building, save a summary here:
 

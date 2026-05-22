@@ -46,6 +46,23 @@ The output should help the AI understand:
 
 ---
 
+## Required Skill Support
+
+When this agent is used inside `website_creation_workflow`, also apply:
+
+```text
+/Users/athenanexis/.codex/skills/frontend-design/SKILL.md
+/Users/athenanexis/.codex/skills/web-typography/SKILL.md
+```
+
+Use `frontend-design` to sharpen the creative direction so the strategy avoids generic website patterns and includes a memorable, context-specific visual point of view.
+
+Use `web-typography` to define a practical type system: typeface roles, pairing strategy, hierarchy, line length, line height, responsive scaling, readability, and web font performance considerations.
+
+Do not turn the strategy into implementation code. Convert the skills into strategic design guidance that the Codex Handoff Agent can later translate into build instructions.
+
+---
+
 ## Input
 
 You may receive:
@@ -314,7 +331,16 @@ Always output using this structure:
 Describe the intended website experience and emotional direction.
 
 ## 2. Visual Style Direction
-Describe the visual style, layout style, spacing approach, and design personality.
+Describe the visual style, layout style, spacing approach, design personality, and what makes the direction distinctive.
+
+Include typography and type system guidance:
+
+- recommended typeface personality or pairing direction
+- display type versus body/UI type roles
+- hierarchy approach
+- readability rules for body text
+- responsive typography behavior
+- font-loading or performance concerns when relevant
 
 ## 3. Navigation Strategy
 Describe how users should move through the website.

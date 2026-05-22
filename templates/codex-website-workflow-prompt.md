@@ -13,6 +13,7 @@ Project name:
 Workflow rules:
 - Read and follow workflow.md.
 - Use the agent files in agents/.
+- Use the global skills assigned by workflow.md during their relevant stages.
 - Save all workflow outputs as editable markdown documents inside:
   website-projects/[PROJECT_NAME]/documents/
 - Treat manually edited documents as the source of truth.
@@ -43,6 +44,9 @@ Start or continue logic:
   website-projects/[PROJECT_NAME]/documents/00-questionnaire.md
   website-projects/[PROJECT_NAME]/documents/01-client-discovery-summary.md
   any links or attached visual references I provide.
+- During this UI/UX Strategy stage, use these global skills to improve the output:
+  /Users/athenanexis/.codex/skills/frontend-design/SKILL.md
+  /Users/athenanexis/.codex/skills/web-typography/SKILL.md
 - Save the UI/UX output to:
   website-projects/[PROJECT_NAME]/documents/02-ui-ux-strategy-summary.md
 - Stop and ask me to review/approve.
@@ -58,6 +62,8 @@ Start or continue logic:
 - If 03-codex-technical-handoff.md already exists and I say Approved, build the website inside:
   website-projects/[PROJECT_NAME]/
 - Use the approved handoff as the main source of truth.
+- After implementation, use the global senior frontend QA skill before finalizing the build summary:
+  /Users/athenanexis/.codex/skills/senior-frontend-qa/SKILL.md
 - Save a build summary to:
   website-projects/[PROJECT_NAME]/documents/04-build-summary.md
 
@@ -69,4 +75,3 @@ Revision rules:
 Current request:
 [START NEW WORKFLOW / CONTINUE FROM APPROVAL / REVISE CURRENT STAGE]
 ```
-
