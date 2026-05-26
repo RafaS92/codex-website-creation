@@ -1,0 +1,49 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.9rem;
+  padding: 0.78rem 1.2rem;
+  border: 0.0625rem solid transparent;
+  border-radius: 0.25rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-decoration: none;
+  transition:
+    background 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease;
+
+  &:hover {
+    transform: translateY(-0.08rem);
+  }
+}
+
+.button--primary {
+  background: var(--color-forest);
+  color: var(--color-rice);
+}
+
+.button--secondary {
+  background: var(--color-rice);
+  color: var(--color-forest);
+  border-color: var(--color-line);
+}
+
+.button--ghost {
+  color: var(--color-rice);
+  border-color: rgba(255, 250, 240, 0.7);
+}
+
+.button--text {
+  min-height: auto;
+  padding: 0;
+  color: var(--color-clay);
+  border: 0;
+  background: transparent;
+
+  &::after {
+    content: ' ->';
+  }
+}

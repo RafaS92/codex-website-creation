@@ -1,0 +1,34 @@
+.footer {
+  padding: var(--space-7) 0;
+  color: var(--color-rice);
+  background: var(--color-forest);
+}
+
+.footer__inner {
+  display: grid;
+  gap: var(--space-6);
+  width: min(calc(100% - 2rem), var(--container));
+  margin-inline: auto;
+}
+
+.footer__brand {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--color-rice);
+}
+
+.footer__links {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.footer a {
+  color: var(--color-rice);
+  text-decoration-color: rgba(255, 250, 240, 0.35);
+}
+
+@media (min-width: 48rem) {
+  .footer__inner {
+    grid-template-columns: 1fr 1fr 1.2fr;
+  }
+}

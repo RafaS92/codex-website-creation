@@ -1,0 +1,25 @@
+.faq-accordion {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.faq-accordion__item {
+  border-bottom: 0.0625rem solid var(--color-line);
+}
+
+.faq-accordion button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 3.8rem;
+  padding: var(--space-3) 0;
+  color: var(--color-forest);
+  background: transparent;
+  border: 0;
+  text-align: left;
+}
+
+.faq-accordion__panel {
+  padding-bottom: var(--space-4);
+}

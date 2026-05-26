@@ -1,0 +1,31 @@
+@use 'breakpoints' as bp;
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == small {
+    @media (min-width: bp.$small) {
+      @content;
+    }
+  } @else if $breakpoint == medium {
+    @media (min-width: bp.$medium) {
+      @content;
+    }
+  } @else if $breakpoint == large {
+    @media (min-width: bp.$large) {
+      @content;
+    }
+  } @else if $breakpoint == xlarge {
+    @media (min-width: bp.$xlarge) {
+      @content;
+    }
+  }
+}
+
+@mixin container($max: var(--container)) {
+  width: min(calc(100% - 2rem), $max);
+  margin-inline: auto;
+}
+
+@mixin focus-ring {
+  outline: 0.18rem solid var(--color-clay);
+  outline-offset: 0.2rem;
+}
