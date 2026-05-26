@@ -169,6 +169,23 @@
   font-weight: 700;
 }
 
+.events-grid {
+  margin-top: var(--space-6);
+}
+
+.events-status {
+  margin-top: var(--space-6);
+  padding: var(--space-5);
+  color: var(--color-forest);
+  background: rgba(255, 250, 240, 0.78);
+  border: 0.0625rem solid var(--color-line);
+  border-radius: var(--radius);
+}
+
+.events-status--error {
+  color: var(--color-clay);
+}
+
 @media (min-width: 48rem) {
   .section {
     padding: var(--space-9) 0;

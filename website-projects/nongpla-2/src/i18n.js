@@ -139,9 +139,12 @@ const resources = {
         intro:
           'Gatherings, seasonal circles, and special healing days for people who want to experience the work in community.',
         imageAlt: 'People gathered for a warm community event',
-        featuredTitle: 'Upcoming sample events',
+        featuredTitle: 'Upcoming events',
         note:
-          'These placeholder events show how future dates, themes, and formats can be presented once the schedule is ready.',
+          'Dates, themes, and formats are published here as new gatherings are confirmed.',
+        loading: 'Loading upcoming events...',
+        empty: 'No upcoming events are published yet.',
+        error: 'Events could not be loaded right now. Please check back soon.',
         action: 'Ask about events',
         items: [
           {
@@ -336,9 +339,12 @@ const resources = {
         intro:
           'กิจกรรมรวมกลุ่ม วงสนทนาตามฤดูกาล และวันเยียวยาพิเศษสำหรับผู้ที่อยากสัมผัสงานนี้ร่วมกับชุมชน',
         imageAlt: 'ผู้คนรวมตัวกันในกิจกรรมชุมชนที่อบอุ่น',
-        featuredTitle: 'ตัวอย่างอีเวนต์ที่กำลังจะมี',
+        featuredTitle: 'อีเวนต์ที่กำลังจะมาถึง',
         note:
-          'ข้อมูลตัวอย่างเหล่านี้แสดงวิธีนำเสนอวันที่ ธีม และรูปแบบกิจกรรมในอนาคตเมื่อมีตารางจริง',
+          'วันที่ ธีม และรูปแบบกิจกรรมจะเผยแพร่ที่นี่เมื่อมีการยืนยันกำหนดการใหม่',
+        loading: 'กำลังโหลดอีเวนต์ที่กำลังจะมาถึง...',
+        empty: 'ยังไม่มีอีเวนต์ที่เผยแพร่ในตอนนี้',
+        error: 'ไม่สามารถโหลดอีเวนต์ได้ในตอนนี้ กรุณากลับมาตรวจสอบอีกครั้ง',
         action: 'สอบถามอีเวนต์',
         items: [
           {

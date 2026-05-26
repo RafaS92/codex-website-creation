@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@sanity/client": "^7.22.0",
     "@vitejs/plugin-react": "^5.0.0",
     "aos": "^2.3.4",
     "i18next": "^25.0.0",
