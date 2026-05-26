@@ -173,6 +173,10 @@
   margin-top: var(--space-6);
 }
 
+.events-grid .card {
+  padding: var(--space-4);
+}
+
 .events-status {
   margin-top: var(--space-6);
   padding: var(--space-5);
@@ -188,8 +192,9 @@
 
 .event-card__image {
   order: -1;
-  width: 100%;
-  aspect-ratio: 4 / 3;
+  width: min(100%, 12rem);
+  aspect-ratio: 9 / 16;
+  margin-inline: auto;
   object-fit: contain;
   background: rgba(20, 35, 28, 0.08);
   border-radius: calc(var(--radius) * 0.75);
