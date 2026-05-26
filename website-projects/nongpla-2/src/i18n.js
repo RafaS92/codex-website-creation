@@ -9,6 +9,7 @@ const resources = {
         about: 'About',
         services: 'Services',
         retreats: 'Retreats & Workshops',
+        events: 'Events',
         reiki: 'Reiki Training',
         faq: 'FAQ',
         contact: 'Contact',
@@ -133,6 +134,30 @@ const resources = {
         note:
           'Specific dates and program details can be shared through inquiry as offerings become available.',
       },
+      events: {
+        title: 'Events',
+        intro:
+          'Gatherings, seasonal circles, and special healing days for people who want to experience the work in community.',
+        imageAlt: 'People gathered for a warm community event',
+        featuredTitle: 'Upcoming sample events',
+        note:
+          'These placeholder events show how future dates, themes, and formats can be presented once the schedule is ready.',
+        action: 'Ask about events',
+        items: [
+          {
+            title: 'Full Moon Sound Evening',
+            body: 'A relaxed evening of sound, stillness, tea, and gentle reflection under the moonlight.',
+          },
+          {
+            title: 'Forest Mindfulness Morning',
+            body: 'A small-group morning with mindful walking, breath practice, and quiet time in nature.',
+          },
+          {
+            title: 'Community Healing Day',
+            body: 'A welcoming open-format day with mini sessions, shared grounding practices, and simple conversation.',
+          },
+        ],
+      },
       reiki: {
         title: 'Reiki training',
         intro:
@@ -203,6 +228,7 @@ const resources = {
         about: 'เกี่ยวกับ',
         services: 'บริการ',
         retreats: 'รีทรีตและเวิร์กช็อป',
+        events: 'อีเวนต์',
         reiki: 'อบรมเรกิ',
         faq: 'คำถามที่พบบ่อย',
         contact: 'ติดต่อ',
@@ -304,6 +330,30 @@ const resources = {
         formats: ['ประสบการณ์ฟื้นฟูส่วนตัว', 'เวิร์กช็อปกลุ่ม', 'วันเยียวยาผ่านธรรมชาติ', 'เซสชันเสียงและสติ', 'โปรแกรมการเยียวยาแบบบูรณาการ'],
         note:
           'วันที่และรายละเอียดโปรแกรมสามารถสอบถามได้เมื่อมีการเปิดรับหรือจัดรูปแบบเฉพาะ',
+      },
+      events: {
+        title: 'อีเวนต์',
+        intro:
+          'กิจกรรมรวมกลุ่ม วงสนทนาตามฤดูกาล และวันเยียวยาพิเศษสำหรับผู้ที่อยากสัมผัสงานนี้ร่วมกับชุมชน',
+        imageAlt: 'ผู้คนรวมตัวกันในกิจกรรมชุมชนที่อบอุ่น',
+        featuredTitle: 'ตัวอย่างอีเวนต์ที่กำลังจะมี',
+        note:
+          'ข้อมูลตัวอย่างเหล่านี้แสดงวิธีนำเสนอวันที่ ธีม และรูปแบบกิจกรรมในอนาคตเมื่อมีตารางจริง',
+        action: 'สอบถามอีเวนต์',
+        items: [
+          {
+            title: 'ค่ำคืนเสียงบำบัดวันพระจันทร์เต็มดวง',
+            body: 'ช่วงเย็นสบาย ๆ กับเสียง ความนิ่ง ชา และการใคร่ครวญอย่างอ่อนโยนใต้แสงจันทร์',
+          },
+          {
+            title: 'เช้าสติในป่า',
+            body: 'กิจกรรมกลุ่มเล็กตอนเช้าพร้อมการเดินอย่างมีสติ การหายใจ และเวลาสงบในธรรมชาติ',
+          },
+          {
+            title: 'วันเยียวยาชุมชน',
+            body: 'วันเปิดรับอย่างเป็นกันเอง มีเซสชันสั้น ๆ การฝึกความมั่นคงร่วมกัน และบทสนทนาเรียบง่าย',
+          },
+        ],
       },
       reiki: {
         title: 'การอบรมเรกิ',

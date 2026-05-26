@@ -3,6 +3,7 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import SiteLayout from './layouts/SiteLayout';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Events from './pages/Events';
 import FAQ from './pages/FAQ';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
@@ -30,6 +31,7 @@ export default function App() {
           <Route path="about" element={<About />} />
           <Route path="services" element={<Services />} />
           <Route path="retreats-workshops" element={<RetreatsWorkshops />} />
+          <Route path="events" element={<Events />} />
           <Route path="reiki-training" element={<ReikiTraining />} />
           <Route path="faq" element={<FAQ />} />
           <Route path="contact" element={<Contact />} />
