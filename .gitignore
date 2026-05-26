@@ -1,3 +1,5 @@
 .DS_Store
 .playwright-mcp/
 codex-website-lab/
+node_modules/
+dist/
