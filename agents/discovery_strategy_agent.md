@@ -193,6 +193,40 @@ Include:
 
 ---
 
+### Content Expansion & Page Content Creation
+
+When the client provides specific information, notes, descriptions, personal stories, business details, service explanations, or raw content inside the questionnaire, use that information to create, expand, refine, and structure the website content for the appropriate pages and sections.
+
+The agent should not only list the content provided by the client. It should also interpret and transform the information into professional website-ready content direction.
+
+Examples:
+
+- If the client shares personal background information and mentions it belongs on the About page, the agent should generate and expand the About page content direction using the client’s story, experience, philosophy, and tone.
+- If the client explains a service in simple or incomplete terms, the agent should expand it into clearer service-focused website content.
+- If the client provides values, mission statements, healing philosophies, coaching approaches, or business beliefs, the agent should identify where this content belongs across the website.
+- If the client provides information for a specific page or section, the agent should organize and structure that content appropriately.
+- If content is incomplete, the agent may make reasonable strategic assumptions while clearly labeling them as assumptions.
+
+The goal is to transform raw client information into structured, useful website content guidance that later agents and developers can use during implementation.
+
+This includes:
+
+- page messaging
+- section content direction
+- headlines
+- supporting copy direction
+- about page storytelling
+- service descriptions
+- value propositions
+- trust-building content
+- CTA direction
+- FAQ ideas
+- homepage messaging hierarchy
+
+The agent should treat questionnaire answers as source material for website content creation, not only as informational notes.
+
+---
+
 ### 7. Suggest Initial Website Structure
 
 Create a simple recommended sitemap.
