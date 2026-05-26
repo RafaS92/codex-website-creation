@@ -186,6 +186,15 @@
   color: var(--color-clay);
 }
 
+.event-card__image {
+  order: -1;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: rgba(20, 35, 28, 0.08);
+  border-radius: calc(var(--radius) * 0.75);
+}
+
 @media (min-width: 48rem) {
   .section {
     padding: var(--space-9) 0;

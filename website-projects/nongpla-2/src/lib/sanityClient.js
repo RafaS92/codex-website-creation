@@ -1,7 +1,7 @@
 import { createClient } from '@sanity/client';
 
-const projectId = import.meta.env.VITE_SANITY_PROJECT_ID;
-const dataset = import.meta.env.VITE_SANITY_DATASET;
+const projectId = import.meta.env.VITE_SANITY_PROJECT_ID || 'he3aee4o';
+const dataset = import.meta.env.VITE_SANITY_DATASET || 'production';
 const apiVersion = import.meta.env.VITE_SANITY_API_VERSION || '2026-05-26';
 
 export const sanityClient =
@@ -10,7 +10,7 @@ export const sanityClient =
         projectId,
         dataset,
         apiVersion,
-        useCdn: true,
+        useCdn: false,
       })
     : null;
 
@@ -23,6 +23,6 @@ export const EVENTS_QUERY = `*[
   titleEn,
   titleTh,
   descriptionEn,
-  descriptionTh
+  descriptionTh,
+  "imageUrl": image.asset->url
 }`;
-

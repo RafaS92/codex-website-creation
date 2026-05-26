@@ -83,7 +83,11 @@ export default function Events() {
                   body={getEventDescription(event)}
                   meta={event.startsAt ? formatter.format(new Date(event.startsAt)) : null}
                   variant="compact"
-                />
+                >
+                  {event.imageUrl && (
+                    <img className="event-card__image" src={event.imageUrl} alt={getEventTitle(event)} />
+                  )}
+                </Card>
               ))}
             </div>
           )}
