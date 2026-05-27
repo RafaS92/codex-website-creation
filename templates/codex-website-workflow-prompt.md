@@ -13,7 +13,7 @@ Project name:
 Workflow rules:
 - Read and follow workflow.md.
 - Use the agent files in agents/.
-- Use the global skills assigned by workflow.md during their relevant stages.
+- Use Stitch MCP only after I confirm the Google Stitch design is ready.
 - Save all workflow outputs as editable markdown documents inside:
   website-projects/[PROJECT_NAME]/documents/
 - Treat manually edited documents as the source of truth.
@@ -40,21 +40,17 @@ Start or continue logic:
   website-projects/[PROJECT_NAME]/documents/01-client-discovery-summary.md
 - Stop and ask me to review/approve.
 
-- If 01-client-discovery-summary.md already exists and I say Approved, run agents/ui_strategy_agent.md using:
-  website-projects/[PROJECT_NAME]/documents/00-questionnaire.md
-  website-projects/[PROJECT_NAME]/documents/01-client-discovery-summary.md
-  any links or attached visual references I provide.
-- During this UI/UX Strategy stage, use these global skills to improve the output:
-  /Users/athenanexis/.codex/skills/frontend-design/SKILL.md
-  /Users/athenanexis/.codex/skills/web-typography/SKILL.md
-- Save the UI/UX output to:
-  website-projects/[PROJECT_NAME]/documents/02-ui-ux-strategy-summary.md
-- Stop and ask me to review/approve.
+- If 01-client-discovery-summary.md already exists and I say Approved, stop the workflow so I can create the design in Google Stitch.
+- Do not create a UI/UX strategy summary.
+- When I come back and confirm the Google Stitch design is ready, use Stitch MCP to find this project and design.
+- Create or update the standard Stitch design document at:
+  website-projects/[PROJECT_NAME]/documents/design.md
+- Stop and ask me to review/approve the design document.
 
-- If 02-ui-ux-strategy-summary.md already exists and I say Approved, run agents/codex_handoff_agent.md using:
+- If design.md already exists and I say Approved, run agents/codex_handoff_agent.md using:
   website-projects/[PROJECT_NAME]/documents/00-questionnaire.md
   website-projects/[PROJECT_NAME]/documents/01-client-discovery-summary.md
-  website-projects/[PROJECT_NAME]/documents/02-ui-ux-strategy-summary.md
+  website-projects/[PROJECT_NAME]/documents/design.md
 - Save the handoff output to:
   website-projects/[PROJECT_NAME]/documents/03-codex-technical-handoff.md
 - Stop and ask me to review/approve.

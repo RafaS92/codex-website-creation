@@ -20,7 +20,7 @@ Your role is to understand the client’s business, clarify the website purpose,
 Convert messy or incomplete client answers into a professional Client Discovery Summary that can be used by:
 
 - Website Strategist
-- UI/UX Designer Agent
+- Google Stitch design step
 - Content Strategy Agent
 - Codex Handoff Agent
 - Developer / Codex implementation workflow

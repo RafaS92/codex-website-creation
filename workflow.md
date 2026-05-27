@@ -11,7 +11,7 @@ Use this workflow when the user asks Codex to create a website through an approv
 - Save every stage output as an editable markdown document.
 - Read the latest saved documents before continuing, because the user may edit them manually.
 - Use user-provided links, screenshots, attached images, assets, and notes as context.
-- Use the global skills listed in this workflow during their assigned stages.
+- Use the Stitch MCP only after the user confirms the Google Stitch design is ready.
 - Do not build code until the Codex handoff document is approved.
 
 ## Global Skill Usage
@@ -19,13 +19,9 @@ Use this workflow when the user asks Codex to create a website through an approv
 Use these globally installed skills when their stage is active:
 
 ```text
-/Users/athenanexis/.codex/skills/frontend-design/SKILL.md
-/Users/athenanexis/.codex/skills/web-typography/SKILL.md
 /Users/athenanexis/.codex/skills/senior-frontend-qa/SKILL.md
 ```
 
-- Use `frontend-design` during the UI/UX Strategy stage to make the visual direction more distinctive, polished, and production-grade.
-- Use `web-typography` during the UI/UX Strategy stage to define type hierarchy, font pairing, readability rules, responsive typography, and font-loading considerations.
 - Use `senior-frontend-qa` during the Website Build stage after implementation and before writing the build summary.
 
 ## Project Structure
@@ -37,7 +33,7 @@ website-projects/project-name/
   documents/
     00-questionnaire.md
     01-client-discovery-summary.md
-    02-ui-ux-strategy-summary.md
+    design.md
     03-codex-technical-handoff.md
     04-build-summary.md
 ```
@@ -66,46 +62,25 @@ website-projects/project-name/documents/01-client-discovery-summary.md
 
 Stop after creating or updating the output. Wait for approval.
 
-### 2. UI/UX Strategy
+### 2. Google Stitch Design
 
-Agent:
+Trigger this only after `01-client-discovery-summary.md` is approved.
 
-```text
-agents/ui_strategy_agent.md
-```
+At this point, stop the Codex workflow so the user can create the design in Google Stitch.
 
-Input:
+When the user comes back and confirms the Google Stitch design is ready:
 
-```text
-website-projects/project-name/documents/00-questionnaire.md
-website-projects/project-name/documents/01-client-discovery-summary.md
-```
-
-Also use any visual references, links, screenshots, or attached images provided by the user.
-
-Required skills for this stage:
+1. Use the Stitch MCP to find the matching project and design.
+2. Read the Stitch project/design details through the MCP.
+3. Create or update the standard Stitch design document at:
 
 ```text
-/Users/athenanexis/.codex/skills/frontend-design/SKILL.md
-/Users/athenanexis/.codex/skills/web-typography/SKILL.md
+website-projects/project-name/documents/design.md
 ```
 
-When writing `02-ui-ux-strategy-summary.md`, apply these skills to improve:
+The `design.md` file should be the source-of-truth design artifact produced from Google Stitch. It should capture the screens, layout, visual system, components, typography, colors, spacing, imagery, interactions, responsive notes, and implementation-relevant design details available from Stitch.
 
-- aesthetic direction and visual differentiation
-- layout composition and design personality
-- typography selection and pairing
-- type hierarchy and readable measurements
-- responsive typography behavior
-- motion, spacing, color, and interaction guidance
-
-Output:
-
-```text
-website-projects/project-name/documents/02-ui-ux-strategy-summary.md
-```
-
-Stop after creating or updating the output. Wait for approval.
+Stop after creating or updating `design.md`. Wait for design approval.
 
 ### 3. Codex Handoff
 
@@ -120,7 +95,7 @@ Input:
 ```text
 website-projects/project-name/documents/00-questionnaire.md
 website-projects/project-name/documents/01-client-discovery-summary.md
-website-projects/project-name/documents/02-ui-ux-strategy-summary.md
+website-projects/project-name/documents/design.md
 ```
 
 Output:
@@ -145,7 +120,7 @@ Use these approved documents as source of truth:
 
 ```text
 website-projects/project-name/documents/01-client-discovery-summary.md
-website-projects/project-name/documents/02-ui-ux-strategy-summary.md
+website-projects/project-name/documents/design.md
 website-projects/project-name/documents/03-codex-technical-handoff.md
 ```
 
@@ -176,8 +151,11 @@ If the user says `Run website_creation_workflow` with new project input:
 If the user says `Approved. Continue website_creation_workflow`:
 
 1. Inspect the existing project documents.
-2. Continue to the next incomplete stage.
-3. Stop after that stage.
+2. If Discovery was just approved and `design.md` does not exist, stop and ask the user to create the design in Google Stitch.
+3. If the user confirms the Google Stitch design is ready, use Stitch MCP to create or update `design.md`.
+4. If `design.md` exists and is approved, run the Codex Handoff stage.
+5. Continue to the next incomplete stage.
+6. Stop after that stage.
 
 If the user gives revision notes before approval:
 
