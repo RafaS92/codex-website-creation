@@ -44,13 +44,13 @@ Start or continue logic:
 - Do not create a UI/UX strategy summary.
 - When I come back and confirm the Google Stitch design is ready, use Stitch MCP to find this project and design.
 - Create or update the standard Stitch design document at:
-  website-projects/[PROJECT_NAME]/documents/design.md
+  website-projects/[PROJECT_NAME]/documents/02-design.md
 - Stop and ask me to review/approve the design document.
 
-- If design.md already exists and I say Approved, run agents/codex_handoff_agent.md using:
+- If 02-design.md already exists and I say Approved, run agents/codex_handoff_agent.md using:
   website-projects/[PROJECT_NAME]/documents/00-questionnaire.md
   website-projects/[PROJECT_NAME]/documents/01-client-discovery-summary.md
-  website-projects/[PROJECT_NAME]/documents/design.md
+  website-projects/[PROJECT_NAME]/documents/02-design.md
 - Save the handoff output to:
   website-projects/[PROJECT_NAME]/documents/03-codex-technical-handoff.md
 - Stop and ask me to review/approve.

@@ -33,7 +33,7 @@ website-projects/project-name/
   documents/
     00-questionnaire.md
     01-client-discovery-summary.md
-    design.md
+    02-design.md
     03-codex-technical-handoff.md
     04-build-summary.md
 ```
@@ -75,12 +75,12 @@ When the user comes back and confirms the Google Stitch design is ready:
 3. Create or update the standard Stitch design document at:
 
 ```text
-website-projects/project-name/documents/design.md
+website-projects/project-name/documents/02-design.md
 ```
 
-The `design.md` file should be the source-of-truth design artifact produced from Google Stitch. It should capture the screens, layout, visual system, components, typography, colors, spacing, imagery, interactions, responsive notes, and implementation-relevant design details available from Stitch.
+The `02-design.md` file should be the source-of-truth design artifact produced from Google Stitch. It should capture the screens, layout, visual system, components, typography, colors, spacing, imagery, interactions, responsive notes, and implementation-relevant design details available from Stitch.
 
-Stop after creating or updating `design.md`. Wait for design approval.
+Stop after creating or updating `02-design.md`. Wait for design approval.
 
 ### 3. Codex Handoff
 
@@ -95,7 +95,7 @@ Input:
 ```text
 website-projects/project-name/documents/00-questionnaire.md
 website-projects/project-name/documents/01-client-discovery-summary.md
-website-projects/project-name/documents/design.md
+website-projects/project-name/documents/02-design.md
 ```
 
 Output:
@@ -120,7 +120,7 @@ Use these approved documents as source of truth:
 
 ```text
 website-projects/project-name/documents/01-client-discovery-summary.md
-website-projects/project-name/documents/design.md
+website-projects/project-name/documents/02-design.md
 website-projects/project-name/documents/03-codex-technical-handoff.md
 ```
 
@@ -151,9 +151,9 @@ If the user says `Run website_creation_workflow` with new project input:
 If the user says `Approved. Continue website_creation_workflow`:
 
 1. Inspect the existing project documents.
-2. If Discovery was just approved and `design.md` does not exist, stop and ask the user to create the design in Google Stitch.
-3. If the user confirms the Google Stitch design is ready, use Stitch MCP to create or update `design.md`.
-4. If `design.md` exists and is approved, run the Codex Handoff stage.
+2. If Discovery was just approved and `02-design.md` does not exist, stop and ask the user to create the design in Google Stitch.
+3. If the user confirms the Google Stitch design is ready, use Stitch MCP to create or update `02-design.md`.
+4. If `02-design.md` exists and is approved, run the Codex Handoff stage.
 5. Continue to the next incomplete stage.
 6. Stop after that stage.
 
