@@ -1,0 +1,303 @@
+@use "../abstracts/breakpoints" as *;
+
+.section {
+  padding: 4rem 1.25rem;
+
+  @include tablet {
+    padding: 5rem 2rem;
+  }
+
+  @include desktop {
+    padding: 6rem 4rem;
+  }
+}
+
+.section > * {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--container);
+}
+
+.section--stone {
+  background: var(--color-surface-low);
+}
+
+.section-heading {
+  display: grid;
+  gap: 0.9rem;
+  margin-bottom: 2rem;
+  max-width: 44rem;
+  text-align: center;
+}
+
+.split-section,
+.split-hero,
+.service-detail,
+.premium-section,
+.contact-page__image {
+  align-items: center;
+  display: grid;
+  gap: 2rem;
+
+  @include tablet {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.split-section__copy,
+.service-detail > div,
+.premium-section > div,
+.contact-page__image > div {
+  display: grid;
+  gap: 1rem;
+}
+
+.split-section--compact {
+  margin-top: 2rem;
+}
+
+.home-hero,
+.reiki-hero {
+  display: grid;
+  min-height: calc(100vh - 4.75rem);
+  overflow: hidden;
+  place-items: end start;
+  position: relative;
+
+  > img {
+    height: 100%;
+    inset: 0;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+  }
+
+  &::after {
+    background: linear-gradient(180deg, rgba(252, 249, 248, 0.08), rgba(252, 249, 248, 0.88));
+    content: "";
+    inset: 0;
+    position: absolute;
+  }
+}
+
+.home-hero__content,
+.reiki-hero > div {
+  background: rgba(252, 249, 248, 0.9);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+  display: grid;
+  gap: 1rem;
+  margin: 1.25rem;
+  max-width: 42rem;
+  padding: 1.5rem;
+  position: relative;
+  z-index: 1;
+
+  @include tablet {
+    margin: 4rem;
+    padding: 2.25rem;
+  }
+}
+
+.page-hero {
+  display: grid;
+  gap: 1rem;
+  min-height: 28rem;
+  text-align: left;
+
+  > p {
+    max-width: 42rem;
+  }
+}
+
+.page-hero--center {
+  place-items: center;
+  text-align: center;
+
+  > * {
+    max-width: 48rem;
+  }
+
+  .image-panel {
+    margin-top: 1.5rem;
+    max-width: var(--container);
+    width: 100%;
+
+    img {
+      aspect-ratio: 16 / 7;
+    }
+  }
+}
+
+.pathways-section,
+.values-section,
+.retreat-features,
+.gallery-section,
+.training-section,
+.statement-section {
+  display: grid;
+  gap: 2rem;
+}
+
+.nature-feature {
+  border-radius: 0;
+  color: var(--color-background);
+  display: grid;
+  min-height: 34rem;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+
+  > img {
+    height: 100%;
+    inset: 0;
+    object-fit: cover;
+    opacity: 0.65;
+    position: absolute;
+    width: 100%;
+  }
+
+  &::after {
+    background: rgba(14, 31, 19, 0.58);
+    content: "";
+    inset: 0;
+    position: absolute;
+  }
+
+  > div {
+    align-self: center;
+    display: grid;
+    gap: 1rem;
+    max-width: 36rem;
+    padding: 4rem 1.25rem;
+    position: relative;
+    z-index: 1;
+
+    @include desktop {
+      margin-left: calc((100vw - var(--container)) / 2);
+      padding: 5rem 4rem;
+    }
+  }
+
+  h2,
+  p,
+  .eyebrow {
+    color: var(--color-background);
+  }
+}
+
+.cta-section {
+  padding: 4rem 1.25rem;
+
+  @include desktop {
+    padding: 6rem 4rem;
+  }
+}
+
+.cta-section__inner {
+  background: var(--color-primary);
+  border-radius: var(--radius-xl);
+  display: grid;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: var(--container);
+  padding: 2rem 1.25rem;
+  text-align: center;
+
+  @include tablet {
+    padding: 4rem;
+  }
+
+  h2,
+  p,
+  .eyebrow {
+    color: var(--color-background);
+  }
+
+  .button-row {
+    justify-content: center;
+  }
+}
+
+.service-detail--reverse {
+  @include tablet {
+    > .image-panel {
+      order: 2;
+    }
+  }
+}
+
+.inquiry-band {
+  background: var(--color-primary);
+  color: var(--color-background);
+  display: grid;
+  gap: 2rem;
+
+  @include tablet {
+    grid-template-columns: 0.8fr 1fr;
+  }
+
+  h2,
+  p,
+  .eyebrow,
+  label {
+    color: var(--color-background);
+  }
+}
+
+.statement-section {
+  text-align: center;
+
+  h2,
+  p {
+    max-width: 48rem;
+  }
+}
+
+.reiki-hero {
+  place-items: center;
+  text-align: center;
+
+  &::after {
+    background: rgba(252, 249, 248, 0.78);
+  }
+}
+
+.contact-page {
+  display: grid;
+  gap: 3rem;
+}
+
+.contact-page__intro {
+  display: grid;
+  gap: 1rem;
+  max-width: 44rem;
+}
+
+.contact-page__grid {
+  display: grid;
+  gap: 2rem;
+
+  @include desktop {
+    grid-template-columns: 1fr 0.8fr;
+  }
+}
+
+.contact-page__grid > div:first-child {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.contact-page__image {
+  margin-top: 1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+    animation-duration: 0.001ms !important;
+  }
+}

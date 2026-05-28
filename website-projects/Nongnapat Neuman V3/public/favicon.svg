@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Nongnapat Neuman">
+  <rect width="64" height="64" rx="18" fill="#fcf9f8"/>
+  <path d="M18 42c9-2 14-9 15-22 7 8 10 16 13 25-8 0-17 0-28-3Z" fill="#4a5d4e"/>
+  <path d="M20 42c7-5 13-12 17-22" stroke="#fcf9f8" stroke-width="3" stroke-linecap="round"/>
+</svg>

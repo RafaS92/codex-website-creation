@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Retreats &amp; Workshops | Nongnapat Neuman</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#fcf9f8",
+                    "on-surface-variant": "#434843",
+                    "on-tertiary-fixed-variant": "#474743",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#303030",
+                    "tertiary-container": "#595855",
+                    "surface": "#fcf9f8",
+                    "error": "#ba1a1a",
+                    "surface-variant": "#e4e2e1",
+                    "on-secondary-fixed": "#1d1c17",
+                    "on-tertiary-container": "#d1ceca",
+                    "surface-container-high": "#eae7e7",
+                    "on-primary-fixed": "#0e1f13",
+                    "error-container": "#ffdad6",
+                    "on-error-container": "#93000a",
+                    "outline": "#737872",
+                    "surface-dim": "#dcd9d9",
+                    "secondary-fixed": "#e6e2da",
+                    "primary-fixed-dim": "#b7ccb9",
+                    "background": "#fcf9f8",
+                    "surface-tint": "#506354",
+                    "on-secondary-fixed-variant": "#484741",
+                    "surface-container-low": "#f6f3f2",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#f3f0f0",
+                    "tertiary-fixed-dim": "#c9c6c2",
+                    "on-secondary-container": "#65625c",
+                    "primary": "#334537",
+                    "on-secondary": "#ffffff",
+                    "tertiary": "#41413e",
+                    "secondary": "#605e58",
+                    "outline-variant": "#c3c8c1",
+                    "on-background": "#1b1c1c",
+                    "inverse-primary": "#b7ccb9",
+                    "on-tertiary-fixed": "#1c1c19",
+                    "on-surface": "#1b1c1c",
+                    "secondary-fixed-dim": "#cac6be",
+                    "tertiary-fixed": "#e5e2dd",
+                    "secondary-container": "#e3dfd7",
+                    "primary-fixed": "#d3e8d5",
+                    "on-primary-fixed-variant": "#394b3d",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#4a5d4e",
+                    "surface-container-highest": "#e4e2e1",
+                    "surface-container": "#f0eded",
+                    "on-primary-container": "#c0d5c2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xl": "80px",
+                    "base": "8px",
+                    "margin-mobile": "20px",
+                    "sm": "12px",
+                    "lg": "48px",
+                    "xl": "80px",
+                    "gutter": "24px",
+                    "container-max": "1200px",
+                    "margin-desktop": "64px",
+                    "xs": "4px",
+                    "md": "24px"
+            },
+            "fontFamily": {
+                    "label-md": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "headline-sm": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "body-lg": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .grain-texture {
+            background-image: url("https://www.transparenttextures.com/patterns/felt.png");
+            opacity: 0.03;
+            pointer-events: none;
+        }
+        .asymmetric-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed overflow-x-hidden">
+<div class="fixed inset-0 grain-texture z-50"></div>
+<!-- TopAppBar -->
+<header class="bg-surface/80 backdrop-blur-md text-primary docked full-width top-0 sticky z-40">
+<div class="flex justify-between items-center w-full px-margin-desktop py-base max-w-container-max mx-auto">
+<a class="font-display-lg text-headline-sm text-primary tracking-tight" href="#">Nongnapat Neuman</a>
+<nav class="hidden md:flex gap-md items-center">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Services</a>
+<a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1 transition-colors duration-300" href="#">Retreats</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Reiki</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">FAQ</a>
+</nav>
+<button class="bg-primary text-on-primary px-md py-sm rounded-full font-label-md text-label-md hover:bg-primary-container transition-all active:scale-95">Inquire</button>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Hero Section -->
+<section class="py-xl flex flex-col items-center text-center">
+<span class="font-label-md text-label-md text-primary tracking-[0.2em] mb-md uppercase">Retreats &amp; Workshops</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary max-w-3xl mb-lg">Deepen Your Connection</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-xl italic">
+                Step away from the rhythm of the everyday into the misty stillness of Chiang Dao. Experience immersive healing journeys designed to restore your essence through nature and community.
+            </p>
+<div class="relative w-full aspect-[21/9] rounded-xl overflow-hidden shadow-sm">
+<img alt="Chiang Dao Retreat Center" class="w-full h-full object-cover" data-alt="A panoramic landscape view of the mist-covered mountains of Chiang Dao, Thailand at sunrise. In the foreground, a minimalist bamboo yoga shala sits amidst lush tropical greenery and wild flowers. The lighting is soft and ethereal, capturing a quietly premium atmosphere with a palette of moss greens, warm stones, and soft sand tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1qP04qWFDBMtPg9DVoLqcvkG2CP2cZcrv2UxW5-rz2JEv1YvTB_bVacikLAEVfxPW1670MmluRYBNJ0BTTq8JMZJ5IbenG_vbH1O_54UeevsRpnYfWzYzSUoHz64VODPVMmyh1anqxQXqyxslj5UCmIJ9LKS7oB_dgEZ6p5qoNrNcv7i5GnCm1psZuOOdQJZ6Q2DFb5VVhSdnUDZLqzzU58i-8MHeC9QDPGKm8YlyN57g6WDGtBK-byFV9hBhe498MhEG6jLmOAAC"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+</div>
+</section>
+<!-- Showcase Section: Bento Grid -->
+<section class="py-xl">
+<div class="asymmetric-grid">
+<div class="col-span-12 lg:col-span-8 flex flex-col justify-center pr-md">
+<h2 class="font-headline-md text-headline-md text-primary mb-md">Integrative workshops and immersive retreats in Chiang Dao.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg leading-relaxed">
+                        Our gatherings are curated experiences that blend ancient wisdom with modern grounding techniques. Located in the heart of Northern Thailand, each session serves as a portal to personal transformation and collective healing.
+                    </p>
+</div>
+<div class="col-span-12 lg:col-span-4 bg-surface-container-low p-md rounded-xl border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-sm" data-icon="auto_awesome">auto_awesome</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-sm">Group Harmony</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">The power of shared silence and collective intention creates a sanctuary where every voice is heard and every soul is seen.</p>
+</div>
+</div>
+<div class="col-span-12 md:col-span-6 lg:col-span-4 bg-secondary-container/30 p-md rounded-xl border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-4xl mb-sm" data-icon="nature_people">nature_people</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-sm">Nature-Based Healing</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">We utilize the terrestrial energy of the Chiang Dao mountains to anchor our practices, ensuring a grounded and tactile healing experience.</p>
+</div>
+<div class="col-span-12 md:col-span-6 lg:col-span-4 bg-surface-container p-md rounded-xl border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-4xl mb-sm" data-icon="psychology_alt">psychology_alt</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-sm">Skillful Facilitation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Guided by years of practice in Reiki and holistic arts, Nongnapat provides a safe, expertly-held container for your journey.</p>
+</div>
+<div class="col-span-12 lg:col-span-4 relative rounded-xl overflow-hidden h-[300px]">
+<img alt="Facilitation Session" class="w-full h-full object-cover" data-alt="A close-up, tactile image showing a healing practitioner's hands resting gently on handmade paper journals during a workshop. The setting is a warm, stone-colored room with soft, dappled sunlight filtering through bamboo blinds. The mood is serene, focused, and intentional, emphasizing the quality of premium, grounded care." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBfHAqyVY_ZoTj6Qv8NuoRPz-6cL0g5MIsQaz6FdGtnuN42iSbM2Ka94rvfq5JQ-6sryzZq7ARaLCW27D-5M1knfkbsXRYzZHAJTosKf8vaAi99t9z04TSroNXqOnLOA07sZCtOKpRyUFlgB49AmuThwEuuXIHdcFWeui3eVlnrwexdI2HC3rf8Vesi_M6IBG7p8TwvpyJjD-p1Fv_zVDHJunixEaeUA-u5A_yNBTwrARAzK9HUFIZAFH_bd-5DetGwZjNcGheI76U"/>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="py-xl">
+<div class="flex flex-col md:flex-row justify-between items-end mb-lg gap-md">
+<div class="max-w-xl">
+<h2 class="font-headline-md text-headline-md text-primary mb-sm">Moments of Stillness</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">A glimpse into the environment and energy of our sessions in nature.</p>
+</div>
+<div class="flex gap-sm">
+<button aria-label="Previous image" class="w-12 h-12 rounded-full border border-outline flex items-center justify-center hover:bg-surface-container transition-colors text-primary">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<button aria-label="Next image" class="w-12 h-12 rounded-full border border-outline flex items-center justify-center hover:bg-surface-container transition-colors text-primary">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<div class="group relative overflow-hidden rounded-xl aspect-square cursor-pointer">
+<img alt="Group meditation" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A wide-angle shot of a diverse group of people sitting in a circle on natural linen cushions inside a minimalist Thai pavilion. The morning light is soft and diffused. The background features lush tropical ferns and a glimpse of stone mountains. The color palette is dominated by soft sands, warm stones, and moss greens." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlqwy3c6sB8ESCauth-ZrHFsGiS-6GynjjD410Icxtwl4IUi4RLHTMTBz8fW7eFwZ7JDe3Lm1qO5gCy81Q55PLy68dqs_NBlDHDnt-mqJp1-2pOrqoB_kASNvTHPVgDvpHGMEG1b8sBgG4rJsPMwN3OXl1E4amGsZZrAgRvTcrG6G2YS5zK0akGi0A9lzkOIOgJBDwFjYwzeLKHWGx21pWTRdtOCl8cCatHeE217scT9BEKxaHoU_kT8lhilXl9M3pJ1EkkPzcLsFC"/>
+<div class="absolute inset-0 bg-primary/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="text-on-primary font-label-md text-label-md uppercase tracking-widest">Group Session</span>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl aspect-square cursor-pointer md:mt-lg">
+<img alt="Mountain hike" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A person walking slowly through a tall grass field at the foot of a massive limestone cliff in Northern Thailand. The image is captured in high-key lighting, emphasizing the vastness and serenity of the landscape. The person is wearing minimalist, earth-toned clothing, blending harmoniously with the natural environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEfmSqfNLqGEBbUud9p-8BWphWTsjUlMkDZ2URWyoRASAh9sUkFF-Ste6hacdZd6o15IQmydfgeiC7A43DXmLrZuWejy6jLFxgNUXp0LSRid4u1W6MHO95rxVWGh44972Uze8LrRd5QJdHSj-LX53nQSUZu2-XQ7neVRm0d9ar5VMrbyOH32J2bgec4StXsElLCFA_XZRRYusaEZKWlMWX1PTbuRzfRzxEuhY4_s1CzciEeKs5RSD5vpMcwj8wSfgf6AIwv126s5rp"/>
+<div class="absolute inset-0 bg-primary/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="text-on-primary font-label-md text-label-md uppercase tracking-widest">Mindful Walk</span>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl aspect-square cursor-pointer">
+<img alt="Healing altar" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A beautifully arranged minimalist altar featuring smooth river stones, a small sprig of jasmine, and a beeswax candle. The altar sits on a raw wood table against a textured warm stone wall. The lighting is low and atmospheric, creating a peaceful, sanctuary-like mood within a light-mode aesthetic framework." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdA3BccbYUwCwxDtPgoAPq7stHK1OB131wP9a99G9i6Vq6X-JEup8SYuKAHHOzlAxuI5rQNtflM9mXQuKbx9m_M6dwBYfCkJZG4W40zyFLe5EgsmVVaQXA72ctgCn7Yt5lHHHY97Yfw8uExe7my5A2IBJRu8H9YHEw0vGolmKfrqcbuXpegaJ50SFeCmlP6DbJvNUqMtHYza-y9IMd1ivXxgFmRFAiCECvBIZZJopGmJWRy6of5ypPtXDrPMeNMd_u8cuC6UwzbSm-"/>
+<div class="absolute inset-0 bg-primary/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="text-on-primary font-label-md text-label-md uppercase tracking-widest">Sacred Space</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-xl mb-xl">
+<div class="bg-primary text-on-primary rounded-[2rem] p-lg md:p-xl flex flex-col items-center text-center relative overflow-hidden shadow-sm">
+<div class="absolute top-0 right-0 p-lg opacity-10">
+<span class="material-symbols-outlined text-[120px]" data-icon="spa">spa</span>
+</div>
+<h2 class="font-headline-md text-headline-md mb-md relative z-10">Ready to embark on a journey of return?</h2>
+<p class="font-body-lg text-body-lg text-on-primary/80 mb-lg max-w-xl relative z-10">
+                    Space is limited for our immersive retreats to maintain an intimate and focused environment.
+                </p>
+<button class="bg-secondary-container text-primary px-xl py-md rounded-full font-label-md text-label-md uppercase tracking-wider hover:bg-surface-bright transition-all active:scale-95 relative z-10">
+                    Inquire about upcoming dates
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low w-full mt-xl">
+<div class="w-full py-lg px-margin-desktop border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-md max-w-container-max mx-auto">
+<div class="flex flex-col gap-xs">
+<span class="font-display-lg text-headline-sm text-primary">Nongnapat Neuman</span>
+<p class="font-label-md text-label-md text-on-surface-variant">© 2024 Nongnapat Neuman Holistic Healing. Chiang Dao, Thailand.</p>
+</div>
+<nav class="flex gap-md">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors active:underline decoration-primary-container" href="#">Philosophy</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors active:underline decoration-primary-container" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors active:underline decoration-primary-container" href="#">WhatsApp</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors active:underline decoration-primary-container" href="#">Email</a>
+</nav>
+</div>
+</footer>
+<script>
+        // Smooth reveal animation on scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+                observer.observe(section);
+            });
+        });
+
+        // Navigation Highlight logic
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            if(link.textContent.trim() === 'Retreats') {
+                link.classList.add('text-primary', 'border-b-2', 'border-primary', 'pb-1');
+                link.classList.remove('text-on-surface-variant');
+            }
+        });
+    </script>
+</body></html>

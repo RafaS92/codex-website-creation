@@ -1,0 +1,56 @@
+@use "../abstracts/breakpoints" as *;
+
+.gallery {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.gallery__header {
+  align-items: end;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.gallery__controls {
+  display: flex;
+  gap: 0.5rem;
+
+  button {
+    align-items: center;
+    background: transparent;
+    border: 0.0625rem solid var(--color-outline-soft);
+    border-radius: 999rem;
+    color: var(--color-primary);
+    display: inline-flex;
+    height: 2.75rem;
+    justify-content: center;
+    width: 2.75rem;
+  }
+
+  svg {
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
+.gallery__grid {
+  display: grid;
+  gap: 1rem;
+
+  @include tablet {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  figure {
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+  }
+
+  img {
+    aspect-ratio: 4 / 5;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+}

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact &amp; FAQ | Sacred Stillness</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&amp;family=Plus+Jakarta+Sans:wght@400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary": "#605e58",
+                        "surface-dim": "#dcd9d9",
+                        "primary": "#334537",
+                        "secondary-container": "#e3dfd7",
+                        "inverse-surface": "#303030",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#b7ccb9",
+                        "on-primary-fixed": "#0e1f13",
+                        "inverse-on-surface": "#f3f0f0",
+                        "on-primary-container": "#c0d5c2",
+                        "surface": "#fcf9f8",
+                        "surface-bright": "#fcf9f8",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed": "#e5e2dd",
+                        "on-secondary-container": "#65625c",
+                        "tertiary-fixed-dim": "#c9c6c2",
+                        "surface-container": "#f0eded",
+                        "on-error-container": "#93000a",
+                        "primary-fixed-dim": "#b7ccb9",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#474743",
+                        "tertiary": "#41413e",
+                        "surface-container-high": "#eae7e7",
+                        "surface-container-low": "#f6f3f2",
+                        "secondary-fixed-dim": "#cac6be",
+                        "primary-container": "#4a5d4e",
+                        "on-surface": "#1b1c1c",
+                        "primary-fixed": "#d3e8d5",
+                        "surface-container-highest": "#e4e2e1",
+                        "secondary-fixed": "#e6e2da",
+                        "on-tertiary-container": "#d1ceca",
+                        "on-tertiary-fixed": "#1c1c19",
+                        "on-primary-fixed-variant": "#394b3d",
+                        "outline": "#737872",
+                        "surface-tint": "#506354",
+                        "surface-variant": "#e4e2e1",
+                        "on-background": "#1b1c1c",
+                        "tertiary-container": "#595855",
+                        "on-secondary-fixed-variant": "#484741",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#c3c8c1",
+                        "on-surface-variant": "#434843",
+                        "on-secondary-fixed": "#1d1c17",
+                        "on-error": "#ffffff",
+                        "background": "#fcf9f8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "80px",
+                        "margin-desktop": "64px",
+                        "lg": "48px",
+                        "md": "24px",
+                        "base": "8px",
+                        "sm": "12px",
+                        "gutter": "24px",
+                        "xs": "4px",
+                        "margin-mobile": "20px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-sm": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "display-lg": ["Playfair Display"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .accordion-item.active .accordion-content {
+            max-height: 200px;
+        }
+        .accordion-item.active .chevron {
+            transform: rotate(180deg);
+        }
+        body {
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full">
+<button class="text-primary dark:text-inverse-primary transition-opacity active:opacity-70" id="menu-toggle">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<div class="font-headline-md text-headline-sm-mobile md:text-headline-md text-primary dark:text-primary-fixed">
+                Sacred Stillness
+            </div>
+<button class="font-label-md text-label-md uppercase tracking-widest text-primary hover:text-primary-fixed-dim transition-colors duration-300">
+                Inquire
+            </button>
+</div>
+</header>
+<!-- Navigation Drawer (Overlay) -->
+<div class="fixed inset-0 z-[60] hidden" id="nav-drawer">
+<div class="absolute inset-0 bg-on-surface/20 backdrop-blur-sm" id="drawer-backdrop"></div>
+<aside class="fixed inset-y-0 left-0 z-[60] flex flex-col py-6 bg-surface dark:bg-surface-container-low h-full w-[280px] shadow-sm">
+<div class="px-6 mb-8 flex justify-between items-center">
+<span class="font-headline-sm text-headline-sm text-primary">Menu</span>
+<button class="text-secondary" id="close-drawer"><span class="material-symbols-outlined">close</span></button>
+</div>
+<nav class="flex-1">
+<a class="text-secondary dark:text-secondary-fixed-dim mx-2 my-1 px-4 py-3 flex items-center gap-4 hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="spa">spa</span>
+<span class="font-label-md">Home</span>
+</a>
+<a class="text-secondary dark:text-secondary-fixed-dim mx-2 my-1 px-4 py-3 flex items-center gap-4 hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="energy_savings_leaf">energy_savings_leaf</span>
+<span class="font-label-md">Offerings</span>
+</a>
+<a class="text-secondary dark:text-secondary-fixed-dim mx-2 my-1 px-4 py-3 flex items-center gap-4 hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="self_improvement">self_improvement</span>
+<span class="font-label-md">Philosophy</span>
+</a>
+<a class="text-secondary dark:text-secondary-fixed-dim mx-2 my-1 px-4 py-3 flex items-center gap-4 hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="cottage">cottage</span>
+<span class="font-label-md">The Sanctuary</span>
+</a>
+<a class="text-secondary dark:text-secondary-fixed-dim mx-2 my-1 px-4 py-3 flex items-center gap-4 hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+<span class="font-label-md">Journal</span>
+</a>
+</nav>
+</aside>
+</div>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[353px] flex items-end px-margin-mobile pb-lg">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A peaceful close-up of smooth, dark healing river stones stacked in a zen-like cairn. The background is a soft-focus misty morning landscape with hints of moss green and warm earth tones. The lighting is ethereal and diffused, creating a serene sanctuary atmosphere that evokes a sense of deep stillness and grounded organic luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo7pSJtlQGxGIhdfXbJ-qecE6OUtgtt-L4FL6Cz_sZRQQHPfWDltheiCZ5ojjf5kESr-R-KpfhuEP18g5_JbadOMYRIixYfxUGIeVX4JMP__k6wnbF8aBfD_8bOgucjd4WDxf6wNPesZ8vnerraQLG9oXIcHA4JCGoO0ZYgS9w0EdDID8jGBKsU2z7TDV364TTyoMqW0yF2DvKuOwJqMgfihCCl9bhLZMV-nm27RDa9MgT-4HA-FcLrQD1i_GNEAiFGwhitJePf4fg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-xl">
+<h1 class="font-display-lg-mobile text-display-lg-mobile text-primary mb-base">We are here to support your journey.</h1>
+<p class="font-body-md text-secondary max-w-[80%]">Find sanctuary in conversation. Reach out for guidance on your path to holistic wellness.</p>
+</div>
+</section>
+<!-- Contact Options -->
+<section class="px-margin-mobile py-lg grid grid-cols-1 gap-md">
+<a class="flex items-center gap-md p-md bg-surface-container-low rounded-xl group transition-all hover:bg-surface-container" href="https://wa.me/#">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+</div>
+<div>
+<span class="block font-label-md text-primary">WhatsApp</span>
+<span class="block text-secondary text-sm">Immediate connection</span>
+</div>
+<span class="material-symbols-outlined ml-auto text-outline-variant group-hover:translate-x-1 transition-transform">arrow_forward_ios</span>
+</a>
+<a class="flex items-center gap-md p-md bg-surface-container-low rounded-xl group transition-all hover:bg-surface-container" href="mailto:hello@sacredstillness.care">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</div>
+<div>
+<span class="block font-label-md text-primary">Email Support</span>
+<span class="block text-secondary text-sm">Personalized inquiries</span>
+</div>
+<span class="material-symbols-outlined ml-auto text-outline-variant group-hover:translate-x-1 transition-transform">arrow_forward_ios</span>
+</a>
+</section>
+<!-- Inquire Form -->
+<section class="px-margin-mobile py-lg bg-surface-container-lowest">
+<h2 class="font-headline-sm text-headline-sm text-primary mb-lg">Inquire</h2>
+<form class="space-y-md">
+<div class="space-y-xs">
+<label class="font-label-md text-secondary ml-xs">FULL NAME</label>
+<input class="w-full bg-surface-container-low border-none border-b border-secondary focus:ring-0 focus:border-primary transition-colors py-3 px-4 rounded-t-lg" placeholder="Your name" type="text"/>
+</div>
+<div class="space-y-xs">
+<label class="font-label-md text-secondary ml-xs">EMAIL ADDRESS</label>
+<input class="w-full bg-surface-container-low border-none border-b border-secondary focus:ring-0 focus:border-primary transition-colors py-3 px-4 rounded-t-lg" placeholder="email@example.com" type="email"/>
+</div>
+<div class="space-y-xs">
+<label class="font-label-md text-secondary ml-xs">YOUR MESSAGE</label>
+<textarea class="w-full bg-surface-container-low border-none border-b border-secondary focus:ring-0 focus:border-primary transition-colors py-3 px-4 rounded-t-lg resize-none" placeholder="How may we guide you?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-surface py-4 font-label-md uppercase tracking-widest rounded-lg active:scale-95 transition-transform duration-200" type="submit">
+                    Send Inquiry
+                </button>
+</form>
+</section>
+<!-- Common Questions Accordion -->
+<section class="px-margin-mobile py-xl">
+<h2 class="font-headline-sm text-headline-sm text-primary mb-lg">Common Questions</h2>
+<div class="space-y-base">
+<!-- FAQ Item 1 -->
+<div class="accordion-item border-b border-outline-variant/30">
+<button class="w-full py-md flex justify-between items-center text-left focus:outline-none" onclick="toggleAccordion(this)">
+<span class="font-label-md text-primary">What should I expect during my first visit?</span>
+<span class="material-symbols-outlined chevron transition-transform text-outline">expand_more</span>
+</button>
+<div class="accordion-content">
+<p class="pb-md text-secondary text-sm">Your journey begins with a quiet consultation where we discuss your physical and energetic needs. We prioritize a slow, unhurried pace to allow your body to settle into the space.</p>
+</div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="accordion-item border-b border-outline-variant/30">
+<button class="w-full py-md flex justify-between items-center text-left focus:outline-none" onclick="toggleAccordion(this)">
+<span class="font-label-md text-primary">Are your practitioners licensed?</span>
+<span class="material-symbols-outlined chevron transition-transform text-outline">expand_more</span>
+</button>
+<div class="accordion-content">
+<p class="pb-md text-secondary text-sm">Yes, every member of our sanctuary is a licensed holistic care practitioner with advanced training in traditional and modern healing modalities.</p>
+</div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="accordion-item border-b border-outline-variant/30">
+<button class="w-full py-md flex justify-between items-center text-left focus:outline-none" onclick="toggleAccordion(this)">
+<span class="font-label-md text-primary">Do you offer gift certificates?</span>
+<span class="material-symbols-outlined chevron transition-transform text-outline">expand_more</span>
+</button>
+<div class="accordion-content">
+<p class="pb-md text-secondary text-sm">We offer physical, hand-pressed paper certificates for all our rituals. These can be collected at the sanctuary or mailed to your chosen recipient.</p>
+</div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="accordion-item border-b border-outline-variant/30">
+<button class="w-full py-md flex justify-between items-center text-left focus:outline-none" onclick="toggleAccordion(this)">
+<span class="font-label-md text-primary">Can I book a same-day appointment?</span>
+<span class="material-symbols-outlined chevron transition-transform text-outline">expand_more</span>
+</button>
+<div class="accordion-content">
+<p class="pb-md text-secondary text-sm">To maintain our environment of stillness, we typically book 48 hours in advance. However, you may contact us via WhatsApp for any last-minute cancellations.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-highest border-t border-outline-variant/30 w-full py-xl mt-xl">
+<div class="flex flex-col md:flex-row justify-between items-start gap-md px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="space-y-base">
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary block">Sacred Stillness</span>
+<p class="font-body-md text-body-md text-secondary dark:text-secondary-fixed max-w-xs">
+                    © 2024 Sacred Stillness Holistic Care. Licensed Practitioner.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-x-xl gap-y-base">
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary transition-colors font-body-md" href="#">Terms of Service</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary transition-colors font-body-md" href="#">Privacy Policy</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary transition-colors font-body-md" href="#">Contact Support</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary transition-colors font-body-md" href="#">Clinic Location</a>
+</div>
+</div>
+</footer>
+<script>
+        // Drawer Logic
+        const menuToggle = document.getElementById('menu-toggle');
+        const closeDrawer = document.getElementById('close-drawer');
+        const navDrawer = document.getElementById('nav-drawer');
+        const drawerBackdrop = document.getElementById('drawer-backdrop');
+
+        function openMenu() {
+            navDrawer.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMenu() {
+            navDrawer.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        menuToggle.addEventListener('click', openMenu);
+        closeDrawer.addEventListener('click', closeMenu);
+        drawerBackdrop.addEventListener('click', closeMenu);
+
+        // Accordion Logic
+        function toggleAccordion(btn) {
+            const item = btn.parentElement;
+            const isActive = item.classList.contains('active');
+            
+            // Close all items
+            document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
+            
+            // Open clicked if it wasn't active
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        }
+
+        // Form micro-interaction
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = form.querySelector('button');
+            const originalText = btn.innerText;
+            btn.innerText = 'Sent with Light';
+            btn.style.opacity = '0.7';
+            form.reset();
+            setTimeout(() => {
+                btn.innerText = originalText;
+                btn.style.opacity = '1';
+            }, 3000);
+        });
+    </script>
+</body></html>
