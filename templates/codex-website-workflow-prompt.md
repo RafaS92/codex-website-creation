@@ -14,6 +14,7 @@ Workflow rules:
 - Read and follow workflow.md.
 - Use the agent files in agents/.
 - Use Stitch MCP only after I confirm the Google Stitch design is ready.
+- Do not treat Stitch design-system tokens alone as enough to build from; require screen-level Stitch data or user-provided screen exports.
 - Save all workflow outputs as editable markdown documents inside:
   website-projects/[PROJECT_NAME]/documents/
 - Treat manually edited documents as the source of truth.
@@ -43,14 +44,23 @@ Start or continue logic:
 - If 01-client-discovery-summary.md already exists and I say Approved, stop the workflow so I can create the design in Google Stitch.
 - Do not create a UI/UX strategy summary.
 - When I come back and confirm the Google Stitch design is ready, use Stitch MCP to find this project and design.
+- Check whether Stitch MCP can provide per-screen screenshots, generated HTML/CSS/component code, structured layout data, or equivalent screen-level implementation details.
+- Save MCP-provided screenshots, HTML, CSS, code, or structured screen exports under:
+  website-projects/[PROJECT_NAME]/documents/stitch/
 - Create or update the standard Stitch design document at:
   website-projects/[PROJECT_NAME]/documents/02-design.md
+- Include `Stitch Fidelity Source Status` in 02-design.md:
+  - `SCREEN_LEVEL_READY` when MCP provides enough per-screen visual/layout/code data to reproduce the approved design.
+  - `DESIGN_SYSTEM_ONLY_BLOCKED` when MCP only provides theme tokens, project metadata, broad descriptions, or screen IDs.
+  - `USER_EXPORT_READY` when I supplied screenshots, generated code, or other screen-level exports outside MCP.
+- If the status is `DESIGN_SYSTEM_ONLY_BLOCKED`, stop and ask me for Stitch screenshots/generated code exports or wait for Stitch MCP screen export support. Do not continue to handoff or build.
 - Stop and ask me to review/approve the design document.
 
 - If 02-design.md already exists and I say Approved, run agents/codex_handoff_agent.md using:
   website-projects/[PROJECT_NAME]/documents/00-questionnaire.md
   website-projects/[PROJECT_NAME]/documents/01-client-discovery-summary.md
   website-projects/[PROJECT_NAME]/documents/02-design.md
+- Only run this handoff when 02-design.md has `Stitch Fidelity Source Status: SCREEN_LEVEL_READY` or `Stitch Fidelity Source Status: USER_EXPORT_READY`.
 - Save the handoff output to:
   website-projects/[PROJECT_NAME]/documents/03-codex-technical-handoff.md
 - Stop and ask me to review/approve.
@@ -58,8 +68,10 @@ Start or continue logic:
 - If 03-codex-technical-handoff.md already exists and I say Approved, build the website inside:
   website-projects/[PROJECT_NAME]/
 - Use the approved handoff as the main source of truth.
+- Before building, verify 02-design.md still has `Stitch Fidelity Source Status: SCREEN_LEVEL_READY` or `Stitch Fidelity Source Status: USER_EXPORT_READY`.
 - After implementation, use the global senior frontend QA skill before finalizing the build summary:
   /Users/athenanexis/.codex/skills/senior-frontend-qa/SKILL.md
+- Include visual fidelity QA against files in website-projects/[PROJECT_NAME]/documents/stitch/ when those files exist.
 - Save a build summary to:
   website-projects/[PROJECT_NAME]/documents/04-build-summary.md
 

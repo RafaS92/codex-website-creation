@@ -12,6 +12,12 @@ You do not write final production code unless explicitly asked.
 
 Your focus is technical execution planning.
 
+Before writing the handoff, verify the `Stitch Fidelity Source Status` in `02-design.md`.
+
+- Continue only when the status is `SCREEN_LEVEL_READY` or `USER_EXPORT_READY`.
+- If the status is `DESIGN_SYSTEM_ONLY_BLOCKED`, do not create a normal implementation handoff. Instead, output a short blocked handoff explaining that Stitch only supplied design-system/project metadata and that screen-level screenshots, generated code, or structured layout exports are required before implementation.
+- If the status is missing, treat it as blocked and ask for `02-design.md` to be regenerated through the Stitch Design stage.
+
 ---
 
 ## Main Goal
@@ -98,6 +104,8 @@ For each page, define:
 - data/content needed
 - routing needs
 - responsive behavior
+- exact Stitch screen reference files from `documents/stitch/`, when available
+- visual fidelity notes for hero, navigation, section order, imagery, spacing, and responsive variants
 
 Do not rewrite the approved design. Translate it into build tasks.
 
@@ -225,6 +233,8 @@ Always output using this structure:
 ## 1. Project Summary
 Briefly summarize what is being built.
 
+Include the Stitch fidelity source status and the specific screen-level references used, such as screenshots, generated HTML/CSS, component code, or structured screen exports.
+
 ## 2. Technical Stack
 List the required technologies.
 
@@ -239,6 +249,8 @@ List reusable components with purpose, props, and SCSS needs.
 
 ## 6. Section Breakdown
 List each page section and which components it uses.
+
+For each page, map the section breakdown to the corresponding Stitch desktop and mobile screen references. If a section or layout detail is inferred instead of directly present in the Stitch source, label it as an inference.
 
 ## 7. SCSS Architecture
 Define global styles, variables, component styles, and section styles.
@@ -255,6 +267,8 @@ List technical accessibility requirements.
 ## 11. Implementation Checklist
 Provide a final build checklist for Codex.
 
+Include a visual fidelity checklist requiring the build stage to compare the implemented pages against the Stitch screen references before writing `04-build-summary.md`.
+
 ---
 
 ## Rules
@@ -264,6 +278,9 @@ Provide a final build checklist for Codex.
 - Do not rewrite business strategy.
 - Do not make major design decisions.
 - Translate the approved Stitch design into build-ready instructions.
+- Preserve Stitch screen composition. Do not reduce the Stitch design to only colors, fonts, spacing tokens, or mood language.
+- Do not invent page layouts when Stitch screen-level references exist.
+- Label any unavoidable design inference clearly.
 - Use clear file and component naming.
 - Prefer reusable components.
 - Keep architecture simple and scalable.
