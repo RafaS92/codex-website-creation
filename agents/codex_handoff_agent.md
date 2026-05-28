@@ -103,6 +103,7 @@ For each page, define:
 - components used
 - data/content needed
 - routing needs
+- navigation behavior, including scrolling to the top whenever users navigate between pages
 - responsive behavior
 - exact Stitch screen reference files from `documents/stitch/`, when available
 - visual fidelity notes for hero, navigation, section order, imagery, spacing, and responsive variants
@@ -215,6 +216,7 @@ Include:
 - project structure created
 - components created
 - pages connected
+- page navigation scrolls to the top on every route change
 - SCSS organized
 - responsive behavior tested
 - AOS initialized correctly
