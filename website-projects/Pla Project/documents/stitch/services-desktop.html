@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services - Nongnapat Neuman</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-fixed": "#0d1b34",
+                      "primary-fixed": "#d7e2ff",
+                      "inverse-primary": "#b9c6e7",
+                      "on-error-container": "#93000a",
+                      "surface-bright": "#fcf9f5",
+                      "surface-tint": "#515e7a",
+                      "secondary-container": "#d0e5d2",
+                      "tertiary-container": "#46392b",
+                      "secondary-fixed": "#d3e8d5",
+                      "tertiary-fixed-dim": "#d7c3b0",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface": "#1c1c1a",
+                      "on-tertiary": "#ffffff",
+                      "tertiary": "#2f2417",
+                      "surface-container": "#f0ede9",
+                      "primary-container": "#2e3b55",
+                      "secondary": "#506354",
+                      "primary-fixed-dim": "#b9c6e7",
+                      "on-tertiary-container": "#b5a290",
+                      "surface-container-highest": "#e5e2de",
+                      "inverse-on-surface": "#f3f0ec",
+                      "on-tertiary-fixed-variant": "#524436",
+                      "on-secondary-fixed-variant": "#394b3d",
+                      "error": "#ba1a1a",
+                      "secondary-fixed-dim": "#b7ccb9",
+                      "outline-variant": "#c5c6ce",
+                      "on-secondary-fixed": "#0e1f13",
+                      "surface-variant": "#e5e2de",
+                      "surface": "#fcf9f5",
+                      "on-tertiary-fixed": "#241a0e",
+                      "on-secondary-container": "#546758",
+                      "surface-container-low": "#f6f3ef",
+                      "on-background": "#1c1c1a",
+                      "outline": "#75777e",
+                      "background": "#fcf9f5",
+                      "on-secondary": "#ffffff",
+                      "surface-container-high": "#eae8e4",
+                      "inverse-surface": "#31302e",
+                      "on-primary": "#ffffff",
+                      "on-primary-container": "#98a5c4",
+                      "surface-dim": "#dcdad6",
+                      "on-surface-variant": "#45474d",
+                      "primary": "#18253e",
+                      "error-container": "#ffdad6",
+                      "on-primary-fixed-variant": "#3a4761",
+                      "on-error": "#ffffff",
+                      "tertiary-fixed": "#f4dfcb"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "base": "8px",
+                      "section-gap-mobile": "64px",
+                      "gutter": "32px",
+                      "section-gap-desktop": "120px",
+                      "container-max-width": "1140px"
+              },
+              "fontFamily": {
+                      "display-lg": [
+                              "Libre Caslon Text"
+                      ],
+                      "label-caps": [
+                              "Manrope"
+                      ],
+                      "headline-lg-mobile": [
+                              "Libre Caslon Text"
+                      ],
+                      "headline-lg": [
+                              "Libre Caslon Text"
+                      ],
+                      "body-lg": [
+                              "Manrope"
+                      ],
+                      "headline-md": [
+                              "Libre Caslon Text"
+                      ],
+                      "body-md": [
+                              "Manrope"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "72px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "30px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "26px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body {
+            background-color: #fcf9f5;
+            color: #1c1c1a;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .texture-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col relative">
+<div class="fixed inset-0 texture-overlay z-[-1]"></div>
+<!-- TopNavBar (Web) -->
+<nav class="hidden md:flex bg-surface/90 dark:bg-surface/90 backdrop-blur-sm w-full top-0 sticky z-40 border-b border-outline-variant/30 transition-transform duration-200">
+<div class="flex justify-between items-center w-full px-base md:px-gutter max-w-container-max-width mx-auto h-20">
+<a class="font-display-lg text-headline-md text-primary dark:text-primary-fixed" href="#">Nongnapat Neuman</a>
+<div class="flex items-center gap-8">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary font-label-caps text-label-caps hover:opacity-80 transition-opacity duration-300" href="#">Philosophy</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary font-label-caps text-label-caps hover:opacity-80 transition-opacity duration-300" href="#">Approach</a>
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary pb-1 font-label-caps text-label-caps hover:opacity-80 transition-opacity duration-300" href="#">Services</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary font-label-caps text-label-caps hover:opacity-80 transition-opacity duration-300" href="#">Story</a>
+</div>
+<a class="bg-primary text-on-primary px-6 py-2 rounded-DEFAULT font-label-caps text-label-caps hover:opacity-90 transition-opacity" href="#">Inquire</a>
+</div>
+</nav>
+<!-- SideNavBar (Mobile) -->
+<nav class="md:hidden fixed inset-y-0 right-0 w-64 z-50 bg-surface-container-low dark:bg-surface-container-highest shadow-lg transform translate-x-full transition-transform duration-300" id="mobileNav">
+<div class="flex flex-col h-full py-base">
+<div class="px-6 py-8 border-b border-outline-variant/20">
+<h2 class="font-display-lg text-headline-md text-primary">Nongnapat Neuman</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Holistic Practitioner</p>
+</div>
+<div class="flex-1 py-4 flex flex-col gap-2">
+<a class="text-on-surface-variant mx-2 p-3 flex items-center gap-3 font-body-md text-body-md hover:bg-surface-container-high rounded-xl" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">home</span>
+                    Home
+                 </a>
+<a class="text-on-surface-variant mx-2 p-3 flex items-center gap-3 font-body-md text-body-md hover:bg-surface-container-high rounded-xl" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">self_care</span>
+                    Philosophy
+                 </a>
+<a class="text-on-surface-variant mx-2 p-3 flex items-center gap-3 font-body-md text-body-md hover:bg-surface-container-high rounded-xl" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">spa</span>
+                    Approach
+                 </a>
+<a class="bg-primary-container text-on-primary-container rounded-xl mx-2 p-3 flex items-center gap-3 font-body-md text-body-md" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+                    Services
+                 </a>
+</div>
+<div class="p-4 border-t border-outline-variant/20">
+<a class="text-on-surface-variant mx-2 p-3 flex items-center gap-3 font-body-md text-body-md hover:bg-surface-container-high rounded-xl" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">mail</span>
+                    Inquire
+                 </a>
+</div>
+</div>
+</nav>
+<!-- Mobile Nav Toggle (Visible only on mobile) -->
+<button class="md:hidden fixed top-4 right-4 z-50 p-2 bg-surface rounded-full shadow-md text-primary" onclick="document.getElementById('mobileNav').classList.toggle('translate-x-full');">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<main class="flex-1">
+<!-- Hero Section -->
+<section class="w-full relative h-[70vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Nongnapat Neuman performing a healing session in a serene, natural setting in Northern Thailand." class="w-full h-full object-cover opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuK_pZawAW8ZxmRef1YsZMiaXLcvi6gzD9LawVIlHuGn19iLOTTi-zPJ72l4WcCCEGRi6N3EtEwdGghElvO-FxUxQevzc8eAh7EtEckcGAgQ8kbPDUvyaHmfqaZ9m4b7Sl6pBZBQmQqEavk1DrFGTHF-VbKQ9iBHYBtm1xKfCQ7oSmQPQittG5COjwYBfo4bTTbeTuqoDeVItdUSHljedWZFU1q-x44S0V73P10YLkKQcdJ23XC3vp46RrmX2t5YL2SQ"/>
+<div class="absolute inset-0 bg-gradient-to-b from-surface/20 via-transparent to-surface"></div>
+</div>
+<div class="relative z-10 text-center px-gutter max-w-3xl mx-auto mt-20">
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">Pathways to Balance</h1>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim md:text-primary max-w-2xl mx-auto backdrop-blur-sm bg-surface/30 p-4 rounded-xl">Grounded, professional care tailored to your specific physical and energetic needs. Drawing on decades of mastery in a space designed for profound safety.</p>
+</div>
+</section>
+<!-- Services Grid -->
+<section class="max-w-container-max-width mx-auto px-gutter py-section-gap-mobile md:py-section-gap-desktop">
+<div class="flex flex-col gap-section-gap-mobile md:gap-section-gap-desktop">
+<!-- Service 1: Private Healing Sessions -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16 items-center">
+<div class="md:col-span-5 order-2 md:order-1">
+<div class="border-l-2 border-secondary pl-6 py-2">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Private Healing Sessions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">One-on-one focused care integrating advanced energy work, somatic unwinding, and structural realignment. These sessions are deeply tailored, providing a safe container to address chronic tension, energetic blockages, and promote deep nervous system reset.</p>
+<a class="inline-flex items-center gap-2 bg-primary text-on-primary px-8 py-3 rounded-DEFAULT font-label-caps text-label-caps hover:bg-primary-container hover:text-on-primary-container transition-colors duration-300" href="#">
+                                Explore Sessions <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-7 order-1 md:order-2">
+<div class="bg-cover bg-center w-full aspect-[4/3] rounded-xl border border-outline-variant/20 shadow-sm relative overflow-hidden group" data-alt="A tranquil, minimalist treatment room bathed in soft natural light, featuring a simple massage table with natural linen sheets, a single lotus flower, and warm wooden textures, embodying a serene and grounded luxury aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBtYHCVyVnkPRzMr2d9c81G3f59SemdIIlDEexdRu24SBD28Hw2NESqyHtv-Q1N-yeqf_T9kjuM_9OT6DUqelyOJuqLbnUcL-jbnw-VBKUvHKS9jRTFR3JePMWbSqs4E_qJ9dpaLwKj_0_vBDhcF8frxlCwoOdNOxwsnEalA6hs1pz0ucUt0pEfzzSMFTdwpnyk5o-DaiscTgB6TlSzuJGB3vuCX3PtUcsXGX8pg6YZR0QI9WPWJFIE')">
+<div class="absolute inset-0 bg-secondary/10 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+</div>
+</div>
+<!-- Service 2: Retreats & Workshops -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16 items-center">
+<div class="md:col-span-7">
+<div class="bg-cover bg-center w-full aspect-[4/3] rounded-xl border border-outline-variant/20 shadow-sm relative overflow-hidden group" data-alt="A small, intimate group of people sitting in a circle on woven meditation cushions on a wide wooden deck surrounded by lush, misty tropical forest in Northern Thailand, conveying a sense of quiet community and groundedness." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBOvlbCeaV0mglh7MdQd4NExvv8bQmBB4nGGAq7fhx02TslWYPFqZLyE27CtmNY7vpzB2duaV8o-sjJJVJJy98UNXN9Rzu5mPiecP28trUYY2UseJ1x2Xp2J8YNK7L0xXBtW7zEyfXBrLxRD2t-l1-N68TjbVMuR0J4h0uJ4IyiECG_iQHsel-ALXVvB28ojyqFU1LLnOa7zBLjF3WQfGcmFn-k0nVA5vzR6RRUj2d9BlYCwKbiz32u')">
+<div class="absolute inset-0 bg-secondary/10 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+</div>
+<div class="md:col-span-5">
+<div class="border-l-2 border-secondary pl-6 py-2">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Retreats &amp; Workshops</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Immersive experiences designed to disconnect from modern pacing and reconnect with natural rhythms. Held in the pristine environment of Chiang Dao, these gatherings combine guided practice, silence, and community support for profound restoration.</p>
+<a class="inline-flex items-center gap-2 border border-secondary text-primary px-8 py-3 rounded-DEFAULT font-label-caps text-label-caps hover:bg-secondary/5 transition-colors duration-300" href="#">
+                                View Schedule <span class="material-symbols-outlined text-[16px]">calendar_today</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Service 3: Reiki Training -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16 items-center">
+<div class="md:col-span-5 order-2 md:order-1">
+<div class="border-l-2 border-secondary pl-6 py-2">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Reiki Training</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Comprehensive initiations into the Usui System of Natural Healing. From foundational Level 1 for personal practice to advanced Master levels, these trainings emphasize ethical grounding, disciplined practice, and a deep respect for the lineage.</p>
+<a class="inline-flex items-center gap-2 bg-primary text-on-primary px-8 py-3 rounded-DEFAULT font-label-caps text-label-caps hover:bg-primary-container hover:text-on-primary-container transition-colors duration-300" href="#">
+                                Apply for Training <span class="material-symbols-outlined text-[16px]">edit_document</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-7 order-1 md:order-2">
+<div class="bg-cover bg-center w-full aspect-[4/3] rounded-xl border border-outline-variant/20 shadow-sm relative overflow-hidden group" data-alt="A close-up view of hands gently resting over a softly glowing area, demonstrating the subtle transfer of energy. The background is a blurred, warm earthen tone, suggesting a calm, professional healing environment." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB8ic2L9jKMSi_wXXGsW0hwfDIWt4Y4xd4n7POlkQ7oBaCx0_S5YwOCicnok8e3mz4b5LEuhVSOkzX1T4yd57aVaaNsSl2b9Wu0jVP7goJhKRpRNiO5BYUtq0VxBoeh-FuO3pfmrqKLBoJw1Of0m7xa1TURcIsuGYvuYwZs77e8hqWfrEidOtFMZqufCen6qV7dSfCwaJiI5dX_QY2XOv9o30KrP7mITEv4sh98dOuvwerEgmX_xyYa')">
+<div class="absolute inset-0 bg-secondary/10 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial Signature -->
+<section class="max-w-3xl mx-auto px-gutter py-section-gap-mobile md:py-section-gap-desktop text-center border-t border-outline-variant/20">
+<p class="font-display-lg text-headline-md text-primary italic mb-8">"Nongnapat provides a rare space of absolute clarity and quiet strength. The work is subtle, yet the shifts are undeniable."</p>
+<p class="font-label-caps text-label-caps text-on-surface-variant tracking-widest uppercase">E. R., Chiang Mai</p>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-container-lowest w-full border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter py-section-gap-desktop px-gutter max-w-container-max-width mx-auto">
+<div>
+<h3 class="font-display-lg text-headline-md text-primary mb-4">Nongnapat Neuman</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">© 2024 Nongnapat Neuman. Refined Nature in Chiang Dao.</p>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">WhatsApp</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Email</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Instagram</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+</body></html>
