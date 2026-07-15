@@ -1,89 +1,100 @@
-# Video Script: I Built a Website with an Approval-Gated AI Workflow
+# Video Script: From an Idea to a Refined Website with Codex and Google Stitch
 
-**Target length:** 9–11 minutes  
-**Format:** Outcome first, high-level workflow second, developer breakdown third  
-**Primary message:** I can create a complete website with AI without relying on a single uncontrolled prompt. The workflow preserves context, requires approval at each stage, and gives developers clear implementation artifacts.
+**Target length:** 6–8 minutes
 
-## Recording Setup
+**Format:** Final result first, workflow overview second, client value and honest reflection last
 
-Have these ready before recording:
+**Core message:** Codex, specialized agents, reusable skills, Google Stitch, and AI-generated imagery can quickly turn client information into a convincing visual website. The tools accelerate the process, but thoughtful review and refinement are still necessary to create a polished final product.
 
-- The finished website, already running in a browser
-- Desktop and mobile views of the finished website
-- This repository open in Codex or an editor
-- `workflow.md`
-- `questionnaries/nongnapat-portfolio-questionnaire.md`
-- A completed project's `documents/` folder
-- The Google Stitch desktop and mobile screens or exports
-- The finished source code and `04-build-summary.md`
+## Before Recording
 
-Replace `[PROJECT_NAME]`, `[WEBSITE DESCRIPTION]`, and any bracketed demo notes before recording.
+Prepare the following:
+
+- The finished website running in a browser
+- Desktop and mobile views
+- The Codex conversation or workspace used for the project
+- The workflow files and generated Markdown documents
+- The Google Stitch desktop and mobile designs
+- Examples of any AI-generated images used in the website
+- One or two before-and-after examples that show how the first concept was refined
+
+Replace the bracketed details before recording.
 
 ---
 
-## Part One: Show What I Created
+## Part One: Show the Final Website
 
-### 0:00–0:35 — Cold Open: The Finished Website
+### 0:00–0:45 — Start with the Result
 
 **On screen**
 
-- Start immediately on the finished homepage. Do not show the editor yet.
+- Begin immediately on the finished homepage.
 - Slowly scroll through the strongest sections.
-- Navigate to one or two other pages.
-- Resize the browser or switch to a mobile viewport.
-- Show one interaction, such as the mobile menu, an accordion, or a form.
+- Navigate to one or two additional pages.
+- Show one interaction, such as the navigation, an accordion, or a contact form.
+- Switch to a mobile viewport near the end of the segment.
 
 **Narration**
 
-> I created this website from a client questionnaire using a structured AI workflow.
+> This is a website I created by combining Codex, Google Stitch, specialized AI agents, and reusable skills.
 >
-> It is a complete, responsive website—not just a mockup or a generated hero section. The workflow helped me turn the client's raw information into a strategy, a visual design, a technical plan, and finally this working build.
+> It started with client information and a general idea of what the website needed to communicate. From there, I used AI throughout discovery, visual design, technical planning, implementation, and quality assurance.
 >
-> Let me show you how I did it, and then I will open up the workflow for developers who want to see how it actually works.
+> The result is this complete, responsive website—not only a mockup, but a working experience that has been reviewed and refined.
 
-### 0:35–1:10 — Establish the Result
+### 0:45–1:20 — Highlight the Website Experience
 
 **On screen**
 
 - Keep the website visible.
-- Point out two or three features that matter to this specific project.
-- Briefly show desktop and mobile side by side if possible.
+- Highlight two or three project-specific details.
+- Show desktop and mobile views side by side if possible.
+- Pause briefly on the main call to action.
 
 **Narration**
 
-> The goal for this project was to create [WEBSITE DESCRIPTION]. The final site includes [KEY PAGE OR FEATURE], [KEY PAGE OR FEATURE], and [KEY INTERACTION].
+> For this project, the goal was to create [SHORT DESCRIPTION OF THE WEBSITE AND ITS AUDIENCE].
 >
-> It adapts across screen sizes, the navigation and interactions work, and the visual implementation follows the approved design. What matters here is not only the result. It is the repeatable path that produced it.
-
-> Instead of asking AI to make every business, design, and engineering decision at once, I separated the work into stages.
+> The final site includes [KEY PAGE OR FEATURE], [KEY PAGE OR FEATURE], and [KEY INTERACTION]. It has a clear visual direction, responsive layouts, and a structure based on what the business and its audience actually need.
+>
+> Before I show the details, I want to give you a high-level view of how these tools worked together.
 
 ---
 
-## Part Two: The Workflow at a High Level
+## Part Two: How I Combined the Tools
 
-### 1:10–1:40 — The Simple Version
+### 1:20–1:50 — The Workflow in One View
 
 **On screen**
 
-- Show a simple graphic or the workflow overview in `README.md`.
-- Highlight each stage as it is named.
+- Show a simple flow graphic or the workflow overview in `README.md`.
+- Highlight each step as it is mentioned.
 
 ```text
-Questionnaire → Discovery → Design → Technical handoff → Build and QA
+Client information
+       ↓
+Codex workflow and agents
+       ↓
+Google Stitch visual design
+       ↓
+Codex implementation and skills
+       ↓
+Review, QA, and refinement
 ```
 
 **Narration**
 
-> At a high level, the process is simple.
+> The process begins with the client's information. Codex helps me organize that information through a structured workflow. Specialized agents handle different responsibilities, Google Stitch helps create the visual direction, and reusable skills help Codex build and review the website.
 >
-> I begin with a questionnaire. The workflow turns that into a discovery strategy. I approve the strategy and use it to create the visual direction in Google Stitch. That approved design becomes a technical handoff. After one final approval, Codex builds and quality-checks the website.
+> Each tool has a specific role, but Codex is where I coordinate the overall process.
 
-### 1:40–2:20 — Why the Approval Gates Matter
+### 1:50–2:35 — The Codex Workflow
 
 **On screen**
 
-- Open a completed project's `documents/` folder.
-- Reveal the files in order:
+- Open the repository in Codex or an editor.
+- Show `workflow.md`, the `agents/` folder, and the generated `documents/` folder.
+- Reveal the numbered project documents in order without reading them line by line.
 
 ```text
 00-questionnaire.md
@@ -95,244 +106,158 @@ Questionnaire → Discovery → Design → Technical handoff → Build and QA
 
 **Narration**
 
-> Every stage creates an editable Markdown document, and the workflow stops for my approval before it continues.
+> I use a workflow inside Codex to keep the project organized. Instead of giving AI one large prompt and asking it to make every decision at once, the work is separated into stages.
 >
-> These files are the project's chain of truth. If I edit one, the next stage must read the saved version. That means important decisions do not disappear inside a long chat, and I can correct the direction before a mistake becomes code.
+> The questionnaire becomes a discovery summary. The approved discovery guides the design. The design becomes a technical handoff, and that handoff guides the build.
 >
-> This is the main idea behind the project: AI performs the transformation between stages, while a person remains responsible for the decisions.
+> Each stage creates an editable document. I can review it, make changes, and approve it before continuing. These documents preserve the context of the project and give the next part of the workflow a clear source of truth.
 
-### 2:20–3:00 — From Raw Client Input to Direction
+### 2:35–3:15 — How the Agents Help
 
 **On screen**
 
-- Open `questionnaries/nongnapat-portfolio-questionnaire.md` or the questionnaire used for the featured build.
-- Briefly highlight the services, audience, business goals, desired feeling, and call to action.
-- Switch to `01-client-discovery-summary.md`.
-- Highlight its overview, audience, goals, sitemap, content direction, and assumptions.
+- Open `agents/discovery_strategy_agent.md`.
+- Switch to `agents/codex_handoff_agent.md`.
+- Highlight only the role and main responsibilities of each agent.
 
 **Narration**
 
-> This is where the project starts: raw client information. It may contain useful details, but it is not yet a website specification.
+> Within the workflow, I use specialized agents for different types of thinking.
 >
-> The discovery stage interprets the business, the audience, the site's goals, the primary call to action, the content, and the desired experience. It organizes that into a strategy that both a designer and a developer can use.
+> The Discovery agent interprets the business, the target audience, the website goals, the content, and the overall direction. Later, the Handoff agent translates the approved strategy and design into something a developer—or Codex—can implement: pages, components, responsive behavior, accessibility requirements, and a build plan.
 >
-> I review the output, make any edits I need, and approve it only when it reflects the client's actual intent.
+> Separating these responsibilities helps prevent the implementation from beginning before the strategy and design are clear.
 
-### 3:00–3:45 — From Strategy to Visual Design
+### 3:15–3:55 — Google Stitch Creates the Visual Direction
 
 **On screen**
 
-- Show the discovery summary beside the Google Stitch project.
-- Cycle through the desktop and mobile screens.
-- Briefly show the screen exports stored in `documents/stitch/`.
-- Open `02-design.md` and highlight `Stitch Fidelity Source Status`.
+- Show the approved discovery summary beside Google Stitch.
+- Move through the desktop and mobile screens.
+- Show the Stitch exports saved in `documents/stitch/`.
+- Compare one Stitch screen with the matching section in the final website.
 
 **Narration**
 
-> The approved strategy then guides the visual design in Google Stitch.
+> Google Stitch is where the strategy becomes visual. I use the approved discovery information to explore the layout, hierarchy, style, and responsive direction before building the website.
 >
-> Once the screens are ready, the workflow collects the implementation references: desktop and mobile previews, generated markup when available, layout information, and the visual system.
+> Then I bring those screens and implementation references back into the Codex workflow. This gives Codex something concrete to build from instead of relying only on a written description such as “modern,” “calm,” or “premium.”
 >
-> There is an important safeguard here. The workflow will not build a website from colors and fonts alone. It requires evidence of the actual screens, so the implementation is based on a real layout instead of a vague interpretation of the style.
+> Having desktop and mobile references also makes it much easier to compare the final implementation with the intended experience.
 
-### 3:45–4:15 — From Design to Working Website
+### 3:55–4:35 — Skills Support the Build and Review
 
 **On screen**
 
-- Flash through `03-codex-technical-handoff.md`.
-- Show the source tree.
-- Return to the running website.
-- Finish on a polished section of the site.
+- Show the technical handoff briefly.
+- Show Codex creating or editing the project files using prepared footage or a short time-lapse.
+- Show a successful build or test result.
+- Show responsive and accessibility checks in the browser.
 
 **Narration**
 
-> Next, the approved design becomes a technical implementation plan: routes, components, responsive behavior, accessibility requirements, animation rules, and a build checklist.
+> Once the design and technical direction are approved, Codex builds the website. I can also use specialized skills for tasks such as frontend implementation, visual review, responsive testing, accessibility, and production readiness.
 >
-> Codex builds from those approved documents and then runs frontend and visual QA. That is the high-level workflow that produced the website you are seeing.
+> The workflow gives Codex the project context, the agents create focused plans, and the skills provide more specific expertise during implementation and QA.
 >
-> If you only wanted the overview, that is the process. From here, I want to go one level deeper and show developers how the workflow is controlled.
+> This combination makes the process faster, but it also makes it more controlled because each tool is being used for a clear purpose.
 
 ---
 
-## Part Three: Developer Breakdown
+## Part Three: Visual Concepts for Potential Clients
 
-### 4:15–4:55 — This Repository Is the Workflow Contract
-
-**On screen**
-
-- Open the repository root.
-- Point to `workflow.md`, `agents/`, `templates/`, `questionnaries/`, and `website-projects/`.
-- Open `workflow.md` and highlight **Core Rules** and **Stage Order**.
-
-**Narration**
-
-> For developers, the key detail is that this repository is not the website framework itself. It is the workflow definition and prompt toolkit.
->
-> `workflow.md` acts as the contract. It defines the stage order, the required inputs and outputs, the approval gates, and the conditions that can block the build. The specialized agent files define the responsibilities of discovery and technical planning, while the prompt template starts or resumes the workflow.
-
-### 4:55–5:45 — State Lives in Files, Not Chat Memory
+### 4:35–5:15 — Make the Idea Tangible Early
 
 **On screen**
 
-- Show the `documents/` directory again.
-- Open two adjacent documents side by side.
-- Make or simulate a small manual edit in one of them, but do not save a fake change into the real demo project unless desired.
-- Show the continuation command:
-
-```text
-Approved. Continue website_creation_workflow.
-```
+- Show the original questionnaire or brief.
+- Transition to the Stitch concept.
+- Then show the final website.
+- If available, show these three stages side by side.
 
 **Narration**
 
-> The workflow's state is represented by files. Each stage reads the latest approved artifacts and writes exactly one new artifact.
+> One of the biggest benefits of this process is how quickly an abstract idea can become something visual.
 >
-> The original input is preserved as document zero. Discovery produces document one. Stitch references are summarized in document two. The engineering plan becomes document three, and the completed build is recorded in document four.
+> A potential client may understand that they need a website, but it can be difficult for them to imagine the layout, the mood, or how their content will come together. With these tools, I can transform an early conversation or questionnaire into a visual representation that is much easier to discuss.
 >
-> Because the files are editable, I can change a requirement outside the conversation. The next stage must reread that file instead of depending on stale chat context. This also makes the work easy to review, diff, and keep with the project.
+> Instead of reviewing only a list of features, the client can react to an experience. They can point to what feels right, what does not represent them, and what needs to change before the complete build is finished.
 
-### 5:45–6:35 — Starting and Resuming the Workflow
+### 5:15–5:55 — AI-Generated Images Can Complete the Concept
 
 **On screen**
 
-- Open `templates/codex-website-workflow-prompt.md`.
-- Highlight the project name, project input, workflow rules, and current request.
-- Show this shorter demo command on screen:
-
-```text
-Run the named workflow: website_creation_workflow.
-
-Project name: [PROJECT_NAME]
-
-Read and follow workflow.md and the agent files in agents/.
-Use the supplied questionnaire as project input.
-Start a new workflow, run only Discovery, save its documents,
-and stop for my approval.
-```
+- Show one or two AI-generated images created for the project.
+- Show where they appear in the Stitch design or final website.
+- If possible, show an early generated image beside its refined or replaced version.
 
 **Narration**
 
-> A new run starts with a project name and the raw input. Codex reads the workflow contract, creates the project's document directory, saves the questionnaire, runs Discovery, and stops.
+> AI can also help generate images when a client does not yet have a complete set of photography or visual assets.
 >
-> Continuation is intentionally explicit. An approval does not mean “finish everything.” It means “inspect the current state, run the next eligible stage, and stop again.” Revision instructions update the current artifact without silently moving forward.
+> These images can help communicate the intended mood, art direction, and composition of the site. They are especially useful during an early concept because they make the presentation feel more complete and help the client understand what kind of content will work well.
+>
+> Depending on the project, those images might remain in the final website, be refined further, or act as placeholders and references for a future photo shoot.
 
-### 6:35–7:25 — The Stitch Fidelity Gate
+### 5:55–6:50 — The First Visual Is Not the Final Product
 
 **On screen**
 
-- Open the Google Stitch Design section in `workflow.md`.
-- Highlight the three allowed statuses:
-
-```text
-SCREEN_LEVEL_READY
-DESIGN_SYSTEM_ONLY_BLOCKED
-USER_EXPORT_READY
-```
-
-- Show examples of desktop and mobile PNG or HTML exports in `documents/stitch/`.
+- Show before-and-after comparisons from the project.
+- Examples could include:
+  - the first Stitch screen versus the final layout
+  - an early AI-generated image versus the selected image
+  - initial typography versus refined typography
+  - the first mobile layout versus the final responsive implementation
+  - a basic generated component versus the polished component
 
 **Narration**
 
-> The design stage has a three-state fidelity gate.
+> It is important to be honest about what these tools produce. A visual concept is not automatically a refined final product.
 >
-> `SCREEN_LEVEL_READY` means the integration supplied enough per-screen visual, layout, or code information. `USER_EXPORT_READY` means I supplied equivalent screen exports myself. But if the workflow only has theme tokens, metadata, or screen IDs, the status becomes `DESIGN_SYSTEM_ONLY_BLOCKED`.
+> Even with a strong Stitch design and working AI-generated code, I still need to review the details. That can include adjusting spacing, typography, colors, image crops, responsive behavior, interactions, accessibility, content, and the overall visual rhythm of the page.
 >
-> In that blocked state, it cannot create the normal engineering handoff and it cannot build. This is a practical guardrail against an easy failure mode: implementing a plausible website that does not actually match the approved design.
-
-### 7:25–8:20 — The Technical Handoff
-
-**On screen**
-
-- Open `agents/codex_handoff_agent.md` and then a completed `03-codex-technical-handoff.md`.
-- Highlight:
-  - stack
-  - folder structure
-  - routes
-  - component boundaries
-  - desktop/mobile screen mappings
-  - SCSS organization
-  - responsive and accessibility rules
-  - build checklist
-
-**Narration**
-
-> When the design passes that gate, the handoff agent translates the approved strategy and screens into engineering tasks. It does not redesign the site and it does not write production code at this stage.
+> Some ideas look good in a static screen but need to change when they become interactive. Some generated images need corrections or better art direction. Some sections need several iterations before the hierarchy feels right.
 >
-> By default, this workflow plans for React, Vite, SCSS, component-based architecture, subtle AOS animation, and rem units. It defines routes, reusable components, style organization, responsive behavior, accessibility requirements, and page-level mappings back to the actual Stitch references.
->
-> This separation is useful because the implementation has a reviewable specification before code generation begins.
-
-### 8:20–9:15 — Build and QA
-
-**On screen**
-
-- Show the final approval command.
-- Show Codex working through the source tree using prepared footage or a short time-lapse.
-- Run the production build or show its successful output.
-- Test the site in the browser:
-  - navigate between routes
-  - test the mobile menu
-  - use one interactive component
-  - tab through an important flow
-  - resize between mobile and desktop
-- Open `04-build-summary.md`.
-
-**Narration**
-
-> Code generation is only allowed after the technical handoff is approved. At that point, Codex uses the approved discovery, design, and handoff documents as the source of truth.
->
-> After implementation, the workflow performs frontend QA across functionality, responsive behavior, accessibility, code quality, maintainability, performance, and production readiness. It also compares the result with the stored Stitch screens for visual fidelity.
->
-> The final build summary records what was implemented, what was tested, and any remaining limitations. The result is not only code—it is code with a documented history and a verification step.
-
-### 9:15–9:50 — Why This Is Useful to Developers
-
-**On screen**
-
-- Show the five documents beside the source tree.
-- Optionally show a Git diff of a document revision and its resulting code change.
-
-**Narration**
-
-> For developers, the value is control and traceability. Business interpretation, visual design, architecture, and implementation are separate concerns. Each has an artifact that can be reviewed before the next one begins.
->
-> If the client changes the sitemap, the content, or a design decision, I can update the relevant document and regenerate only the affected downstream work instead of restarting from an oversized prompt.
+> AI helps me reach a strong starting point much faster. The final quality still comes from reviewing the work, making deliberate changes, and refining the experience.
 
 ---
 
 ## Closing
 
-### 9:50–10:15 — Return to the Outcome
+### 6:50–7:25 — Return to the Final Website
 
 **On screen**
 
 - Return to the finished homepage.
-- Slowly scroll to the main call to action.
-- End with the website and the workflow documents visible side by side.
+- Scroll through the strongest final sections again.
+- End with the finished website beside the workflow documents or an early Stitch concept.
 
 **Narration**
 
-> This website began as raw client information and moved through discovery, design, engineering planning, implementation, and QA.
+> By combining Codex, structured workflows, specialized agents, reusable skills, Google Stitch, and AI-generated imagery, I can move from raw client information to a visual concept and then to a complete website much faster.
 >
-> AI accelerated every transition, but the approval gates kept the work intentional. That is how I use this workflow to create complete websites—not with one magic prompt, but with a repeatable process that both clients and developers can inspect.
+> The tools make it easier to explore ideas, communicate with potential clients, and begin implementation with a much clearer direction.
+>
+> They do not remove the need for design judgment or development work. They give me a stronger starting point and more time to focus on the refinements that turn an early concept into a polished final product.
 
 ## Optional Final Call to Action
 
-Choose one line that matches where the video will be published:
+Choose the line that best fits the audience:
 
-> If you want to see me run the workflow on another project, let me know what kind of website I should build next.
+> If you want to see this workflow applied to another type of business, let me know what website I should create next.
 
-> If you are a developer, the repository includes the workflow contract, agent roles, and reusable prompt so you can inspect the complete setup.
+> If you have an idea for a website and want to see what it could look like, get in touch.
 
-> If you need a website built through a clear, reviewable process, get in touch.
+> If you are a developer, the repository contains the workflow, agent roles, and prompt templates used to coordinate the process.
 
 ## Editing Notes
 
 - Keep the finished website on screen for most of the first minute.
-- Label the transition into the developer section with a simple title card: **Developer breakdown**.
-- Use prepared outputs rather than leaving generation time in the edit.
-- Do not read long documents line by line. Highlight the headings that prove the workflow's behavior.
-- Add a small progress label during the overview: **Discover → Design → Plan → Build → Verify**.
-- When explaining the fidelity gate, show the actual desktop and mobile screen exports.
-- Avoid exposing private client information, API keys, local user paths, or unrelated tabs.
-- If the featured project does not yet contain all five numbered documents and a completed build, record those segments using another completed project or finish the workflow before filming.
+- Avoid turning the middle into a detailed tutorial. Show how the tools connect and why each one is useful.
+- Use a simple label when introducing each tool: **Workflow**, **Agents**, **Google Stitch**, and **Skills**.
+- Show a direct Stitch-to-final-site comparison whenever possible.
+- Use at least one before-and-after example in the refinement section.
+- When discussing AI-generated images, clarify whether they are final assets, refined assets, or concept placeholders.
+- Remove waiting time and use prepared outputs for generation steps.
+- Do not expose private client data, API keys, or unrelated browser tabs.
