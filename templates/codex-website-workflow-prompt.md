@@ -13,6 +13,8 @@ Project name:
 Workflow rules:
 - Read and follow workflow.md.
 - Use the agent files in agents/.
+- After discovery approval, use agents/stitch_directions_agent.md to create one shared master brief and three separate complete-website Stitch prompts.
+- Keep content, sitemap, functionality, conversion priorities, and fixed brand constraints identical across Directions A, B, and C; vary only the visual system.
 - Use Stitch MCP only after I confirm the Google Stitch design is ready.
 - Do not treat Stitch design-system tokens alone as enough to build from; require screen-level Stitch data or user-provided screen exports.
 - Save all workflow outputs as editable markdown documents inside:
@@ -41,14 +43,27 @@ Start or continue logic:
   website-projects/[PROJECT_NAME]/documents/01-client-discovery-summary.md
 - Stop and ask me to review/approve.
 
-- If 01-client-discovery-summary.md already exists and I say Approved, stop the workflow so I can create the design in Google Stitch.
+- If 01-client-discovery-summary.md already exists and I say Approved, run agents/stitch_directions_agent.md.
+- Create or update:
+  website-projects/[PROJECT_NAME]/documents/stitch-prompts/00-master-brief.md
+  website-projects/[PROJECT_NAME]/documents/stitch-prompts/01-direction-a.md
+  website-projects/[PROJECT_NAME]/documents/stitch-prompts/02-direction-b.md
+  website-projects/[PROJECT_NAME]/documents/stitch-prompts/03-direction-c.md
+
+- Make every direction prompt self-contained and copy-ready. Copy the shared master brief verbatim into all three prompts.
+- Derive all three visual directions from the current project's approved discovery summary. Do not hard-code a client, industry, or visual style.
+- Stop and ask me to review/approve the Stitch prompt kit.
+- After the Stitch prompt kit is approved, stop the workflow so I can create the designs in Google Stitch.
+- I will run Directions A, B, and C in separate Stitch agent threads or branches in the same project, compare them, choose one, and make corrections or refinements directly in Google Stitch until one final design remains.
 - Do not create a UI/UX strategy summary.
-- When I come back and confirm the Google Stitch design is ready, use Stitch MCP to find this project and design.
+- When I come back and confirm the final Google Stitch design is ready, use Stitch MCP to find this project and design.
 - Check whether Stitch MCP can provide per-screen screenshots, generated HTML/CSS/component code, structured layout data, or equivalent screen-level implementation details.
 - Save MCP-provided screenshots, HTML, CSS, code, or structured screen exports under:
   website-projects/[PROJECT_NAME]/documents/stitch/
 - Create or update the standard Stitch design document at:
   website-projects/[PROJECT_NAME]/documents/02-design.md
+- Document only the single final corrected design in 02-design.md.
+- Do not mention Direction A/B/C labels, discarded concepts, comparison results, or selection history in 02-design.md or any later workflow artifact.
 - Include `Stitch Fidelity Source Status` in 02-design.md:
   - `SCREEN_LEVEL_READY` when MCP provides enough per-screen visual/layout/code data to reproduce the approved design.
   - `DESIGN_SYSTEM_ONLY_BLOCKED` when MCP only provides theme tokens, project metadata, broad descriptions, or screen IDs.

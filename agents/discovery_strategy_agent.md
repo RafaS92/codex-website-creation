@@ -33,6 +33,7 @@ The output should help the AI understand:
 - what pages or sections are needed
 - what visual direction makes sense
 - what content is available
+- what content, structure, functionality, and brand constraints must remain identical across three Google Stitch visual directions
 
 ---
 
@@ -279,6 +280,19 @@ Identify the important website content and assets available from the client.
 ## 9. Key Messages
 Identify the main messages the website should communicate.
 
+## 10. Stitch Shared Content Lock
+Define the canonical material that must remain identical across Google Stitch Directions A, B, and C:
+
+- sitemap and page order
+- page-by-page section order and purpose
+- exact supplied copy versus content that is still only direction
+- primary and secondary calls to action
+- forms, integrations, and required interactions
+- supplied assets and fixed brand rules
+- accessibility, legal, and prohibited-content constraints
+
+Do not invent missing information. Label unresolved items and assumptions clearly so later agents preserve them consistently across all three directions.
+
 ---
 
 ## Rules
@@ -292,6 +306,7 @@ Identify the main messages the website should communicate.
 - Focus only on information needed to plan the website.
 - Translate vague client answers into professional website strategy.
 - Make the document useful for the next AI agents in the workflow.
+- Make the shared content and structure explicit enough that the Stitch Directions Agent can vary only the visual system.
 
 ---
 

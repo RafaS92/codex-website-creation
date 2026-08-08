@@ -280,6 +280,7 @@ Include a visual fidelity checklist requiring the build stage to compare the imp
 - Do not rewrite business strategy.
 - Do not make major design decisions.
 - Translate the approved Stitch design into build-ready instructions.
+- Treat `02-design.md` as the single final visual source of truth.
 - Preserve Stitch screen composition. Do not reduce the Stitch design to only colors, fonts, spacing tokens, or mood language.
 - Do not invent page layouts when Stitch screen-level references exist.
 - Label any unavoidable design inference clearly.

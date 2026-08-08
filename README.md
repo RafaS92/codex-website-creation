@@ -6,12 +6,13 @@ This repository is a **workflow definition and prompt toolkit**, not a standalon
 
 ## What This Repository Does
 
-The workflow transforms a questionnaire, discovery notes, reference links, screenshots, and brand assets into a complete website through four controlled stages:
+The workflow transforms a questionnaire, discovery notes, reference links, screenshots, and brand assets into a complete website through five controlled stages:
 
 1. **Discovery** — interprets the client's business, audience, goals, content, and brand direction.
-2. **Google Stitch Design** — captures the approved visual design and verifies that screen-level implementation references are available.
-3. **Codex Technical Handoff** — translates the strategy and design into a frontend implementation blueprint.
-4. **Website Build and QA** — creates the website, verifies it against the approved design, and records the result.
+2. **Google Stitch Prompt Kit** — creates one project-specific master brief, three visually distinct complete-website prompts, and a neutral comparison checklist.
+3. **Google Stitch Design** — explores the directions in separate Stitch branches, selects one, and verifies that screen-level implementation references are available.
+4. **Codex Technical Handoff** — translates the strategy and approved design into a frontend implementation blueprint.
+5. **Website Build and QA** — creates the website, verifies it against the approved design, and records the result.
 
 The process intentionally stops after each stage. A person must review and explicitly approve the current artifact before Codex may continue.
 
@@ -40,10 +41,19 @@ Client questionnaire and references
           Human approval
                 │
                 ▼
-       Google Stitch design
+      Stitch prompt kit
+       A / B / C prompts
+                │
+          Human approval
                 │
                 ▼
-        02. Design document
+ Google Stitch design branches
+        A / B / C comparison
+                │
+ Choose and refine one design
+                │
+                ▼
+  02. Final design document
                 │
      Fidelity check + approval
                 │
@@ -73,6 +83,7 @@ The complete workflow contract is defined in [`workflow.md`](workflow.md).
 ├── video.md
 ├── agents/
 │   ├── discovery_strategy_agent.md
+│   ├── stitch_directions_agent.md
 │   └── codex_handoff_agent.md
 ├── templates/
 │   ├── codex-website-workflow-prompt.md
@@ -87,6 +98,7 @@ The complete workflow contract is defined in [`workflow.md`](workflow.md).
 | --- | --- |
 | [`workflow.md`](workflow.md) | Defines stage order, approval rules, required artifacts, Stitch fidelity statuses, and continuation behavior. |
 | [`agents/discovery_strategy_agent.md`](agents/discovery_strategy_agent.md) | Instructs the Discovery agent to turn raw client answers into an actionable website strategy. |
+| [`agents/stitch_directions_agent.md`](agents/stitch_directions_agent.md) | Creates a reusable project-specific master brief, three copy-ready visual direction prompts, and a comparison checklist. |
 | [`agents/codex_handoff_agent.md`](agents/codex_handoff_agent.md) | Instructs the Handoff agent to convert approved discovery and design material into a technical implementation plan. |
 | [`templates/codex-website-workflow-prompt.md`](templates/codex-website-workflow-prompt.md) | Reusable prompt for starting, continuing, or revising a website workflow. |
 | [`templates/sanity-create-studio-prompt.md`](templates/sanity-create-studio-prompt.md) | Optional prompt for adding a Sanity Studio and connecting selected frontend content. |
@@ -183,16 +195,20 @@ You may also edit the generated Markdown file directly. The workflow requires Co
 
 ### 4. Create the Google Stitch Design
 
-After the Discovery document is approved, the Codex workflow pauses so the design can be created in Google Stitch.
+After the Discovery document is approved, Codex generates the Stitch prompt kit under `documents/stitch-prompts/` and pauses for review. The kit is generated from the current project's discovery summary, so the workflow works for different clients without embedding a specific business or visual style.
+
+After the prompt kit is approved, create one Stitch project and run Directions A, B, and C in separate agent threads or branches. Generate the same complete desktop and mobile page set for each direction, compare them, choose one, and make any corrections directly in Google Stitch until one final design remains.
 
 When the design is ready, tell Codex:
 
 ```text
-The Google Stitch design for [PROJECT_NAME] is ready.
+The final corrected Google Stitch design for [PROJECT_NAME] is ready.
 Continue website_creation_workflow and create the design document.
 ```
 
 Codex should use the Stitch integration to collect all available implementation references, save exports under `documents/stitch/`, and create `02-design.md`.
+
+All downstream stages use `02-design.md` as the single final visual source of truth.
 
 ### 5. Approve the Handoff and Build
 
@@ -209,6 +225,12 @@ website-projects/project-name/
 ├── documents/
 │   ├── 00-questionnaire.md
 │   ├── 01-client-discovery-summary.md
+│   ├── stitch-prompts/
+│   │   ├── 00-master-brief.md
+│   │   ├── 01-direction-a.md
+│   │   ├── 02-direction-b.md
+│   │   ├── 03-direction-c.md
+│   │   └── 04-comparison-checklist.md
 │   ├── 02-design.md
 │   ├── 03-codex-technical-handoff.md
 │   ├── 04-build-summary.md
