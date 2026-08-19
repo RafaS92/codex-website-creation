@@ -172,4 +172,3 @@ Do not use navy blue, green, or brown. The experience must remain professional, 
 ## Content and Structure Lock
 
 This brief is the canonical source for all three directions. Do not rewrite, remove, add, reprioritize, merge, split, or relocate pages, sections, content meanings, CTAs, form purposes, interactions, legal constraints, unresolved-item placeholders, or conversion priorities. Do not introduce new offers, claims, functionality, or business facts. Generate the same complete website with the same content density and level of polish in each direction. Only the visual system—composition, layout rhythm, typography, palette application, imagery treatment, spacing, component styling, navigation/footer presentation, and motion language—may change.
-

@@ -143,13 +143,13 @@ The visitor should feel they have entered a quiet, restorative space. Generous b
 
 Preferred palette:
 
-| Color | HEX |
-|---|---|
-| Porcelain | `#FBF8F6` |
-| Warm Greige | `#DCD2CC` |
+| Color          | HEX       |
+| -------------- | --------- |
+| Porcelain      | `#FBF8F6` |
+| Warm Greige    | `#DCD2CC` |
 | Dusty Lavender | `#B8A6BD` |
-| Soft Mauve | `#C998A5` |
-| Plum Gray | `#574B56` |
+| Soft Mauve     | `#C998A5` |
+| Plum Gray      | `#574B56` |
 
 Do not use navy blue, green, or brown. The supplied colors should be treated as the working palette because no separate established brand palette was confirmed.
 
@@ -350,4 +350,3 @@ CTA wording may change only through client revision; hierarchy and destination i
 - Confirm whether the site is English-only, Thai/English, or multilingual.
 - Confirm all booking mechanics, event management requirements, pricing, schedules, policies, location details, and integrations before design content is finalized.
 - Confirm whether “therapy” is the preferred public-facing term in every target market and approve all legal/disclaimer wording.
-

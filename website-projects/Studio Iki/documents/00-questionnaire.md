@@ -17,7 +17,7 @@ Nongnapat Neuman
 **Email address:**  
 nongnapatr@gmail.com
 
-**Date completed:**  
+**Date completed:**
 
 ---
 
@@ -298,13 +298,13 @@ Organic and natural
 
 ## 20. What color palette would you like?
 
-| Color | HEX |
-|---|---|
-| Porcelain | `#FBF8F6` |
-| Warm Greige | `#DCD2CC` |
+| Color          | HEX       |
+| -------------- | --------- |
+| Porcelain      | `#FBF8F6` |
+| Warm Greige    | `#DCD2CC` |
 | Dusty Lavender | `#B8A6BD` |
-| Soft Mauve | `#C998A5` |
-| Plum Gray | `#574B56` |
+| Soft Mauve     | `#C998A5` |
+| Plum Gray      | `#574B56` |
 
 ## 21. Which brand and content assets can you provide?
 

@@ -23,18 +23,18 @@ All authored SCSS sizes use rem units. Styling is mobile-first and is translated
 
 ## Implemented routes
 
-| Route | Implementation |
-|---|---|
-| `/` | Home page with primary seminar path, therapy overview, practitioner credibility, Healing Garden, philosophy, event state, FAQ preview, and final CTA |
-| `/jikiden-reiki-seminar` | Primary offer page covering lineage, audience, curriculum, learning environment, and inquiry |
-| `/therapies` | Four-service overview and detail page with complementary-care disclaimer |
-| `/about` | Nongnapat’s professional journey, credentials, philosophy, and Healing Garden story |
-| `/events` | Truthful empty state and future event structure without invented event records |
-| `/faq` | Accessible grouped FAQ disclosures and medical-complementarity note |
-| `/contact` | Two-column contact screen plus the inquiry form missing from the Stitch export |
-| `/privacy` | Pending-content legal-page shell |
-| `/terms` | Pending-content booking/terms shell |
-| `*` | Branded Not Found page |
+| Route                    | Implementation                                                                                                                                       |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/`                      | Home page with primary seminar path, therapy overview, practitioner credibility, Healing Garden, philosophy, event state, FAQ preview, and final CTA |
+| `/jikiden-reiki-seminar` | Primary offer page covering lineage, audience, curriculum, learning environment, and inquiry                                                         |
+| `/therapies`             | Four-service overview and detail page with complementary-care disclaimer                                                                             |
+| `/about`                 | Nongnapat’s professional journey, credentials, philosophy, and Healing Garden story                                                                  |
+| `/events`                | Truthful empty state and future event structure without invented event records                                                                       |
+| `/faq`                   | Accessible grouped FAQ disclosures and medical-complementarity note                                                                                  |
+| `/contact`               | Two-column contact screen plus the inquiry form missing from the Stitch export                                                                       |
+| `/privacy`               | Pending-content legal-page shell                                                                                                                     |
+| `/terms`                 | Pending-content booking/terms shell                                                                                                                  |
+| `*`                      | Branded Not Found page                                                                                                                               |
 
 Every route uses the shared header, mobile navigation, footer, route title handling, active navigation, and scroll-to-top behavior.
 

@@ -17,22 +17,22 @@ For a fair review:
 
 Mark each item Pass, Needs correction, or Not reviewable. All correctable parity issues should be fixed before visual scoring.
 
-| Check | Direction A | Direction B | Direction C | Notes |
-|---|---|---|---|---|
-| All nine canonical pages exist in the locked order |  |  |  |  |
-| Home contains all 11 sections in the locked order |  |  |  |  |
-| Seminar page contains every locked section in order |  |  |  |  |
-| Therapies page contains all four therapies in the locked order |  |  |  |  |
-| About, Events, FAQ, Contact, Privacy, and Terms pages match the locked scope |  |  |  |  |
-| Business facts, service meanings, credentials, and philosophy remain consistent |  |  |  |  |
-| Primary, secondary, contextual, and events CTAs use the locked labels and priorities |  |  |  |  |
-| Inquiry selector contains seminar, therapy, therapy guidance, and general inquiry |  |  |  |  |
-| Event-management pattern, form states, FAQ behavior, and footer functions match |  |  |  |  |
-| Missing details are labelled as pending; none are fabricated |  |  |  |  |
-| No testimonial quotes, events, prices, schedules, policies, addresses, or integrations were invented |  |  |  |  |
-| Medical and complementary-care claims stay within the approved boundary |  |  |  |  |
-| Fixed palette and prohibited-color rules are respected |  |  |  |  |
-| Desktop and mobile screens exist for every page |  |  |  |  |
+| Check                                                                                                | Direction A | Direction B | Direction C | Notes |
+| ---------------------------------------------------------------------------------------------------- | ----------- | ----------- | ----------- | ----- |
+| All nine canonical pages exist in the locked order                                                   |             |             |             |       |
+| Home contains all 11 sections in the locked order                                                    |             |             |             |       |
+| Seminar page contains every locked section in order                                                  |             |             |             |       |
+| Therapies page contains all four therapies in the locked order                                       |             |             |             |       |
+| About, Events, FAQ, Contact, Privacy, and Terms pages match the locked scope                         |             |             |             |       |
+| Business facts, service meanings, credentials, and philosophy remain consistent                      |             |             |             |       |
+| Primary, secondary, contextual, and events CTAs use the locked labels and priorities                 |             |             |             |       |
+| Inquiry selector contains seminar, therapy, therapy guidance, and general inquiry                    |             |             |             |       |
+| Event-management pattern, form states, FAQ behavior, and footer functions match                      |             |             |             |       |
+| Missing details are labelled as pending; none are fabricated                                         |             |             |             |       |
+| No testimonial quotes, events, prices, schedules, policies, addresses, or integrations were invented |             |             |             |       |
+| Medical and complementary-care claims stay within the approved boundary                              |             |             |             |       |
+| Fixed palette and prohibited-color rules are respected                                               |             |             |             |       |
+| Desktop and mobile screens exist for every page                                                      |             |             |             |       |
 
 ## Direction Review Scorecard
 
@@ -44,19 +44,19 @@ Score each category from 1 to 5:
 - **4 — Strong:** fits very well with only modest refinement required.
 - **5 — Excellent:** expresses the requirement clearly, distinctively, and credibly.
 
-| Criterion | What to evaluate | A | B | C | Notes |
-|---|---|---:|---:|---:|---|
-| Audience fit | Feels welcoming and relevant to adults 30–65, international learners, wellness professionals, and therapy clients |  |  |  |  |
-| Brand fit | Feels professional, calm, minimal, trustworthy, warm, refined, organic, and personal |  |  |  |  |
-| Clarity and readability | Unfamiliar therapies, seminar details, credentials, and practical information are easy to scan and understand |  |  |  |  |
-| Trust and credibility | Experience, lineage, qualifications, responsible claims, and professional care feel convincing without becoming clinical |  |  |  |  |
-| Conversion visibility | Seminar inquiry is clearly primary; therapy and guidance routes remain obvious and noncompetitive |  |  |  |  |
-| Cross-page consistency | Typography, components, navigation, footer, actions, and states behave as one coherent site |  |  |  |  |
-| Responsive quality | Mobile preserves hierarchy, reading order, functionality, atmosphere, and comfortable interaction |  |  |  |  |
-| Accessibility | Contrast, type size, focus, keyboard behavior, touch targets, labels, states, and reduced motion appear viable |  |  |  |  |
-| Asset feasibility | Design can succeed with realistic future photography and clearly replaceable placeholders; it does not depend on unavailable assets |  |  |  |  |
-| Visual distinctiveness | Direction has a memorable visual identity appropriate to Studio IKI without relying on cliché or cultural appropriation |  |  |  |  |
-| **Total / 50** | Use totals as input, not as an automatic decision |  |  |  |  |
+| Criterion               | What to evaluate                                                                                                                    |   A |   B |   C | Notes |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | --: | --: | --: | ----- |
+| Audience fit            | Feels welcoming and relevant to adults 30–65, international learners, wellness professionals, and therapy clients                   |     |     |     |       |
+| Brand fit               | Feels professional, calm, minimal, trustworthy, warm, refined, organic, and personal                                                |     |     |     |       |
+| Clarity and readability | Unfamiliar therapies, seminar details, credentials, and practical information are easy to scan and understand                       |     |     |     |       |
+| Trust and credibility   | Experience, lineage, qualifications, responsible claims, and professional care feel convincing without becoming clinical            |     |     |     |       |
+| Conversion visibility   | Seminar inquiry is clearly primary; therapy and guidance routes remain obvious and noncompetitive                                   |     |     |     |       |
+| Cross-page consistency  | Typography, components, navigation, footer, actions, and states behave as one coherent site                                         |     |     |     |       |
+| Responsive quality      | Mobile preserves hierarchy, reading order, functionality, atmosphere, and comfortable interaction                                   |     |     |     |       |
+| Accessibility           | Contrast, type size, focus, keyboard behavior, touch targets, labels, states, and reduced motion appear viable                      |     |     |     |       |
+| Asset feasibility       | Design can succeed with realistic future photography and clearly replaceable placeholders; it does not depend on unavailable assets |     |     |     |       |
+| Visual distinctiveness  | Direction has a memorable visual identity appropriate to Studio IKI without relying on cliché or cultural appropriation             |     |     |     |       |
+| **Total / 50**          | Use totals as input, not as an automatic decision                                                                                   |     |     |     |       |
 
 ## Page-by-Page Review Notes
 
@@ -67,10 +67,10 @@ Score each category from 1 to 5:
 - Do credibility, Healing Garden, philosophy, events, testimonials, FAQ, and final CTA form a clear progression?
 
 | Direction | What works | What needs correction |
-|---|---|---|
-| A |  |  |
-| B |  |  |
-| C |  |  |
+| --------- | ---------- | --------------------- |
+| A         |            |                       |
+| B         |            |                       |
+| C         |            |                       |
 
 ### Jikiden Reiki Seminar
 
@@ -79,10 +79,10 @@ Score each category from 1 to 5:
 - Is the primary inquiry action easy to find throughout the journey?
 
 | Direction | What works | What needs correction |
-|---|---|---|
-| A |  |  |
-| B |  |  |
-| C |  |  |
+| --------- | ---------- | --------------------- |
+| A         |            |                       |
+| B         |            |                       |
+| C         |            |                       |
 
 ### Therapies
 
@@ -91,10 +91,10 @@ Score each category from 1 to 5:
 - Are benefits framed as complementary support rather than medical promises?
 
 | Direction | What works | What needs correction |
-|---|---|---|
-| A |  |  |
-| B |  |  |
-| C |  |  |
+| --------- | ---------- | --------------------- |
+| A         |            |                       |
+| B         |            |                       |
+| C         |            |                       |
 
 ### About & Philosophy
 
@@ -103,10 +103,10 @@ Score each category from 1 to 5:
 - Does the philosophy feel sincere, specific, and readable?
 
 | Direction | What works | What needs correction |
-|---|---|---|
-| A |  |  |
-| B |  |  |
-| C |  |  |
+| --------- | ---------- | --------------------- |
+| A         |            |                       |
+| B         |            |                       |
+| C         |            |                       |
 
 ### Events, FAQ, Contact, and Legal Pages
 
@@ -116,22 +116,22 @@ Score each category from 1 to 5:
 - Are pending operational and legal details explicit rather than invented?
 
 | Direction | What works | What needs correction |
-|---|---|---|
-| A |  |  |
-| B |  |  |
-| C |  |  |
+| --------- | ---------- | --------------------- |
+| A         |            |                       |
+| B         |            |                       |
+| C         |            |                       |
 
 ## Mobile and Interaction Review
 
-| Check | A | B | C | Notes |
-|---|---|---|---|---|
-| Header and mobile menu are clear, operable, and appropriately prioritised |  |  |  |  |
-| Section reading order matches desktop intent |  |  |  |  |
-| Cards, accordions, buttons, and form controls are comfortably tappable |  |  |  |  |
-| Forms expose labels, validation, consent, error, and success states |  |  |  |  |
-| Text remains readable without unsafe image overlays |  |  |  |  |
-| Motion is restrained and has a complete reduced-motion alternative |  |  |  |  |
-| Footer navigation and contact routes remain usable |  |  |  |  |
+| Check                                                                     | A   | B   | C   | Notes |
+| ------------------------------------------------------------------------- | --- | --- | --- | ----- |
+| Header and mobile menu are clear, operable, and appropriately prioritised |     |     |     |       |
+| Section reading order matches desktop intent                              |     |     |     |       |
+| Cards, accordions, buttons, and form controls are comfortably tappable    |     |     |     |       |
+| Forms expose labels, validation, consent, error, and success states       |     |     |     |       |
+| Text remains readable without unsafe image overlays                       |     |     |     |       |
+| Motion is restrained and has a complete reduced-motion alternative        |     |     |     |       |
+| Footer navigation and contact routes remain usable                        |     |     |     |       |
 
 ## Feedback and Selection Record
 
@@ -156,4 +156,3 @@ Pending review.
 ### Refinements to make in Google Stitch
 
 Pending review. Apply all selected refinements directly in the chosen Stitch thread or branch until one final corrected website design remains.
-

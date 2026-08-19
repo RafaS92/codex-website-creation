@@ -10,15 +10,15 @@
 
 ## Screen-level exports
 
-| Screen | Stitch screen ID | Exported screenshot | Screenshot size | Generated HTML |
-|---|---|---|---:|---|
-| Home | `e6f9e4575cdb452ba8bac1c22ebcdbf0` | [01-home.png](screenshots/01-home.png) | 2560 × 12402 | [01-home.html](html/01-home.html) |
-| Jikiden Reiki Seminar | `26775646c4044516a7d9cf0f993c4a39` | [02-jikiden-reiki-seminar.jpg](screenshots/02-jikiden-reiki-seminar.jpg) | 2560 × 6342 | [02-jikiden-reiki-seminar.html](html/02-jikiden-reiki-seminar.html) |
-| Therapies | `01137660f07a4f2e91a330aa035cf7da` | [03-therapies.jpg](screenshots/03-therapies.jpg) | 2560 × 10950 | [03-therapies.html](html/03-therapies.html) |
-| About & Philosophy | `646f7b51c9a849ab8dc8a4f121942115` | [04-about-philosophy.jpg](screenshots/04-about-philosophy.jpg) | 2560 × 4918 | [04-about-philosophy.html](html/04-about-philosophy.html) |
-| Events | `5f29f06c8ebb4551a325da0fb0f4694b` | [05-events.jpg](screenshots/05-events.jpg) | 2560 × 5498 | [05-events.html](html/05-events.html) |
-| FAQ | `86d10a98e4c843da8f1c59f97f46f912` | [06-faq.jpg](screenshots/06-faq.jpg) | 2560 × 3962 | [06-faq.html](html/06-faq.html) |
-| Contact & Inquiry | `7e88981442e1487bb66a69d09ccffe35` | [07-contact-inquiry.jpg](screenshots/07-contact-inquiry.jpg) | 2560 × 2194 | [07-contact-inquiry.html](html/07-contact-inquiry.html) |
+| Screen                | Stitch screen ID                   | Exported screenshot                                                      | Screenshot size | Generated HTML                                                      |
+| --------------------- | ---------------------------------- | ------------------------------------------------------------------------ | --------------: | ------------------------------------------------------------------- |
+| Home                  | `e6f9e4575cdb452ba8bac1c22ebcdbf0` | [01-home.png](screenshots/01-home.png)                                   |    2560 × 12402 | [01-home.html](html/01-home.html)                                   |
+| Jikiden Reiki Seminar | `26775646c4044516a7d9cf0f993c4a39` | [02-jikiden-reiki-seminar.jpg](screenshots/02-jikiden-reiki-seminar.jpg) |     2560 × 6342 | [02-jikiden-reiki-seminar.html](html/02-jikiden-reiki-seminar.html) |
+| Therapies             | `01137660f07a4f2e91a330aa035cf7da` | [03-therapies.jpg](screenshots/03-therapies.jpg)                         |    2560 × 10950 | [03-therapies.html](html/03-therapies.html)                         |
+| About & Philosophy    | `646f7b51c9a849ab8dc8a4f121942115` | [04-about-philosophy.jpg](screenshots/04-about-philosophy.jpg)           |     2560 × 4918 | [04-about-philosophy.html](html/04-about-philosophy.html)           |
+| Events                | `5f29f06c8ebb4551a325da0fb0f4694b` | [05-events.jpg](screenshots/05-events.jpg)                               |     2560 × 5498 | [05-events.html](html/05-events.html)                               |
+| FAQ                   | `86d10a98e4c843da8f1c59f97f46f912` | [06-faq.jpg](screenshots/06-faq.jpg)                                     |     2560 × 3962 | [06-faq.html](html/06-faq.html)                                     |
+| Contact & Inquiry     | `7e88981442e1487bb66a69d09ccffe35` | [07-contact-inquiry.jpg](screenshots/07-contact-inquiry.jpg)             |     2560 × 2194 | [07-contact-inquiry.html](html/07-contact-inquiry.html)             |
 
 ## Coverage notes
 

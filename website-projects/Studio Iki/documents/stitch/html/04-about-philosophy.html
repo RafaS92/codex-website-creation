@@ -1,305 +1,618 @@
-<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>About &amp; Philosophy - Studio IKI</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&amp;family=EB+Garamond:wght@400;500&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "inverse-primary": "#d2c2cf",
-                        "on-primary-container": "#ccbcc9",
-                        "on-surface": "#1f1b17",
-                        "secondary-container": "#ffc9d7",
-                        "secondary-fixed": "#ffd9e2",
-                        "surface-container-lowest": "#ffffff",
-                        "tertiary-fixed": "#f0dcf5",
-                        "surface-container-high": "#f1e6e0",
-                        "on-background": "#1f1b17",
-                        "primary-fixed-dim": "#d2c2cf",
-                        "tertiary-fixed-dim": "#d3c0d8",
-                        "surface-container-low": "#fcf2eb",
-                        "surface-tint": "#675b66",
-                        "on-secondary-fixed": "#30121c",
-                        "outline": "#7c757a",
-                        "on-secondary": "#ffffff",
-                        "on-error": "#ffffff",
-                        "on-surface-variant": "#4b454a",
-                        "on-tertiary": "#ffffff",
-                        "on-tertiary-fixed": "#231728",
-                        "on-secondary-fixed-variant": "#623c47",
-                        "surface-bright": "#fff8f5",
-                        "on-secondary-container": "#7b525d",
-                        "error": "#ba1a1a",
-                        "tertiary": "#403346",
-                        "inverse-on-surface": "#f9efe8",
-                        "primary-fixed": "#efddeb",
-                        "inverse-surface": "#352f2b",
-                        "on-tertiary-fixed-variant": "#504255",
-                        "secondary-fixed-dim": "#edb9c6",
-                        "primary-container": "#574b56",
-                        "surface-container": "#f6ece6",
-                        "background": "#fff8f5",
-                        "on-primary-fixed-variant": "#4f434e",
-                        "outline-variant": "#cdc4ca",
-                        "surface": "#fff8f5",
-                        "on-tertiary-container": "#cdbbd2",
-                        "surface-variant": "#ebe1da",
-                        "on-primary": "#ffffff",
-                        "on-primary-fixed": "#221822",
-                        "surface-dim": "#e2d8d2",
-                        "secondary": "#7c535f",
-                        "on-error-container": "#93000a",
-                        "surface-container-highest": "#ebe1da",
-                        "error-container": "#ffdad6",
-                        "primary": "#3f343f",
-                        "tertiary-container": "#584a5e"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "margin-mobile": "20px",
-                        "gutter": "24px",
-                        "margin-desktop": "64px",
-                        "base": "8px",
-                        "section-gap": "80px"
-                    },
-                    "fontFamily": {
-                        "display-lg": ["beVietnamPro"],
-                        "body-md": ["beVietnamPro"],
-                        "headline-lg": ["beVietnamPro"],
-                        "body-lg": ["beVietnamPro"],
-                        "label-md": ["beVietnamPro"],
-                        "headline-lg-mobile": ["beVietnamPro"],
-                        "philosophy-accent": ["ebGaramond"]
-                    },
-                    "fontSize": {
-                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
-                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
-                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
-                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
-                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
-                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
-                        "philosophy-accent": ["24px", { "lineHeight": "32px", "fontWeight": "400" }]
-                    }
-                }
-            }
-        }
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About &amp; Philosophy - Studio IKI</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&amp;family=EB+Garamond:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-primary": "#d2c2cf",
+              "on-primary-container": "#ccbcc9",
+              "on-surface": "#1f1b17",
+              "secondary-container": "#ffc9d7",
+              "secondary-fixed": "#ffd9e2",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed": "#f0dcf5",
+              "surface-container-high": "#f1e6e0",
+              "on-background": "#1f1b17",
+              "primary-fixed-dim": "#d2c2cf",
+              "tertiary-fixed-dim": "#d3c0d8",
+              "surface-container-low": "#fcf2eb",
+              "surface-tint": "#675b66",
+              "on-secondary-fixed": "#30121c",
+              outline: "#7c757a",
+              "on-secondary": "#ffffff",
+              "on-error": "#ffffff",
+              "on-surface-variant": "#4b454a",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed": "#231728",
+              "on-secondary-fixed-variant": "#623c47",
+              "surface-bright": "#fff8f5",
+              "on-secondary-container": "#7b525d",
+              error: "#ba1a1a",
+              tertiary: "#403346",
+              "inverse-on-surface": "#f9efe8",
+              "primary-fixed": "#efddeb",
+              "inverse-surface": "#352f2b",
+              "on-tertiary-fixed-variant": "#504255",
+              "secondary-fixed-dim": "#edb9c6",
+              "primary-container": "#574b56",
+              "surface-container": "#f6ece6",
+              background: "#fff8f5",
+              "on-primary-fixed-variant": "#4f434e",
+              "outline-variant": "#cdc4ca",
+              surface: "#fff8f5",
+              "on-tertiary-container": "#cdbbd2",
+              "surface-variant": "#ebe1da",
+              "on-primary": "#ffffff",
+              "on-primary-fixed": "#221822",
+              "surface-dim": "#e2d8d2",
+              secondary: "#7c535f",
+              "on-error-container": "#93000a",
+              "surface-container-highest": "#ebe1da",
+              "error-container": "#ffdad6",
+              primary: "#3f343f",
+              "tertiary-container": "#584a5e",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "margin-mobile": "20px",
+              gutter: "24px",
+              "margin-desktop": "64px",
+              base: "8px",
+              "section-gap": "80px",
+            },
+            fontFamily: {
+              "display-lg": ["beVietnamPro"],
+              "body-md": ["beVietnamPro"],
+              "headline-lg": ["beVietnamPro"],
+              "body-lg": ["beVietnamPro"],
+              "label-md": ["beVietnamPro"],
+              "headline-lg-mobile": ["beVietnamPro"],
+              "philosophy-accent": ["ebGaramond"],
+            },
+            fontSize: {
+              "display-lg": [
+                "48px",
+                {
+                  lineHeight: "56px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+              "headline-lg": [
+                "32px",
+                {
+                  lineHeight: "40px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "500",
+                },
+              ],
+              "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+              "label-md": [
+                "14px",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0.05em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-lg-mobile": [
+                "28px",
+                { lineHeight: "36px", fontWeight: "500" },
+              ],
+              "philosophy-accent": [
+                "24px",
+                { lineHeight: "32px", fontWeight: "400" },
+              ],
+            },
+          },
+        },
+      };
     </script>
-<style>
-        body { font-family: 'Be Vietnam Pro', sans-serif; background-color: #fff8f5; color: #1f1b17; }
-        .ghost-border { border: 1px solid #cdc4ca; }
-        .tactile-btn { transition: transform 0.2s ease, box-shadow 0.2s ease; }
-        .tactile-btn:active { transform: scale(0.98); }
-        .divider { height: 1px; background-color: #cdc4ca; width: 100%; }
-        
-        /* Mobile Nav Toggle Logic */
-        #mobile-menu { transform: translateX(100%); transition: transform 0.5s ease-in-out; }
-        #mobile-menu.open { transform: translateX(0); }
+    <style>
+      body {
+        font-family: "Be Vietnam Pro", sans-serif;
+        background-color: #fff8f5;
+        color: #1f1b17;
+      }
+      .ghost-border {
+        border: 1px solid #cdc4ca;
+      }
+      .tactile-btn {
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+      .tactile-btn:active {
+        transform: scale(0.98);
+      }
+      .divider {
+        height: 1px;
+        background-color: #cdc4ca;
+        width: 100%;
+      }
+
+      /* Mobile Nav Toggle Logic */
+      #mobile-menu {
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+      }
+      #mobile-menu.open {
+        transform: translateX(0);
+      }
     </style>
-</head>
-<body class="bg-background text-on-background min-h-screen flex flex-col antialiased">
-<!-- TopNavBar (Web) / Hamburger (Mobile) -->
-<header class="bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline sticky top-0 z-40 w-full transition-all duration-300">
-<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-screen-2xl mx-auto">
-<!-- Brand -->
-<a aria-label="Studio IKI Home" class="font-display-lg text-display-lg tracking-tight text-primary dark:text-inverse-primary" href="#">Studio IKI</a>
-<!-- Web Navigation -->
-<nav class="hidden md:flex items-center gap-6">
-<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 font-label-md text-label-md" href="#">Home</a>
-<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 font-label-md text-label-md" href="#">Seminar</a>
-<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 font-label-md text-label-md" href="#">Therapies</a>
-<a aria-current="page" class="text-primary dark:text-inverse-primary border-b-2 border-primary dark:border-inverse-primary pb-1 font-label-md text-label-md hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 active scale-95 transition-transform duration-200" href="#">About</a>
-<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 font-label-md text-label-md" href="#">Events</a>
-<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 font-label-md text-label-md" href="#">FAQ</a>
-</nav>
-<!-- Actions -->
-<div class="hidden md:flex items-center gap-4">
-<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors" href="#">Contact</a>
-<a class="bg-primary text-on-primary px-6 py-2 rounded font-label-md text-label-md tactile-btn hover:bg-tertiary transition-colors shadow-[0px_4px_20px_rgba(87,75,86,0.08)]" href="#">Join a Seminar</a>
-</div>
-<!-- Mobile Menu Toggle -->
-<button aria-label="Open Menu" class="md:hidden text-primary focus:outline-none" id="menu-btn">
-<span class="material-symbols-outlined text-[32px]">menu</span>
-</button>
-</div>
-</header>
-<!-- SideNavBar (Mobile) -->
-<div class="h-full w-80 fixed right-0 top-0 z-50 bg-surface-container dark:bg-surface-container-highest shadow-2xl flex flex-col p-margin-mobile md:hidden" id="mobile-menu">
-<div class="flex justify-between items-center mb-8">
-<div>
-<h2 class="font-display-lg text-display-lg text-primary dark:text-inverse-primary text-2xl">Studio IKI</h2>
-<p class="font-body-md text-body-md text-on-surface-variant">Holistic Wellness</p>
-</div>
-<button aria-label="Close Menu" class="text-primary focus:outline-none" id="close-btn">
-<span class="material-symbols-outlined text-[32px]">close</span>
-</button>
-</div>
-<nav class="flex flex-col gap-2 flex-grow">
-<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors rounded-lg font-label-md text-label-md" href="#">
-<span class="material-symbols-outlined" data-weight="fill">home</span> Home
+  </head>
+  <body
+    class="bg-background text-on-background min-h-screen flex flex-col antialiased"
+  >
+    <!-- TopNavBar (Web) / Hamburger (Mobile) -->
+    <header
+      class="bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline sticky top-0 z-40 w-full transition-all duration-300"
+    >
+      <div
+        class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-screen-2xl mx-auto"
+      >
+        <!-- Brand -->
+        <a
+          aria-label="Studio IKI Home"
+          class="font-display-lg text-display-lg tracking-tight text-primary dark:text-inverse-primary"
+          href="#"
+          >Studio IKI</a
+        >
+        <!-- Web Navigation -->
+        <nav class="hidden md:flex items-center gap-6">
+          <a
+            class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 font-label-md text-label-md"
+            href="#"
+            >Home</a
+          >
+          <a
+            class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 font-label-md text-label-md"
+            href="#"
+            >Seminar</a
+          >
+          <a
+            class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 font-label-md text-label-md"
+            href="#"
+            >Therapies</a
+          >
+          <a
+            aria-current="page"
+            class="text-primary dark:text-inverse-primary border-b-2 border-primary dark:border-inverse-primary pb-1 font-label-md text-label-md hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 active scale-95 transition-transform duration-200"
+            href="#"
+            >About</a
+          >
+          <a
+            class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 font-label-md text-label-md"
+            href="#"
+            >Events</a
+          >
+          <a
+            class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 font-label-md text-label-md"
+            href="#"
+            >FAQ</a
+          >
+        </nav>
+        <!-- Actions -->
+        <div class="hidden md:flex items-center gap-4">
+          <a
+            class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors"
+            href="#"
+            >Contact</a
+          >
+          <a
+            class="bg-primary text-on-primary px-6 py-2 rounded font-label-md text-label-md tactile-btn hover:bg-tertiary transition-colors shadow-[0px_4px_20px_rgba(87,75,86,0.08)]"
+            href="#"
+            >Join a Seminar</a
+          >
+        </div>
+        <!-- Mobile Menu Toggle -->
+        <button
+          aria-label="Open Menu"
+          class="md:hidden text-primary focus:outline-none"
+          id="menu-btn"
+        >
+          <span class="material-symbols-outlined text-[32px]">menu</span>
+        </button>
+      </div>
+    </header>
+    <!-- SideNavBar (Mobile) -->
+    <div
+      class="h-full w-80 fixed right-0 top-0 z-50 bg-surface-container dark:bg-surface-container-highest shadow-2xl flex flex-col p-margin-mobile md:hidden"
+      id="mobile-menu"
+    >
+      <div class="flex justify-between items-center mb-8">
+        <div>
+          <h2
+            class="font-display-lg text-display-lg text-primary dark:text-inverse-primary text-2xl"
+          >
+            Studio IKI
+          </h2>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            Holistic Wellness
+          </p>
+        </div>
+        <button
+          aria-label="Close Menu"
+          class="text-primary focus:outline-none"
+          id="close-btn"
+        >
+          <span class="material-symbols-outlined text-[32px]">close</span>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-2 flex-grow">
+        <a
+          class="text-on-surface-variant dark:text-on-secondary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors rounded-lg font-label-md text-label-md"
+          href="#"
+        >
+          <span class="material-symbols-outlined" data-weight="fill">home</span>
+          Home
+        </a>
+        <a
+          class="text-on-surface-variant dark:text-on-secondary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors rounded-lg font-label-md text-label-md"
+          href="#"
+        >
+          <span class="material-symbols-outlined">school</span> Seminar
+        </a>
+        <a
+          class="text-on-surface-variant dark:text-on-secondary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors rounded-lg font-label-md text-label-md"
+          href="#"
+        >
+          <span class="material-symbols-outlined">self_care</span> Therapies
+        </a>
+        <a
+          aria-current="page"
+          class="bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-lg px-4 py-3 flex items-center gap-3 font-label-md text-label-md"
+          href="#"
+        >
+          <span class="material-symbols-outlined" data-weight="fill">info</span>
+          About
+        </a>
+        <a
+          class="text-on-surface-variant dark:text-on-secondary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors rounded-lg font-label-md text-label-md"
+          href="#"
+        >
+          <span class="material-symbols-outlined">calendar_today</span> Events
+        </a>
+        <a
+          class="text-on-surface-variant dark:text-on-secondary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors rounded-lg font-label-md text-label-md"
+          href="#"
+        >
+          <span class="material-symbols-outlined">quiz</span> FAQ
+        </a>
+        <a
+          class="text-on-surface-variant dark:text-on-secondary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors rounded-lg font-label-md text-label-md mt-auto"
+          href="#"
+        >
+          <span class="material-symbols-outlined">mail</span> Contact
+        </a>
+      </nav>
+      <div class="mt-4">
+        <a
+          class="block w-full text-center bg-primary text-on-primary px-6 py-3 rounded-lg font-label-md text-label-md tactile-btn shadow-[0px_4px_20px_rgba(87,75,86,0.08)]"
+          href="#"
+          >Join Seminar</a
+        >
+      </div>
+    </div>
+    <!-- Mobile Menu Overlay -->
+    <div
+      class="fixed inset-0 bg-on-background/20 backdrop-blur-sm z-40 hidden md:hidden"
+      id="mobile-overlay"
+    ></div>
+    <!-- Main Content -->
+    <main
+      class="flex-grow w-full max-w-screen-2xl mx-auto px-margin-mobile md:px-margin-desktop py-section-gap flex flex-col gap-section-gap"
+    >
+      <!-- Hero Section -->
+      <section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+        <div class="lg:col-span-5 flex flex-col gap-6 order-2 lg:order-1">
+          <span
+            class="font-label-md text-label-md text-secondary tracking-widest uppercase"
+            >The Practitioner</span
+          >
+          <h1
+            class="font-display-lg text-display-lg text-primary leading-tight"
+          >
+            A Journey of Healing &amp; Discovery.
+          </h1>
+          <p class="font-body-lg text-body-lg text-on-surface-variant">
+            For over two decades, I have dedicated myself to understanding the
+            profound connection between the physical body and the energetic
+            spirit, guiding others toward their own intrinsic balance.
+          </p>
+        </div>
+        <div class="lg:col-span-7 order-1 lg:order-2 relative">
+          <div
+            class="aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-high p-4 ghost-border"
+          >
+            <img
+              alt="Practitioner Portrait"
+              class="w-full h-full object-cover rounded-lg shadow-sm"
+              data-alt="A portrait of a serene female wellness practitioner standing in a lush, green, sunlit garden, radiating warmth and calm."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBL2tR-NesvwC-rJslDvTQQSlqKdlaqPAkZas78qeWUlNmDQwYMeucrsV3hjfNWzSg7feypBIv-qGHxY13m3fssAhYv0kkgwRhrmYQJHtqSohdhYSPWKy-OpgZLIUUGw382_M8F5bU5JbWh1r-gS-HssU75HyuCjHnygVxFKpBM63EuncJgw7yJ5Q43NyNqYJVLEJ0kUAeNrjr-FB0G6SSUdarO9VUBgDhaef_b5IHTGUveEHu89KUs"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Professional Journey & The Question -->
+      <section
+        class="bg-surface-container p-8 md:p-12 lg:p-16 rounded-xl ghost-border relative overflow-hidden"
+      >
+        <div class="max-w-4xl mx-auto flex flex-col gap-12 relative z-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+              <h2
+                class="font-headline-lg-mobile md:font-headline-lg text-primary mb-6"
+              >
+                Refining the Craft
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                My foundational years were shaped within the sanctuaries of
+                world-renowned luxury wellness retreats, including Kamalaya and
+                Four Seasons. Here, amidst pristine environments and discerning
+                guests, I honed a practice that seamlessly blends ancient wisdom
+                with refined care.
+              </p>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                These environments demanded not just technical proficiency, but
+                an intuitive presence—the ability to hold space for profound
+                transformation within a setting of absolute comfort.
+              </p>
+            </div>
+            <div
+              class="border-l border-outline-variant pl-8 flex flex-col justify-center"
+            >
+              <span
+                class="material-symbols-outlined text-secondary text-4xl mb-4"
+                data-weight="300"
+                >spa</span
+              >
+              <h3
+                class="font-philosophy-accent text-philosophy-accent text-primary italic leading-relaxed"
+              >
+                "Amidst the luxury, a persistent question emerged: How do we
+                carry this profound peace back into the turbulence of everyday
+                life?"
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- Decorative structural line -->
+        <div
+          class="absolute top-0 bottom-0 left-1/3 w-px bg-outline-variant opacity-20 hidden md:block"
+        ></div>
+      </section>
+      <!-- Modalities Bento -->
+      <section class="flex flex-col gap-8">
+        <div class="text-center max-w-2xl mx-auto">
+          <h2
+            class="font-headline-lg-mobile md:font-headline-lg text-primary mb-4"
+          >
+            Tools of Alignment
+          </h2>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            A synthesis of disciplines designed to address the subtle layers of
+            being.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Modality Card 1 -->
+          <div
+            class="bg-surface-bright p-8 rounded-xl ghost-border hover:shadow-lg transition-shadow duration-300 group"
+          >
+            <div
+              class="bg-tertiary-fixed w-12 h-12 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+            >
+              <span class="material-symbols-outlined text-on-tertiary-fixed"
+                >self_improvement</span
+              >
+            </div>
+            <h3 class="font-label-md text-label-md text-primary mb-3 text-lg">
+              Reiki Mastery
+            </h3>
+            <p
+              class="font-body-md text-body-md text-on-surface-variant text-sm"
+            >
+              Channeling universal life energy to clear blockages, reduce
+              stress, and promote physical and emotional healing.
+            </p>
+          </div>
+          <!-- Modality Card 2 -->
+          <div
+            class="bg-surface-bright p-8 rounded-xl ghost-border hover:shadow-lg transition-shadow duration-300 group"
+          >
+            <div
+              class="bg-secondary-fixed w-12 h-12 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+            >
+              <span class="material-symbols-outlined text-on-secondary-fixed"
+                >waves</span
+              >
+            </div>
+            <h3 class="font-label-md text-label-md text-primary mb-3 text-lg">
+              Sound Therapy
+            </h3>
+            <p
+              class="font-body-md text-body-md text-on-surface-variant text-sm"
+            >
+              Utilizing harmonic frequencies and vibrations to induce deep
+              meditative states and cellular harmony.
+            </p>
+          </div>
+          <!-- Modality Card 3 -->
+          <div
+            class="bg-surface-bright p-8 rounded-xl ghost-border hover:shadow-lg transition-shadow duration-300 group"
+          >
+            <div
+              class="bg-primary-fixed w-12 h-12 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+            >
+              <span class="material-symbols-outlined text-on-primary-fixed"
+                >psychiatry</span
+              >
+            </div>
+            <h3 class="font-label-md text-label-md text-primary mb-3 text-lg">
+              Somatic Integration
+            </h3>
+            <p
+              class="font-body-md text-body-md text-on-surface-variant text-sm"
+            >
+              Guiding awareness into the physical body to release trauma and
+              re-establish a felt sense of safety.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Philosophy Block & The Garden -->
+      <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div
+          class="order-2 lg:order-1 relative h-[500px] rounded-xl overflow-hidden ghost-border"
+        >
+          <img
+            alt="The Healing Garden"
+            class="w-full h-full object-cover"
+            data-alt="A tranquil, minimalist Japanese-inspired healing garden with raked sand, smooth stones, and delicate greenery, softly lit by morning sun."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdLvWcCFO-7TBkTJoRMSoqnakO2Duqj-U-E52vNh2NVgSvgg5MXLgUxCrlZ50L48LHVoBOoUX7kX67q5zMvufUHmBmjERfLZ8Dgm_Ri7ZYF81rSNRqMF8RDu5pVjrsvuDXwoUlxkKa-vMM1DqDlw6UkfjLJHSza0vskiGvXC3L8_qYHV58NWYxHNaE27ZrVMQUZKflrafSPZV0Au_qAYX0ztZScETzvONypHAxIxKCKev1kjKmLwAm"
+          />
+        </div>
+        <div class="order-1 lg:order-2 flex flex-col gap-8">
+          <div>
+            <h2
+              class="font-headline-lg-mobile md:font-headline-lg text-primary mb-4"
+            >
+              The Philosophy
+            </h2>
+            <div class="h-px bg-outline-variant w-16 mb-6"></div>
+            <p
+              class="font-philosophy-accent text-philosophy-accent text-primary mb-6"
+            >
+              "Healing is not becoming someone new; healing is returning to who
+              we truly are."
+            </p>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-4">
+              My passion extends beyond individual therapy to the act of
+              teaching. Empowering others with the tools to self-regulate and
+              heal is the ultimate goal. True wellness is a practice, not a
+              destination.
+            </p>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              This ethos birthed the 'Healing Garden'—a conceptual and physical
+              space designed for grounding. It represents the cultivated
+              stillness required to listen to our own inner wisdom.
+            </p>
+          </div>
+          <div>
+            <a
+              class="inline-flex items-center gap-2 border border-primary text-primary px-6 py-3 rounded font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-colors tactile-btn"
+              href="#"
+            >
+              Inquire About Sessions
+              <span class="material-symbols-outlined text-sm"
+                >arrow_forward</span
+              >
             </a>
-<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors rounded-lg font-label-md text-label-md" href="#">
-<span class="material-symbols-outlined">school</span> Seminar
-            </a>
-<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors rounded-lg font-label-md text-label-md" href="#">
-<span class="material-symbols-outlined">self_care</span> Therapies
-            </a>
-<a aria-current="page" class="bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-lg px-4 py-3 flex items-center gap-3 font-label-md text-label-md" href="#">
-<span class="material-symbols-outlined" data-weight="fill">info</span> About
-            </a>
-<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors rounded-lg font-label-md text-label-md" href="#">
-<span class="material-symbols-outlined">calendar_today</span> Events
-            </a>
-<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors rounded-lg font-label-md text-label-md" href="#">
-<span class="material-symbols-outlined">quiz</span> FAQ
-            </a>
-<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors rounded-lg font-label-md text-label-md mt-auto" href="#">
-<span class="material-symbols-outlined">mail</span> Contact
-            </a>
-</nav>
-<div class="mt-4">
-<a class="block w-full text-center bg-primary text-on-primary px-6 py-3 rounded-lg font-label-md text-label-md tactile-btn shadow-[0px_4px_20px_rgba(87,75,86,0.08)]" href="#">Join Seminar</a>
-</div>
-</div>
-<!-- Mobile Menu Overlay -->
-<div class="fixed inset-0 bg-on-background/20 backdrop-blur-sm z-40 hidden md:hidden" id="mobile-overlay"></div>
-<!-- Main Content -->
-<main class="flex-grow w-full max-w-screen-2xl mx-auto px-margin-mobile md:px-margin-desktop py-section-gap flex flex-col gap-section-gap">
-<!-- Hero Section -->
-<section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
-<div class="lg:col-span-5 flex flex-col gap-6 order-2 lg:order-1">
-<span class="font-label-md text-label-md text-secondary tracking-widest uppercase">The Practitioner</span>
-<h1 class="font-display-lg text-display-lg text-primary leading-tight">A Journey of Healing &amp; Discovery.</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant">For over two decades, I have dedicated myself to understanding the profound connection between the physical body and the energetic spirit, guiding others toward their own intrinsic balance.</p>
-</div>
-<div class="lg:col-span-7 order-1 lg:order-2 relative">
-<div class="aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-high p-4 ghost-border">
-<img alt="Practitioner Portrait" class="w-full h-full object-cover rounded-lg shadow-sm" data-alt="A portrait of a serene female wellness practitioner standing in a lush, green, sunlit garden, radiating warmth and calm." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBL2tR-NesvwC-rJslDvTQQSlqKdlaqPAkZas78qeWUlNmDQwYMeucrsV3hjfNWzSg7feypBIv-qGHxY13m3fssAhYv0kkgwRhrmYQJHtqSohdhYSPWKy-OpgZLIUUGw382_M8F5bU5JbWh1r-gS-HssU75HyuCjHnygVxFKpBM63EuncJgw7yJ5Q43NyNqYJVLEJ0kUAeNrjr-FB0G6SSUdarO9VUBgDhaef_b5IHTGUveEHu89KUs">
-</div>
-</div>
-</section>
-<!-- Professional Journey & The Question -->
-<section class="bg-surface-container p-8 md:p-12 lg:p-16 rounded-xl ghost-border relative overflow-hidden">
-<div class="max-w-4xl mx-auto flex flex-col gap-12 relative z-10">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-<div>
-<h2 class="font-headline-lg-mobile md:font-headline-lg text-primary mb-6">Refining the Craft</h2>
-<p class="font-body-md text-body-md text-on-surface-variant mb-4">My foundational years were shaped within the sanctuaries of world-renowned luxury wellness retreats, including Kamalaya and Four Seasons. Here, amidst pristine environments and discerning guests, I honed a practice that seamlessly blends ancient wisdom with refined care.</p>
-<p class="font-body-md text-body-md text-on-surface-variant">These environments demanded not just technical proficiency, but an intuitive presence—the ability to hold space for profound transformation within a setting of absolute comfort.</p>
-</div>
-<div class="border-l border-outline-variant pl-8 flex flex-col justify-center">
-<span class="material-symbols-outlined text-secondary text-4xl mb-4" data-weight="300">spa</span>
-<h3 class="font-philosophy-accent text-philosophy-accent text-primary italic leading-relaxed">"Amidst the luxury, a persistent question emerged: How do we carry this profound peace back into the turbulence of everyday life?"</h3>
-</div>
-</div>
-</div>
-<!-- Decorative structural line -->
-<div class="absolute top-0 bottom-0 left-1/3 w-px bg-outline-variant opacity-20 hidden md:block"></div>
-</section>
-<!-- Modalities Bento -->
-<section class="flex flex-col gap-8">
-<div class="text-center max-w-2xl mx-auto">
-<h2 class="font-headline-lg-mobile md:font-headline-lg text-primary mb-4">Tools of Alignment</h2>
-<p class="font-body-md text-body-md text-on-surface-variant">A synthesis of disciplines designed to address the subtle layers of being.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<!-- Modality Card 1 -->
-<div class="bg-surface-bright p-8 rounded-xl ghost-border hover:shadow-lg transition-shadow duration-300 group">
-<div class="bg-tertiary-fixed w-12 h-12 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-on-tertiary-fixed">self_improvement</span>
-</div>
-<h3 class="font-label-md text-label-md text-primary mb-3 text-lg">Reiki Mastery</h3>
-<p class="font-body-md text-body-md text-on-surface-variant text-sm">Channeling universal life energy to clear blockages, reduce stress, and promote physical and emotional healing.</p>
-</div>
-<!-- Modality Card 2 -->
-<div class="bg-surface-bright p-8 rounded-xl ghost-border hover:shadow-lg transition-shadow duration-300 group">
-<div class="bg-secondary-fixed w-12 h-12 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-on-secondary-fixed">waves</span>
-</div>
-<h3 class="font-label-md text-label-md text-primary mb-3 text-lg">Sound Therapy</h3>
-<p class="font-body-md text-body-md text-on-surface-variant text-sm">Utilizing harmonic frequencies and vibrations to induce deep meditative states and cellular harmony.</p>
-</div>
-<!-- Modality Card 3 -->
-<div class="bg-surface-bright p-8 rounded-xl ghost-border hover:shadow-lg transition-shadow duration-300 group">
-<div class="bg-primary-fixed w-12 h-12 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-on-primary-fixed">psychiatry</span>
-</div>
-<h3 class="font-label-md text-label-md text-primary mb-3 text-lg">Somatic Integration</h3>
-<p class="font-body-md text-body-md text-on-surface-variant text-sm">Guiding awareness into the physical body to release trauma and re-establish a felt sense of safety.</p>
-</div>
-</div>
-</section>
-<!-- Philosophy Block & The Garden -->
-<section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-<div class="order-2 lg:order-1 relative h-[500px] rounded-xl overflow-hidden ghost-border">
-<img alt="The Healing Garden" class="w-full h-full object-cover" data-alt="A tranquil, minimalist Japanese-inspired healing garden with raked sand, smooth stones, and delicate greenery, softly lit by morning sun." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdLvWcCFO-7TBkTJoRMSoqnakO2Duqj-U-E52vNh2NVgSvgg5MXLgUxCrlZ50L48LHVoBOoUX7kX67q5zMvufUHmBmjERfLZ8Dgm_Ri7ZYF81rSNRqMF8RDu5pVjrsvuDXwoUlxkKa-vMM1DqDlw6UkfjLJHSza0vskiGvXC3L8_qYHV58NWYxHNaE27ZrVMQUZKflrafSPZV0Au_qAYX0ztZScETzvONypHAxIxKCKev1kjKmLwAm">
-</div>
-<div class="order-1 lg:order-2 flex flex-col gap-8">
-<div>
-<h2 class="font-headline-lg-mobile md:font-headline-lg text-primary mb-4">The Philosophy</h2>
-<div class="h-px bg-outline-variant w-16 mb-6"></div>
-<p class="font-philosophy-accent text-philosophy-accent text-primary mb-6">"Healing is not becoming someone new; healing is returning to who we truly are."</p>
-<p class="font-body-md text-body-md text-on-surface-variant mb-4">My passion extends beyond individual therapy to the act of teaching. Empowering others with the tools to self-regulate and heal is the ultimate goal. True wellness is a practice, not a destination.</p>
-<p class="font-body-md text-body-md text-on-surface-variant">This ethos birthed the 'Healing Garden'—a conceptual and physical space designed for grounding. It represents the cultivated stillness required to listen to our own inner wisdom.</p>
-</div>
-<div>
-<a class="inline-flex items-center gap-2 border border-primary text-primary px-6 py-3 rounded font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-colors tactile-btn" href="#">
-                        Inquire About Sessions <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container-low dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline mt-auto w-full">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-screen-2xl mx-auto">
-<!-- Brand -->
-<div class="col-span-1 md:col-span-1">
-<div class="font-display-lg text-display-lg text-primary dark:text-inverse-primary mb-4 text-2xl">Studio IKI</div>
-<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-secondary-fixed-variant text-sm">© 2024 Studio IKI. Built with intention.</p>
-</div>
-<!-- Links -->
-<div class="col-span-1 md:col-span-3 flex flex-wrap gap-x-8 gap-y-4 md:justify-end items-start pt-2">
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim underline transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim underline transition-all opacity-80 hover:opacity-100" href="#">Terms of Service</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim underline transition-all opacity-80 hover:opacity-100" href="#">Inquiry</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim underline transition-all opacity-80 hover:opacity-100" href="#">Social</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim underline transition-all opacity-80 hover:opacity-100" href="#">Credentials</a>
-</div>
-</div>
-</footer>
-<script>
-        // Mobile Menu Logic
-        const menuBtn = document.getElementById('menu-btn');
-        const closeBtn = document.getElementById('close-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const overlay = document.getElementById('mobile-overlay');
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="bg-surface-container-low dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline mt-auto w-full"
+    >
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-screen-2xl mx-auto"
+      >
+        <!-- Brand -->
+        <div class="col-span-1 md:col-span-1">
+          <div
+            class="font-display-lg text-display-lg text-primary dark:text-inverse-primary mb-4 text-2xl"
+          >
+            Studio IKI
+          </div>
+          <p
+            class="font-body-md text-body-md text-on-surface-variant dark:text-on-secondary-fixed-variant text-sm"
+          >
+            © 2024 Studio IKI. Built with intention.
+          </p>
+        </div>
+        <!-- Links -->
+        <div
+          class="col-span-1 md:col-span-3 flex flex-wrap gap-x-8 gap-y-4 md:justify-end items-start pt-2"
+        >
+          <a
+            class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim underline transition-all opacity-80 hover:opacity-100"
+            href="#"
+            >Privacy Policy</a
+          >
+          <a
+            class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim underline transition-all opacity-80 hover:opacity-100"
+            href="#"
+            >Terms of Service</a
+          >
+          <a
+            class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim underline transition-all opacity-80 hover:opacity-100"
+            href="#"
+            >Inquiry</a
+          >
+          <a
+            class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim underline transition-all opacity-80 hover:opacity-100"
+            href="#"
+            >Social</a
+          >
+          <a
+            class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim underline transition-all opacity-80 hover:opacity-100"
+            href="#"
+            >Credentials</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Mobile Menu Logic
+      const menuBtn = document.getElementById("menu-btn");
+      const closeBtn = document.getElementById("close-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const overlay = document.getElementById("mobile-overlay");
 
-        function toggleMenu() {
-            const isOpen = mobileMenu.classList.contains('open');
-            if (isOpen) {
-                mobileMenu.classList.remove('open');
-                overlay.classList.add('hidden');
-                document.body.style.overflow = '';
-            } else {
-                mobileMenu.classList.add('open');
-                overlay.classList.remove('hidden');
-                document.body.style.overflow = 'hidden'; // Prevent scrolling
-            }
+      function toggleMenu() {
+        const isOpen = mobileMenu.classList.contains("open");
+        if (isOpen) {
+          mobileMenu.classList.remove("open");
+          overlay.classList.add("hidden");
+          document.body.style.overflow = "";
+        } else {
+          mobileMenu.classList.add("open");
+          overlay.classList.remove("hidden");
+          document.body.style.overflow = "hidden"; // Prevent scrolling
         }
+      }
 
-        menuBtn.addEventListener('click', toggleMenu);
-        closeBtn.addEventListener('click', toggleMenu);
-        overlay.addEventListener('click', toggleMenu);
+      menuBtn.addEventListener("click", toggleMenu);
+      closeBtn.addEventListener("click", toggleMenu);
+      overlay.addEventListener("click", toggleMenu);
     </script>
-</body></html>
+  </body>
+</html>

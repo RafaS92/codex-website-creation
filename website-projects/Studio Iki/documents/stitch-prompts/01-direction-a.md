@@ -245,4 +245,3 @@ Before finishing, confirm that:
 - All pending content is visibly labelled without invented details.
 - Contrast, focus, keyboard behavior, touch targets, reading order, form states, and reduced motion meet the brief.
 - Only the visual system differs from the other possible directions.
-

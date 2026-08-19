@@ -25,15 +25,15 @@ The page rhythm alternates white and warm porcelain sections. Content is arrange
 
 ## 3. Screen inventory
 
-| Page | Primary design evidence | Structural source | Coverage |
-|---|---|---|---|
-| Home | [Screenshot](stitch/screenshots/01-home.png) | [HTML](stitch/html/01-home.html) | Complete long-form desktop screen; responsive rules included |
-| Jikiden Reiki Seminar | [Screenshot](stitch/screenshots/02-jikiden-reiki-seminar.jpg) | [HTML](stitch/html/02-jikiden-reiki-seminar.html) | Complete primary-offer screen |
-| Therapies | [Screenshot](stitch/screenshots/03-therapies.jpg) | [HTML](stitch/html/03-therapies.html) | Complete overview and four-service detail screen |
-| About & Philosophy | [Screenshot](stitch/screenshots/04-about-philosophy.jpg) | [HTML](stitch/html/04-about-philosophy.html) | Complete practitioner and philosophy screen |
-| Events | [Screenshot](stitch/screenshots/05-events.jpg) | [HTML](stitch/html/05-events.html) | Complete listing treatment; event content is placeholder-only |
-| FAQ | [Screenshot](stitch/screenshots/06-faq.jpg) | [HTML](stitch/html/06-faq.html) | Complete grouped FAQ treatment; answers require content approval |
-| Contact / Inquiry | [Screenshot](stitch/screenshots/07-contact-inquiry.jpg) | [HTML](stitch/html/07-contact-inquiry.html) | Visual shell and contact card supplied; required form markup is missing |
+| Page                  | Primary design evidence                                       | Structural source                                 | Coverage                                                                |
+| --------------------- | ------------------------------------------------------------- | ------------------------------------------------- | ----------------------------------------------------------------------- |
+| Home                  | [Screenshot](stitch/screenshots/01-home.png)                  | [HTML](stitch/html/01-home.html)                  | Complete long-form desktop screen; responsive rules included            |
+| Jikiden Reiki Seminar | [Screenshot](stitch/screenshots/02-jikiden-reiki-seminar.jpg) | [HTML](stitch/html/02-jikiden-reiki-seminar.html) | Complete primary-offer screen                                           |
+| Therapies             | [Screenshot](stitch/screenshots/03-therapies.jpg)             | [HTML](stitch/html/03-therapies.html)             | Complete overview and four-service detail screen                        |
+| About & Philosophy    | [Screenshot](stitch/screenshots/04-about-philosophy.jpg)      | [HTML](stitch/html/04-about-philosophy.html)      | Complete practitioner and philosophy screen                             |
+| Events                | [Screenshot](stitch/screenshots/05-events.jpg)                | [HTML](stitch/html/05-events.html)                | Complete listing treatment; event content is placeholder-only           |
+| FAQ                   | [Screenshot](stitch/screenshots/06-faq.jpg)                   | [HTML](stitch/html/06-faq.html)                   | Complete grouped FAQ treatment; answers require content approval        |
+| Contact / Inquiry     | [Screenshot](stitch/screenshots/07-contact-inquiry.jpg)       | [HTML](stitch/html/07-contact-inquiry.html)       | Visual shell and contact card supplied; required form markup is missing |
 
 Privacy Policy and Terms / Booking Policy have no dedicated Stitch screens. They should reuse the final header, footer, typography, content width, spacing, colors, borders, and form/legal text styling without inventing policy content.
 
@@ -43,13 +43,13 @@ Privacy Policy and Terms / Booking Policy have no dedicated Stitch screens. They
 
 Preserve the approved fixed palette:
 
-| Role | Color | Use |
-|---|---|---|
-| Porcelain | `#FBF8F6` | Primary warm page and section background |
-| Warm Greige | `#DCD2CC` | Borders, dividers, muted surfaces |
-| Dusty Lavender | `#B8A6BD` | Restrained supporting accent |
-| Soft Mauve | `#C998A5` | Secondary accent, selected labels, subtle emphasis |
-| Plum Gray | `#574B56` | Primary text, navigation emphasis, filled controls |
+| Role           | Color     | Use                                                |
+| -------------- | --------- | -------------------------------------------------- |
+| Porcelain      | `#FBF8F6` | Primary warm page and section background           |
+| Warm Greige    | `#DCD2CC` | Borders, dividers, muted surfaces                  |
+| Dusty Lavender | `#B8A6BD` | Restrained supporting accent                       |
+| Soft Mauve     | `#C998A5` | Secondary accent, selected labels, subtle emphasis |
+| Plum Gray      | `#574B56` | Primary text, navigation emphasis, filled controls |
 
 The generated system also uses near-white surface values and darker plum-derived text values for contrast. Any implementation shades must remain visibly within the approved palette family. Do not introduce navy blue, green, or brown as UI colors. Natural photography may contain environmental colors.
 

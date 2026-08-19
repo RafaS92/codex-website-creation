@@ -8,15 +8,15 @@ Build a responsive, multi-page Studio IKI website that promotes authentic Jikide
 
 The build has paired full-resolution desktop screenshots and generated responsive HTML for seven primary pages. Use the screenshot for visual truth and the matching HTML for section structure, responsive intent, classes, interactions, image framing, and detailed sizing relationships:
 
-| Page | Screenshot | Generated HTML |
-|---|---|---|
-| Home | `documents/stitch/screenshots/01-home.png` | `documents/stitch/html/01-home.html` |
+| Page                  | Screenshot                                                  | Generated HTML                                        |
+| --------------------- | ----------------------------------------------------------- | ----------------------------------------------------- |
+| Home                  | `documents/stitch/screenshots/01-home.png`                  | `documents/stitch/html/01-home.html`                  |
 | Jikiden Reiki Seminar | `documents/stitch/screenshots/02-jikiden-reiki-seminar.jpg` | `documents/stitch/html/02-jikiden-reiki-seminar.html` |
-| Therapies | `documents/stitch/screenshots/03-therapies.jpg` | `documents/stitch/html/03-therapies.html` |
-| About & Philosophy | `documents/stitch/screenshots/04-about-philosophy.jpg` | `documents/stitch/html/04-about-philosophy.html` |
-| Events | `documents/stitch/screenshots/05-events.jpg` | `documents/stitch/html/05-events.html` |
-| FAQ | `documents/stitch/screenshots/06-faq.jpg` | `documents/stitch/html/06-faq.html` |
-| Contact / Inquiry | `documents/stitch/screenshots/07-contact-inquiry.jpg` | `documents/stitch/html/07-contact-inquiry.html` |
+| Therapies             | `documents/stitch/screenshots/03-therapies.jpg`             | `documents/stitch/html/03-therapies.html`             |
+| About & Philosophy    | `documents/stitch/screenshots/04-about-philosophy.jpg`      | `documents/stitch/html/04-about-philosophy.html`      |
+| Events                | `documents/stitch/screenshots/05-events.jpg`                | `documents/stitch/html/05-events.html`                |
+| FAQ                   | `documents/stitch/screenshots/06-faq.jpg`                   | `documents/stitch/html/06-faq.html`                   |
+| Contact / Inquiry     | `documents/stitch/screenshots/07-contact-inquiry.jpg`       | `documents/stitch/html/07-contact-inquiry.html`       |
 
 No dedicated mobile screenshots were exported. Mobile and tablet layouts must therefore follow the responsive HTML and the approved responsive rules in `02-design.md`; these responsive details are implementation inferences and require build-stage visual QA. Privacy and Terms / Booking Policy also have no screen-level references and must inherit the approved global shell and long-form content styling.
 
@@ -30,7 +30,7 @@ Do not copy generated Stitch facts blindly. The approved discovery document cont
 - SCSS using mobile-first styles and `rem` units only
 - AOS for a small number of subtle on-scroll reveals
 - Sanity CMS
-- i18n 
+- i18n
 - Semantic HTML5
 - Native browser form controls with React-managed validation
 - Local content/data modules for services, navigation, FAQs, credentials, and events
@@ -136,18 +136,18 @@ Folder responsibilities:
 
 ## 4. Routing / Page Structure
 
-| Route | Page component | Status / reference |
-|---|---|---|
-| `/` | `HomePage` | Direct Stitch screen reference |
-| `/jikiden-reiki-seminar` | `SeminarPage` | Direct Stitch screen reference |
-| `/therapies` | `TherapiesPage` | Direct Stitch screen reference |
-| `/about` | `AboutPage` | Direct Stitch screen reference |
-| `/events` | `EventsPage` | Direct Stitch screen reference |
-| `/faq` | `FAQPage` | Direct Stitch screen reference |
-| `/contact` | `ContactPage` | Stitch shell/reference; form layout completion required |
-| `/privacy` | `LegalPage` configured for privacy | Layout inference; content pending |
-| `/terms` | `LegalPage` configured for terms/booking | Conditional layout inference; content pending |
-| `*` | `NotFoundPage` | Global-system inference |
+| Route                    | Page component                           | Status / reference                                      |
+| ------------------------ | ---------------------------------------- | ------------------------------------------------------- |
+| `/`                      | `HomePage`                               | Direct Stitch screen reference                          |
+| `/jikiden-reiki-seminar` | `SeminarPage`                            | Direct Stitch screen reference                          |
+| `/therapies`             | `TherapiesPage`                          | Direct Stitch screen reference                          |
+| `/about`                 | `AboutPage`                              | Direct Stitch screen reference                          |
+| `/events`                | `EventsPage`                             | Direct Stitch screen reference                          |
+| `/faq`                   | `FAQPage`                                | Direct Stitch screen reference                          |
+| `/contact`               | `ContactPage`                            | Stitch shell/reference; form layout completion required |
+| `/privacy`               | `LegalPage` configured for privacy       | Layout inference; content pending                       |
+| `/terms`                 | `LegalPage` configured for terms/booking | Conditional layout inference; content pending           |
+| `*`                      | `NotFoundPage`                           | Global-system inference                                 |
 
 Routing rules:
 
@@ -164,56 +164,56 @@ Routing rules:
 
 ### Layout and navigation
 
-| Component | Purpose and props | Used by | SCSS |
-|---|---|---|---|
-| `SiteLayout` | Shared shell; owns skip link, `Header`, `main`, route outlet, and `Footer` | All routes | `SiteLayout.scss` |
-| `Header` | Desktop navigation and mobile trigger; props: `navItems`, `primaryCta` | `SiteLayout` | `Header.scss` |
-| `MobileMenu` | Accessible small-screen navigation dialog/drawer; props: `open`, `onClose`, `navItems` | `Header` | `MobileMenu.scss` |
-| `Footer` | Wordmark, dynamic year, legal and contact links; props: `links`, `socialLinks` | `SiteLayout` | `Footer.scss` |
-| `ScrollToTop` | Route-change scroll behavior; no rendered UI | App routing | No SCSS |
+| Component     | Purpose and props                                                                      | Used by      | SCSS              |
+| ------------- | -------------------------------------------------------------------------------------- | ------------ | ----------------- |
+| `SiteLayout`  | Shared shell; owns skip link, `Header`, `main`, route outlet, and `Footer`             | All routes   | `SiteLayout.scss` |
+| `Header`      | Desktop navigation and mobile trigger; props: `navItems`, `primaryCta`                 | `SiteLayout` | `Header.scss`     |
+| `MobileMenu`  | Accessible small-screen navigation dialog/drawer; props: `open`, `onClose`, `navItems` | `Header`     | `MobileMenu.scss` |
+| `Footer`      | Wordmark, dynamic year, legal and contact links; props: `links`, `socialLinks`         | `SiteLayout` | `Footer.scss`     |
+| `ScrollToTop` | Route-change scroll behavior; no rendered UI                                           | App routing  | No SCSS           |
 
 Use one mobile navigation pattern across the site. The varying bottom-navigation treatments found in generated HTML are not separate requirements.
 
 ### Foundational UI
 
-| Component | Purpose and props | Used by | SCSS |
-|---|---|---|---|
-| `Button` | Link or button visual variants; props: `as`, `variant`, `to`, `type`, `disabled`, `children`, icon options | Global | `Button.scss` |
-| `SectionContainer` | Reusable max-width, margins, and vertical spacing; props: `as`, `tone`, `size`, `className` | All sections | Shared `SectionContainer.scss` |
-| `SectionHeading` | Consistent eyebrow/title/body alignment; props: `eyebrow`, `title`, `body`, `align`, `headingLevel` | Most pages | `SectionHeading.scss` |
-| `ImageFrame` | Approved rounded border/crop treatment; props: `src`, `alt`, `ratio`, `position`, `loading`, `sizes` | Heroes/features/cards | `ImageFrame.scss` |
-| `StatusChip` | Event status with text and icon; props: `label`, `state` | Event cards/details | `StatusChip.scss` |
+| Component          | Purpose and props                                                                                          | Used by               | SCSS                           |
+| ------------------ | ---------------------------------------------------------------------------------------------------------- | --------------------- | ------------------------------ |
+| `Button`           | Link or button visual variants; props: `as`, `variant`, `to`, `type`, `disabled`, `children`, icon options | Global                | `Button.scss`                  |
+| `SectionContainer` | Reusable max-width, margins, and vertical spacing; props: `as`, `tone`, `size`, `className`                | All sections          | Shared `SectionContainer.scss` |
+| `SectionHeading`   | Consistent eyebrow/title/body alignment; props: `eyebrow`, `title`, `body`, `align`, `headingLevel`        | Most pages            | `SectionHeading.scss`          |
+| `ImageFrame`       | Approved rounded border/crop treatment; props: `src`, `alt`, `ratio`, `position`, `loading`, `sizes`       | Heroes/features/cards | `ImageFrame.scss`              |
+| `StatusChip`       | Event status with text and icon; props: `label`, `state`                                                   | Event cards/details   | `StatusChip.scss`              |
 
 `SectionContainer` may share layout styles; do not duplicate the desktop margin and section-padding rules across every page.
 
 ### Content components
 
-| Component | Purpose and props | Used by | SCSS |
-|---|---|---|---|
-| `ServiceCard` | Short service overview; props: `title`, `summary`, `to`, optional icon | Home, Therapies | `ServiceCard.scss` |
-| `ServiceDetail` | Alternating long-form therapy row; props: `service`, `imageSide`, `cta` | Therapies | `ServiceDetail.scss` |
-| `EventCard` | Image, status, metadata, title, summary, action; props: `event` | Home, Events | `EventCard.scss` |
-| `TestimonialCard` | Approved quotation and attribution; props: `quote`, `name`, `context` | Home, Seminar | `TestimonialCard.scss` |
-| `FAQItem` | Accessible disclosure or static bordered Q&A; props: `question`, `answer`, `defaultOpen`, `headingLevel` | Home, FAQ, Seminar | `FAQItem.scss` |
-| `ContactCard` | Portrait and confirmed direct-contact methods; props: `practitioner`, `channels`, `location` | Contact | `ContactCard.scss` |
-| `ContactForm` | Inquiry-purpose form, validation, submission states; props: `initialPurpose`, `onSubmit`, `privacyUrl` | Contact | `ContactForm.scss` |
+| Component         | Purpose and props                                                                                        | Used by            | SCSS                   |
+| ----------------- | -------------------------------------------------------------------------------------------------------- | ------------------ | ---------------------- |
+| `ServiceCard`     | Short service overview; props: `title`, `summary`, `to`, optional icon                                   | Home, Therapies    | `ServiceCard.scss`     |
+| `ServiceDetail`   | Alternating long-form therapy row; props: `service`, `imageSide`, `cta`                                  | Therapies          | `ServiceDetail.scss`   |
+| `EventCard`       | Image, status, metadata, title, summary, action; props: `event`                                          | Home, Events       | `EventCard.scss`       |
+| `TestimonialCard` | Approved quotation and attribution; props: `quote`, `name`, `context`                                    | Home, Seminar      | `TestimonialCard.scss` |
+| `FAQItem`         | Accessible disclosure or static bordered Q&A; props: `question`, `answer`, `defaultOpen`, `headingLevel` | Home, FAQ, Seminar | `FAQItem.scss`         |
+| `ContactCard`     | Portrait and confirmed direct-contact methods; props: `practitioner`, `channels`, `location`             | Contact            | `ContactCard.scss`     |
+| `ContactForm`     | Inquiry-purpose form, validation, submission states; props: `initialPurpose`, `onSubmit`, `privacyUrl`   | Contact            | `ContactForm.scss`     |
 
 Render testimonials, events, contact channels, and social links from data. If records are absent or unapproved, use an intentional empty/pending state in development and omit the public module at production time; do not invent records to fill the layout.
 
 ### Reusable sections
 
-| Component | Purpose and props | Used by | SCSS |
-|---|---|---|---|
-| `Hero` | Split or centered page introduction; props: `variant`, `title`, `body`, `actions`, `image` | All primary pages | `Hero.scss` |
-| `SeminarFeature` | Primary-offer copy/image band | Home | `SeminarFeature.scss` |
-| `ServicesGrid` | Responsive four-service grid | Home, Therapies | `ServicesGrid.scss` |
-| `AboutFeature` | Practitioner portrait, story, credentials, action | Home, About | `AboutFeature.scss` |
-| `HealingGardenFeature` | Centered copy and landscape image panel | Home, About | `HealingGardenFeature.scss` |
-| `PhilosophyQuote` | EB Garamond editorial quotation band | Home, About | `PhilosophyQuote.scss` |
-| `EventsPreview` | Three-card event preview and page link | Home | `EventsPreview.scss` |
-| `FAQPreview` | Small FAQ subset and full FAQ link | Home, Seminar | `FAQPreview.scss` |
-| `TestimonialsSection` | Approved testimonial grid or omitted state | Home, Seminar | `TestimonialsSection.scss` |
-| `CTASection` | Warm full-width conversion band; props: `title`, `body`, `actions`, `tone` | All conversion pages | `CTASection.scss` |
+| Component              | Purpose and props                                                                          | Used by              | SCSS                        |
+| ---------------------- | ------------------------------------------------------------------------------------------ | -------------------- | --------------------------- |
+| `Hero`                 | Split or centered page introduction; props: `variant`, `title`, `body`, `actions`, `image` | All primary pages    | `Hero.scss`                 |
+| `SeminarFeature`       | Primary-offer copy/image band                                                              | Home                 | `SeminarFeature.scss`       |
+| `ServicesGrid`         | Responsive four-service grid                                                               | Home, Therapies      | `ServicesGrid.scss`         |
+| `AboutFeature`         | Practitioner portrait, story, credentials, action                                          | Home, About          | `AboutFeature.scss`         |
+| `HealingGardenFeature` | Centered copy and landscape image panel                                                    | Home, About          | `HealingGardenFeature.scss` |
+| `PhilosophyQuote`      | EB Garamond editorial quotation band                                                       | Home, About          | `PhilosophyQuote.scss`      |
+| `EventsPreview`        | Three-card event preview and page link                                                     | Home                 | `EventsPreview.scss`        |
+| `FAQPreview`           | Small FAQ subset and full FAQ link                                                         | Home, Seminar        | `FAQPreview.scss`           |
+| `TestimonialsSection`  | Approved testimonial grid or omitted state                                                 | Home, Seminar        | `TestimonialsSection.scss`  |
+| `CTASection`           | Warm full-width conversion band; props: `title`, `body`, `actions`, `tone`                 | All conversion pages | `CTASection.scss`           |
 
 ## 6. Section Breakdown
 

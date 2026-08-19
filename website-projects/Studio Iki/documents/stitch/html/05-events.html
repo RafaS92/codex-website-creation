@@ -1,324 +1,657 @@
-<!DOCTYPE html><html lang="en"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Studio IKI - Events</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&amp;family=EB+Garamond:wght@400&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "inverse-primary": "#d2c2cf",
-                        "on-primary-container": "#ccbcc9",
-                        "on-surface": "#1f1b17",
-                        "secondary-container": "#ffc9d7",
-                        "secondary-fixed": "#ffd9e2",
-                        "surface-container-lowest": "#ffffff",
-                        "tertiary-fixed": "#f0dcf5",
-                        "surface-container-high": "#f1e6e0",
-                        "on-background": "#1f1b17",
-                        "primary-fixed-dim": "#d2c2cf",
-                        "tertiary-fixed-dim": "#d3c0d8",
-                        "surface-container-low": "#fcf2eb",
-                        "surface-tint": "#675b66",
-                        "on-secondary-fixed": "#30121c",
-                        "outline": "#7c757a",
-                        "on-secondary": "#ffffff",
-                        "on-error": "#ffffff",
-                        "on-surface-variant": "#4b454a",
-                        "on-tertiary": "#ffffff",
-                        "on-tertiary-fixed": "#231728",
-                        "on-secondary-fixed-variant": "#623c47",
-                        "surface-bright": "#fff8f5",
-                        "on-secondary-container": "#7b525d",
-                        "error": "#ba1a1a",
-                        "tertiary": "#403346",
-                        "inverse-on-surface": "#f9efe8",
-                        "primary-fixed": "#efddeb",
-                        "inverse-surface": "#352f2b",
-                        "on-tertiary-fixed-variant": "#504255",
-                        "secondary-fixed-dim": "#edb9c6",
-                        "primary-container": "#574b56",
-                        "surface-container": "#f6ece6",
-                        "background": "#fff8f5",
-                        "on-primary-fixed-variant": "#4f434e",
-                        "outline-variant": "#cdc4ca",
-                        "surface": "#fff8f5",
-                        "on-tertiary-container": "#cdbbd2",
-                        "surface-variant": "#ebe1da",
-                        "on-primary": "#ffffff",
-                        "on-primary-fixed": "#221822",
-                        "surface-dim": "#e2d8d2",
-                        "secondary": "#7c535f",
-                        "on-error-container": "#93000a",
-                        "surface-container-highest": "#ebe1da",
-                        "error-container": "#ffdad6",
-                        "primary": "#3f343f",
-                        "tertiary-container": "#584a5e"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "margin-mobile": "20px",
-                        "gutter": "24px",
-                        "margin-desktop": "64px",
-                        "base": "8px",
-                        "section-gap": "80px"
-                    },
-                    "fontFamily": {
-                        "display-lg": ["Be Vietnam Pro"],
-                        "body-md": ["Be Vietnam Pro"],
-                        "headline-lg": ["Be Vietnam Pro"],
-                        "body-lg": ["Be Vietnam Pro"],
-                        "label-md": ["Be Vietnam Pro"],
-                        "headline-lg-mobile": ["Be Vietnam Pro"],
-                        "philosophy-accent": ["EB Garamond"]
-                    },
-                    "fontSize": {
-                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
-                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
-                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
-                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
-                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
-                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
-                        "philosophy-accent": ["24px", { "lineHeight": "32px", "fontWeight": "400" }]
-                    }
-                },
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Studio IKI - Events</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&amp;family=EB+Garamond:wght@400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-primary": "#d2c2cf",
+              "on-primary-container": "#ccbcc9",
+              "on-surface": "#1f1b17",
+              "secondary-container": "#ffc9d7",
+              "secondary-fixed": "#ffd9e2",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed": "#f0dcf5",
+              "surface-container-high": "#f1e6e0",
+              "on-background": "#1f1b17",
+              "primary-fixed-dim": "#d2c2cf",
+              "tertiary-fixed-dim": "#d3c0d8",
+              "surface-container-low": "#fcf2eb",
+              "surface-tint": "#675b66",
+              "on-secondary-fixed": "#30121c",
+              outline: "#7c757a",
+              "on-secondary": "#ffffff",
+              "on-error": "#ffffff",
+              "on-surface-variant": "#4b454a",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed": "#231728",
+              "on-secondary-fixed-variant": "#623c47",
+              "surface-bright": "#fff8f5",
+              "on-secondary-container": "#7b525d",
+              error: "#ba1a1a",
+              tertiary: "#403346",
+              "inverse-on-surface": "#f9efe8",
+              "primary-fixed": "#efddeb",
+              "inverse-surface": "#352f2b",
+              "on-tertiary-fixed-variant": "#504255",
+              "secondary-fixed-dim": "#edb9c6",
+              "primary-container": "#574b56",
+              "surface-container": "#f6ece6",
+              background: "#fff8f5",
+              "on-primary-fixed-variant": "#4f434e",
+              "outline-variant": "#cdc4ca",
+              surface: "#fff8f5",
+              "on-tertiary-container": "#cdbbd2",
+              "surface-variant": "#ebe1da",
+              "on-primary": "#ffffff",
+              "on-primary-fixed": "#221822",
+              "surface-dim": "#e2d8d2",
+              secondary: "#7c535f",
+              "on-error-container": "#93000a",
+              "surface-container-highest": "#ebe1da",
+              "error-container": "#ffdad6",
+              primary: "#3f343f",
+              "tertiary-container": "#584a5e",
             },
-        }
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "margin-mobile": "20px",
+              gutter: "24px",
+              "margin-desktop": "64px",
+              base: "8px",
+              "section-gap": "80px",
+            },
+            fontFamily: {
+              "display-lg": ["Be Vietnam Pro"],
+              "body-md": ["Be Vietnam Pro"],
+              "headline-lg": ["Be Vietnam Pro"],
+              "body-lg": ["Be Vietnam Pro"],
+              "label-md": ["Be Vietnam Pro"],
+              "headline-lg-mobile": ["Be Vietnam Pro"],
+              "philosophy-accent": ["EB Garamond"],
+            },
+            fontSize: {
+              "display-lg": [
+                "48px",
+                {
+                  lineHeight: "56px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+              "headline-lg": [
+                "32px",
+                {
+                  lineHeight: "40px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "500",
+                },
+              ],
+              "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+              "label-md": [
+                "14px",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0.05em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-lg-mobile": [
+                "28px",
+                { lineHeight: "36px", fontWeight: "500" },
+              ],
+              "philosophy-accent": [
+                "24px",
+                { lineHeight: "32px", fontWeight: "400" },
+              ],
+            },
+          },
+        },
+      };
     </script>
-<style>
-        body { background-color: theme('colors.surface'); color: theme('colors.on-surface'); }
+    <style>
+      body {
+        background-color: theme("colors.surface");
+        color: theme("colors.on-surface");
+      }
     </style>
-</head>
-<body class="antialiased flex flex-col min-h-screen relative">
-<!-- Top Navigation (Desktop) -->
-<nav class="hidden md:flex bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline docked full-width top-0 z-40 sticky w-full">
-<div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-screen-2xl mx-auto">
-<div class="font-display-lg text-display-lg tracking-tight text-primary dark:text-inverse-primary">Studio IKI</div>
-<div class="flex gap-8 items-center">
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300" href="#">Home</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300" href="#">Seminar</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300" href="#">Therapies</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300" href="#">About</a>
-<a class="font-label-md text-label-md text-primary dark:text-inverse-primary border-b-2 border-primary dark:border-inverse-primary pb-1 scale-95 transition-transform duration-200" href="#">Events</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300" href="#">FAQ</a>
-</div>
-<div class="flex gap-4">
-<button class="font-label-md text-label-md text-primary hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 px-4 py-2 border border-outline-variant rounded">Contact</button>
-<button class="font-label-md text-label-md bg-primary text-on-primary rounded px-4 py-2 hover:bg-surface-tint transition-colors duration-300">Join a Seminar</button>
-</div>
-</div>
-</nav>
-<!-- Side Navigation (Mobile) -->
-<nav class="md:hidden flex flex-col h-full p-margin-mobile bg-surface-container dark:bg-surface-container-highest shadow-2xl h-full w-80 fixed right-0 top-0 z-50 transform translate-x-full transition-transform duration-500 ease-in-out" id="mobile-menu">
-<div class="flex justify-between items-center mb-8">
-<div>
-<div class="font-display-lg text-display-lg text-primary dark:text-inverse-primary">Studio IKI</div>
-<div class="font-label-md text-label-md text-on-surface-variant">Holistic Wellness</div>
-</div>
-<button class="text-on-surface-variant" id="close-menu">
-<span class="material-symbols-outlined">close</span>
-</button>
-</div>
-<div class="flex flex-col gap-2 flex-grow">
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors rounded-lg" href="#">
-<span class="material-symbols-outlined">home</span> Home
-            </a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors rounded-lg" href="#">
-<span class="material-symbols-outlined">school</span> Seminar
-            </a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors rounded-lg" href="#">
-<span class="material-symbols-outlined">self_care</span> Therapies
-            </a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors rounded-lg" href="#">
-<span class="material-symbols-outlined">info</span> About
-            </a>
-<a class="font-label-md text-label-md bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-lg px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors" href="#">
-<span class="material-symbols-outlined">calendar_today</span> Events
-            </a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors rounded-lg" href="#">
-<span class="material-symbols-outlined">quiz</span> FAQ
-            </a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors rounded-lg mt-auto" href="#">
-<span class="material-symbols-outlined">mail</span> Contact
-            </a>
-</div>
-<div class="mt-4">
-<button class="w-full font-label-md text-label-md bg-primary text-on-primary rounded px-4 py-3 hover:bg-surface-tint transition-colors duration-300">Join Seminar</button>
-</div>
-</nav>
-<div class="md:hidden p-4 flex justify-between items-center border-b border-outline-variant">
-<div class="font-display-lg text-display-lg tracking-tight text-primary">Studio IKI</div>
-<button class="text-primary" id="open-menu"><span class="material-symbols-outlined">menu</span></button>
-</div>
-<!-- Main Content -->
-<main class="flex-grow">
-<!-- Introduction Header -->
-<section class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-screen-2xl mx-auto text-center border-b border-outline-variant">
-<h1 class="font-display-lg text-display-lg text-primary mb-6">Gatherings &amp; Events</h1>
-<p class="font-philosophy-accent text-philosophy-accent text-on-surface-variant max-w-2xl mx-auto">
-                Join us in a shared space of healing, learning, and connection. Our events are carefully curated to foster mindfulness and spiritual growth within a supportive community.
+  </head>
+  <body class="antialiased flex flex-col min-h-screen relative">
+    <!-- Top Navigation (Desktop) -->
+    <nav
+      class="hidden md:flex bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline docked full-width top-0 z-40 sticky w-full"
+    >
+      <div
+        class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-screen-2xl mx-auto"
+      >
+        <div
+          class="font-display-lg text-display-lg tracking-tight text-primary dark:text-inverse-primary"
+        >
+          Studio IKI
+        </div>
+        <div class="flex gap-8 items-center">
+          <a
+            class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300"
+            href="#"
+            >Home</a
+          >
+          <a
+            class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300"
+            href="#"
+            >Seminar</a
+          >
+          <a
+            class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300"
+            href="#"
+            >Therapies</a
+          >
+          <a
+            class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300"
+            href="#"
+            >About</a
+          >
+          <a
+            class="font-label-md text-label-md text-primary dark:text-inverse-primary border-b-2 border-primary dark:border-inverse-primary pb-1 scale-95 transition-transform duration-200"
+            href="#"
+            >Events</a
+          >
+          <a
+            class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300"
+            href="#"
+            >FAQ</a
+          >
+        </div>
+        <div class="flex gap-4">
+          <button
+            class="font-label-md text-label-md text-primary hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 px-4 py-2 border border-outline-variant rounded"
+          >
+            Contact
+          </button>
+          <button
+            class="font-label-md text-label-md bg-primary text-on-primary rounded px-4 py-2 hover:bg-surface-tint transition-colors duration-300"
+          >
+            Join a Seminar
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Side Navigation (Mobile) -->
+    <nav
+      class="md:hidden flex flex-col h-full p-margin-mobile bg-surface-container dark:bg-surface-container-highest shadow-2xl h-full w-80 fixed right-0 top-0 z-50 transform translate-x-full transition-transform duration-500 ease-in-out"
+      id="mobile-menu"
+    >
+      <div class="flex justify-between items-center mb-8">
+        <div>
+          <div
+            class="font-display-lg text-display-lg text-primary dark:text-inverse-primary"
+          >
+            Studio IKI
+          </div>
+          <div class="font-label-md text-label-md text-on-surface-variant">
+            Holistic Wellness
+          </div>
+        </div>
+        <button class="text-on-surface-variant" id="close-menu">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <div class="flex flex-col gap-2 flex-grow">
+        <a
+          class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors rounded-lg"
+          href="#"
+        >
+          <span class="material-symbols-outlined">home</span> Home
+        </a>
+        <a
+          class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors rounded-lg"
+          href="#"
+        >
+          <span class="material-symbols-outlined">school</span> Seminar
+        </a>
+        <a
+          class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors rounded-lg"
+          href="#"
+        >
+          <span class="material-symbols-outlined">self_care</span> Therapies
+        </a>
+        <a
+          class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors rounded-lg"
+          href="#"
+        >
+          <span class="material-symbols-outlined">info</span> About
+        </a>
+        <a
+          class="font-label-md text-label-md bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-lg px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors"
+          href="#"
+        >
+          <span class="material-symbols-outlined">calendar_today</span> Events
+        </a>
+        <a
+          class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors rounded-lg"
+          href="#"
+        >
+          <span class="material-symbols-outlined">quiz</span> FAQ
+        </a>
+        <a
+          class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant px-4 py-3 flex items-center gap-3 hover:bg-surface-container-high dark:hover:bg-surface-container-low transition-colors rounded-lg mt-auto"
+          href="#"
+        >
+          <span class="material-symbols-outlined">mail</span> Contact
+        </a>
+      </div>
+      <div class="mt-4">
+        <button
+          class="w-full font-label-md text-label-md bg-primary text-on-primary rounded px-4 py-3 hover:bg-surface-tint transition-colors duration-300"
+        >
+          Join Seminar
+        </button>
+      </div>
+    </nav>
+    <div
+      class="md:hidden p-4 flex justify-between items-center border-b border-outline-variant"
+    >
+      <div class="font-display-lg text-display-lg tracking-tight text-primary">
+        Studio IKI
+      </div>
+      <button class="text-primary" id="open-menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+    <!-- Main Content -->
+    <main class="flex-grow">
+      <!-- Introduction Header -->
+      <section
+        class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-screen-2xl mx-auto text-center border-b border-outline-variant"
+      >
+        <h1 class="font-display-lg text-display-lg text-primary mb-6">
+          Gatherings &amp; Events
+        </h1>
+        <p
+          class="font-philosophy-accent text-philosophy-accent text-on-surface-variant max-w-2xl mx-auto"
+        >
+          Join us in a shared space of healing, learning, and connection. Our
+          events are carefully curated to foster mindfulness and spiritual
+          growth within a supportive community.
+        </p>
+      </section>
+      <!-- Upcoming Events Listing -->
+      <section
+        class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-screen-2xl mx-auto"
+      >
+        <h2
+          class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-12"
+        >
+          Upcoming Gatherings
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+          <!-- Event Card 1 -->
+          <div
+            class="bg-surface-container rounded-lg overflow-hidden border border-outline-variant flex flex-col group cursor-pointer hover:bg-surface-container-high transition-colors"
+          >
+            <div class="relative h-48 bg-surface-variant overflow-hidden">
+              <img
+                class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+                data-alt="A tranquil meditation space with soft natural light filtering through bamboo blinds, featuring cushions arranged in a circle on a wooden floor."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMsDQw7sM-nM2oICIppFGEHD0CrP1aPJOq4_Ciyw2Zh8EngJk-WLZayFkYEtZCXKaSSSrwElE3OU-itvOTopwtpiOZCCy6IPbog1TdXvZbCktle8CB2fhTxeO430tgynmcEPUFEacMe2gOnbp3LJIxO1cTeOY6ndXQmDjApwPCaNdN0jIg7z-RqFiWdyUpI00PStcXinNQKz6TfiEWhV40ZPr-h65YUBBu2Qq3q6Cya8JWrb0OYBfE"
+              />
+              <div
+                class="absolute top-4 left-4 bg-surface/90 backdrop-blur px-3 py-1 rounded font-label-md text-label-md text-primary"
+              >
+                OCT 15
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <div
+                class="font-label-md text-label-md text-secondary mb-2 flex items-center gap-1"
+              >
+                <span class="material-symbols-outlined text-sm">schedule</span>
+                10:00 AM - 1:00 PM
+              </div>
+              <h3
+                class="font-headline-lg text-headline-lg-mobile text-primary mb-3"
+              >
+                Mindful Movement Retreat
+              </h3>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow"
+              >
+                A half-day immersive experience focusing on gentle somatic
+                practices to release tension and restore inner balance.
+              </p>
+              <div
+                class="flex justify-between items-center pt-4 border-t border-outline-variant"
+              >
+                <span
+                  class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1"
+                  ><span class="material-symbols-outlined text-sm"
+                    >location_on</span
+                  >
+                  Main Studio</span
+                >
+                <span
+                  class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform"
+                  >arrow_forward</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Event Card 2 -->
+          <div
+            class="bg-surface-container rounded-lg overflow-hidden border border-outline-variant flex flex-col group cursor-pointer hover:bg-surface-container-high transition-colors"
+          >
+            <div class="relative h-48 bg-surface-variant overflow-hidden">
+              <img
+                class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+                data-alt="Close up of hands holding a warm ceramic bowl of tea, resting on a rustic wooden table with dried herbs and soft morning light."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWVn4A8P5zDvw_Mh3_9V3hVLqXkPo3mBkqdjdNkUvpy74_pQ9U7WjJwIt6n5RsmimKPBpHt6-8iIe1Y5J6u9QOh0NkoxdDq-fte8uCSUsgeXma7R8ZpQGNpT_vxEPNFvBHfQB25adsRzAvD4Eiumwmc5y9HH6SBBmuiExzHqQdoTD-IikwlaJbAdZVDx8zqjbfSt8In3Qt2Xynh56lr6ChDBwTWp8GYVr37La_FZoLC6Uw0wn0ZbA1"
+              />
+              <div
+                class="absolute top-4 left-4 bg-surface/90 backdrop-blur px-3 py-1 rounded font-label-md text-label-md text-primary"
+              >
+                NOV 02
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <div
+                class="font-label-md text-label-md text-secondary mb-2 flex items-center gap-1"
+              >
+                <span class="material-symbols-outlined text-sm">schedule</span>
+                6:00 PM - 8:00 PM
+              </div>
+              <h3
+                class="font-headline-lg text-headline-lg-mobile text-primary mb-3"
+              >
+                Autumn Tea Ceremony
+              </h3>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow"
+              >
+                Embrace the changing season with a traditional tea ceremony
+                focused on grounding and gratitude.
+              </p>
+              <div
+                class="flex justify-between items-center pt-4 border-t border-outline-variant"
+              >
+                <span
+                  class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1"
+                  ><span class="material-symbols-outlined text-sm"
+                    >location_on</span
+                  >
+                  Garden Pavilion</span
+                >
+                <span
+                  class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform"
+                  >arrow_forward</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Event Card 3 -->
+          <div
+            class="bg-surface-container rounded-lg overflow-hidden border border-outline-variant flex flex-col group cursor-pointer hover:bg-surface-container-high transition-colors"
+          >
+            <div class="relative h-48 bg-surface-variant overflow-hidden">
+              <img
+                class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+                data-alt="A collection of crystal singing bowls arranged on a woven mat in a dimly lit room with flickering candlelight, preparing for a sound bath."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvmm4S6YcXESreXMnu-AYr2YPWCDtO4f5KkXh8OeB5199SvzcBQPzABLore5E00WVwIl7SHT2NE7mDwPeWqLUnmQh6Zq90UZFxDT8IXPA4pKCtWSiYL2e6IotGZRlKmnTDSQEgv7harktOn-Zl0-9KZo42vpkGnGzJr4uqA9x3FtxU_3c74C2oVCwYk9CrcAWG0ZcKcP9GRwVb6stxE98iMKgFZ1nizjnAv7JPuOelX1xI7M-_XZGf"
+              />
+              <div
+                class="absolute top-4 left-4 bg-surface/90 backdrop-blur px-3 py-1 rounded font-label-md text-label-md text-primary"
+              >
+                NOV 18
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <div
+                class="font-label-md text-label-md text-secondary mb-2 flex items-center gap-1"
+              >
+                <span class="material-symbols-outlined text-sm">schedule</span>
+                7:30 PM - 9:00 PM
+              </div>
+              <h3
+                class="font-headline-lg text-headline-lg-mobile text-primary mb-3"
+              >
+                Full Moon Sound Bath
+              </h3>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow"
+              >
+                Bathe in the resonant frequencies of crystal bowls and gongs to
+                harmonize mind and body under the full moon.
+              </p>
+              <div
+                class="flex justify-between items-center pt-4 border-t border-outline-variant"
+              >
+                <span
+                  class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1"
+                  ><span class="material-symbols-outlined text-sm"
+                    >location_on</span
+                  >
+                  Main Studio</span
+                >
+                <span
+                  class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform"
+                  >arrow_forward</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Featured Event Details Pattern -->
+      <section class="bg-surface-container-low py-section-gap">
+        <div
+          class="px-margin-mobile md:px-margin-desktop max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start"
+        >
+          <div class="lg:col-span-7 space-y-6">
+            <div
+              class="inline-block px-3 py-1 bg-surface-container-high text-primary font-label-md text-label-md rounded border border-outline-variant"
+            >
+              Featured Retreat
+            </div>
+            <h2
+              class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary"
+            >
+              Winter Solstice: <br />Silence &amp; Stillness
+            </h2>
+            <div
+              class="grid grid-cols-2 gap-4 py-6 border-y border-outline-variant/50"
+            >
+              <div>
+                <div
+                  class="font-label-md text-label-md text-on-surface-variant mb-1"
+                >
+                  Date &amp; Time
+                </div>
+                <div class="font-body-md text-body-md text-primary">
+                  Dec 21, 2024<br />9:00 AM - 5:00 PM
+                </div>
+              </div>
+              <div>
+                <div
+                  class="font-label-md text-label-md text-on-surface-variant mb-1"
+                >
+                  Location
+                </div>
+                <div class="font-body-md text-body-md text-primary">
+                  Studio IKI<br />Main Hall
+                </div>
+              </div>
+              <div>
+                <div
+                  class="font-label-md text-label-md text-on-surface-variant mb-1"
+                >
+                  Guide
+                </div>
+                <div class="font-body-md text-body-md text-primary">
+                  Elena Rostova
+                </div>
+              </div>
+              <div>
+                <div
+                  class="font-label-md text-label-md text-on-surface-variant mb-1"
+                >
+                  Investment
+                </div>
+                <div class="font-body-md text-body-md text-primary">
+                  $150 (Lunch Included)
+                </div>
+              </div>
+            </div>
+            <p class="font-body-lg text-body-lg text-on-surface-variant pt-4">
+              Honor the darkest day of the year with a daylong retreat dedicated
+              to introspection. This gathering invites you to step away from the
+              holiday rush and anchor yourself in quietude. Through guided
+              meditation, gentle restorative yoga, and periods of noble silence,
+              we will cultivate a spaciousness that welcomes the return of the
+              light.
             </p>
-</section>
-<!-- Upcoming Events Listing -->
-<section class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-screen-2xl mx-auto">
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-12">Upcoming Gatherings</h2>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
-<!-- Event Card 1 -->
-<div class="bg-surface-container rounded-lg overflow-hidden border border-outline-variant flex flex-col group cursor-pointer hover:bg-surface-container-high transition-colors">
-<div class="relative h-48 bg-surface-variant overflow-hidden">
-<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A tranquil meditation space with soft natural light filtering through bamboo blinds, featuring cushions arranged in a circle on a wooden floor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMsDQw7sM-nM2oICIppFGEHD0CrP1aPJOq4_Ciyw2Zh8EngJk-WLZayFkYEtZCXKaSSSrwElE3OU-itvOTopwtpiOZCCy6IPbog1TdXvZbCktle8CB2fhTxeO430tgynmcEPUFEacMe2gOnbp3LJIxO1cTeOY6ndXQmDjApwPCaNdN0jIg7z-RqFiWdyUpI00PStcXinNQKz6TfiEWhV40ZPr-h65YUBBu2Qq3q6Cya8JWrb0OYBfE">
-<div class="absolute top-4 left-4 bg-surface/90 backdrop-blur px-3 py-1 rounded font-label-md text-label-md text-primary">
-                            OCT 15
-                        </div>
-</div>
-<div class="p-6 flex flex-col flex-grow">
-<div class="font-label-md text-label-md text-secondary mb-2 flex items-center gap-1">
-<span class="material-symbols-outlined text-sm">schedule</span> 10:00 AM - 1:00 PM
-                        </div>
-<h3 class="font-headline-lg text-headline-lg-mobile text-primary mb-3">Mindful Movement Retreat</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">A half-day immersive experience focusing on gentle somatic practices to release tension and restore inner balance.</p>
-<div class="flex justify-between items-center pt-4 border-t border-outline-variant">
-<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> Main Studio</span>
-<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</div>
-</div>
-</div>
-<!-- Event Card 2 -->
-<div class="bg-surface-container rounded-lg overflow-hidden border border-outline-variant flex flex-col group cursor-pointer hover:bg-surface-container-high transition-colors">
-<div class="relative h-48 bg-surface-variant overflow-hidden">
-<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Close up of hands holding a warm ceramic bowl of tea, resting on a rustic wooden table with dried herbs and soft morning light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWVn4A8P5zDvw_Mh3_9V3hVLqXkPo3mBkqdjdNkUvpy74_pQ9U7WjJwIt6n5RsmimKPBpHt6-8iIe1Y5J6u9QOh0NkoxdDq-fte8uCSUsgeXma7R8ZpQGNpT_vxEPNFvBHfQB25adsRzAvD4Eiumwmc5y9HH6SBBmuiExzHqQdoTD-IikwlaJbAdZVDx8zqjbfSt8In3Qt2Xynh56lr6ChDBwTWp8GYVr37La_FZoLC6Uw0wn0ZbA1">
-<div class="absolute top-4 left-4 bg-surface/90 backdrop-blur px-3 py-1 rounded font-label-md text-label-md text-primary">
-                            NOV 02
-                        </div>
-</div>
-<div class="p-6 flex flex-col flex-grow">
-<div class="font-label-md text-label-md text-secondary mb-2 flex items-center gap-1">
-<span class="material-symbols-outlined text-sm">schedule</span> 6:00 PM - 8:00 PM
-                        </div>
-<h3 class="font-headline-lg text-headline-lg-mobile text-primary mb-3">Autumn Tea Ceremony</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Embrace the changing season with a traditional tea ceremony focused on grounding and gratitude.</p>
-<div class="flex justify-between items-center pt-4 border-t border-outline-variant">
-<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> Garden Pavilion</span>
-<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</div>
-</div>
-</div>
-<!-- Event Card 3 -->
-<div class="bg-surface-container rounded-lg overflow-hidden border border-outline-variant flex flex-col group cursor-pointer hover:bg-surface-container-high transition-colors">
-<div class="relative h-48 bg-surface-variant overflow-hidden">
-<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A collection of crystal singing bowls arranged on a woven mat in a dimly lit room with flickering candlelight, preparing for a sound bath." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvmm4S6YcXESreXMnu-AYr2YPWCDtO4f5KkXh8OeB5199SvzcBQPzABLore5E00WVwIl7SHT2NE7mDwPeWqLUnmQh6Zq90UZFxDT8IXPA4pKCtWSiYL2e6IotGZRlKmnTDSQEgv7harktOn-Zl0-9KZo42vpkGnGzJr4uqA9x3FtxU_3c74C2oVCwYk9CrcAWG0ZcKcP9GRwVb6stxE98iMKgFZ1nizjnAv7JPuOelX1xI7M-_XZGf">
-<div class="absolute top-4 left-4 bg-surface/90 backdrop-blur px-3 py-1 rounded font-label-md text-label-md text-primary">
-                            NOV 18
-                        </div>
-</div>
-<div class="p-6 flex flex-col flex-grow">
-<div class="font-label-md text-label-md text-secondary mb-2 flex items-center gap-1">
-<span class="material-symbols-outlined text-sm">schedule</span> 7:30 PM - 9:00 PM
-                        </div>
-<h3 class="font-headline-lg text-headline-lg-mobile text-primary mb-3">Full Moon Sound Bath</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Bathe in the resonant frequencies of crystal bowls and gongs to harmonize mind and body under the full moon.</p>
-<div class="flex justify-between items-center pt-4 border-t border-outline-variant">
-<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> Main Studio</span>
-<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Featured Event Details Pattern -->
-<section class="bg-surface-container-low py-section-gap">
-<div class="px-margin-mobile md:px-margin-desktop max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
-<div class="lg:col-span-7 space-y-6">
-<div class="inline-block px-3 py-1 bg-surface-container-high text-primary font-label-md text-label-md rounded border border-outline-variant">Featured Retreat</div>
-<h2 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary">Winter Solstice: <br>Silence &amp; Stillness</h2>
-<div class="grid grid-cols-2 gap-4 py-6 border-y border-outline-variant/50">
-<div>
-<div class="font-label-md text-label-md text-on-surface-variant mb-1">Date &amp; Time</div>
-<div class="font-body-md text-body-md text-primary">Dec 21, 2024<br>9:00 AM - 5:00 PM</div>
-</div>
-<div>
-<div class="font-label-md text-label-md text-on-surface-variant mb-1">Location</div>
-<div class="font-body-md text-body-md text-primary">Studio IKI<br>Main Hall</div>
-</div>
-<div>
-<div class="font-label-md text-label-md text-on-surface-variant mb-1">Guide</div>
-<div class="font-body-md text-body-md text-primary">Elena Rostova</div>
-</div>
-<div>
-<div class="font-label-md text-label-md text-on-surface-variant mb-1">Investment</div>
-<div class="font-body-md text-body-md text-primary">$150 (Lunch Included)</div>
-</div>
-</div>
-<p class="font-body-lg text-body-lg text-on-surface-variant pt-4">
-                        Honor the darkest day of the year with a daylong retreat dedicated to introspection. This gathering invites you to step away from the holiday rush and anchor yourself in quietude. Through guided meditation, gentle restorative yoga, and periods of noble silence, we will cultivate a spaciousness that welcomes the return of the light.
-                    </p>
-</div>
-<div class="lg:col-span-5 relative mt-8 lg:mt-0">
-<div class="aspect-[4/5] bg-surface-container rounded-lg overflow-hidden border border-outline-variant p-2">
-<img class="w-full h-full object-cover rounded" data-alt="A minimalist altar setup for a winter solstice retreat, featuring white candles, pine cones, and a small woven basket, surrounded by soft, subdued lighting conveying stillness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoYTrar2jMA5DccaNK9gaxdgeQugFxq1rdg-Lih25oncp63Tm3oVBNlE_HqSptnlfhHkmNy_ABSQGgSulAfmZv9FbM5jMVuw2Oi31zqw0iio_s-RsB_y4LRRi5oeCG3l9Ti0ssk_BljY-RwAPDQ0-5gBoIibnJBnfvRCYlQZEuzG20LSxNip0Ca5mjLjTtFqPbT86bvnkFGP8yfOtWrak3vabU2l1IClTOrM0MdQTP0-KpJzx2o53M">
-</div>
-</div>
-</div>
-</section>
-<!-- Registration CTA -->
-<section class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-screen-xl mx-auto text-center">
-<div class="bg-surface-container p-12 md:p-20 rounded-xl border border-outline-variant">
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Reserve Your Space</h2>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mx-auto mb-8">
-                    Our gatherings are intentionally kept small to ensure a deeply personal experience. Secure your place in our upcoming sessions.
-                </p>
-<div class="flex flex-col sm:flex-row justify-center gap-4">
-<button class="bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded hover:bg-surface-tint hover:scale-[0.98] transition-all shadow-[0_4px_20px_rgba(87,75,86,0.08)]">View Full Calendar</button>
-<button class="bg-transparent border border-primary text-primary font-label-md text-label-md px-8 py-4 rounded hover:bg-surface-container-high hover:scale-[0.98] transition-all">Join Mailing List</button>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container-low dark:bg-surface-container-lowest full-width bottom border-t border-outline-variant dark:border-outline">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap max-w-screen-2xl mx-auto">
-<div class="md:col-span-1">
-<div class="font-display-lg text-display-lg text-primary dark:text-inverse-primary mb-4">Studio IKI</div>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6">A space for quiet architecture and holistic well-being.</p>
-</div>
-<div class="flex flex-col gap-3">
-<h4 class="font-label-md text-label-md text-primary font-bold mb-2">Connect</h4>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim hover:underline transition-all opacity-80 hover:opacity-100" href="#">Social</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim hover:underline transition-all opacity-80 hover:opacity-100" href="#">Inquiry</a>
-</div>
-<div class="flex flex-col gap-3">
-<h4 class="font-label-md text-label-md text-primary font-bold mb-2">Legal</h4>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim hover:underline transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim hover:underline transition-all opacity-80 hover:opacity-100" href="#">Terms of Service</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim hover:underline transition-all opacity-80 hover:opacity-100" href="#">Credentials</a>
-</div>
-<div class="md:col-span-1 flex items-end justify-start md:justify-end">
-<p class="font-body-md text-body-md text-on-surface-variant opacity-60">© 2024 Studio IKI. Built with intention.</p>
-</div>
-</div>
-</footer>
-<script>
-        // Simple mobile menu toggle
-        const openMenuBtn = document.getElementById('open-menu');
-        const closeMenuBtn = document.getElementById('close-menu');
-        const mobileMenu = document.getElementById('mobile-menu');
+          </div>
+          <div class="lg:col-span-5 relative mt-8 lg:mt-0">
+            <div
+              class="aspect-[4/5] bg-surface-container rounded-lg overflow-hidden border border-outline-variant p-2"
+            >
+              <img
+                class="w-full h-full object-cover rounded"
+                data-alt="A minimalist altar setup for a winter solstice retreat, featuring white candles, pine cones, and a small woven basket, surrounded by soft, subdued lighting conveying stillness."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoYTrar2jMA5DccaNK9gaxdgeQugFxq1rdg-Lih25oncp63Tm3oVBNlE_HqSptnlfhHkmNy_ABSQGgSulAfmZv9FbM5jMVuw2Oi31zqw0iio_s-RsB_y4LRRi5oeCG3l9Ti0ssk_BljY-RwAPDQ0-5gBoIibnJBnfvRCYlQZEuzG20LSxNip0Ca5mjLjTtFqPbT86bvnkFGP8yfOtWrak3vabU2l1IClTOrM0MdQTP0-KpJzx2o53M"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Registration CTA -->
+      <section
+        class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-screen-xl mx-auto text-center"
+      >
+        <div
+          class="bg-surface-container p-12 md:p-20 rounded-xl border border-outline-variant"
+        >
+          <h2
+            class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4"
+          >
+            Reserve Your Space
+          </h2>
+          <p
+            class="font-body-md text-body-md text-on-surface-variant max-w-lg mx-auto mb-8"
+          >
+            Our gatherings are intentionally kept small to ensure a deeply
+            personal experience. Secure your place in our upcoming sessions.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <button
+              class="bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded hover:bg-surface-tint hover:scale-[0.98] transition-all shadow-[0_4px_20px_rgba(87,75,86,0.08)]"
+            >
+              View Full Calendar
+            </button>
+            <button
+              class="bg-transparent border border-primary text-primary font-label-md text-label-md px-8 py-4 rounded hover:bg-surface-container-high hover:scale-[0.98] transition-all"
+            >
+              Join Mailing List
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="bg-surface-container-low dark:bg-surface-container-lowest full-width bottom border-t border-outline-variant dark:border-outline"
+    >
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap max-w-screen-2xl mx-auto"
+      >
+        <div class="md:col-span-1">
+          <div
+            class="font-display-lg text-display-lg text-primary dark:text-inverse-primary mb-4"
+          >
+            Studio IKI
+          </div>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-6">
+            A space for quiet architecture and holistic well-being.
+          </p>
+        </div>
+        <div class="flex flex-col gap-3">
+          <h4 class="font-label-md text-label-md text-primary font-bold mb-2">
+            Connect
+          </h4>
+          <a
+            class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim hover:underline transition-all opacity-80 hover:opacity-100"
+            href="#"
+            >Social</a
+          >
+          <a
+            class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim hover:underline transition-all opacity-80 hover:opacity-100"
+            href="#"
+            >Inquiry</a
+          >
+        </div>
+        <div class="flex flex-col gap-3">
+          <h4 class="font-label-md text-label-md text-primary font-bold mb-2">
+            Legal
+          </h4>
+          <a
+            class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim hover:underline transition-all opacity-80 hover:opacity-100"
+            href="#"
+            >Privacy Policy</a
+          >
+          <a
+            class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim hover:underline transition-all opacity-80 hover:opacity-100"
+            href="#"
+            >Terms of Service</a
+          >
+          <a
+            class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim hover:underline transition-all opacity-80 hover:opacity-100"
+            href="#"
+            >Credentials</a
+          >
+        </div>
+        <div class="md:col-span-1 flex items-end justify-start md:justify-end">
+          <p
+            class="font-body-md text-body-md text-on-surface-variant opacity-60"
+          >
+            © 2024 Studio IKI. Built with intention.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Simple mobile menu toggle
+      const openMenuBtn = document.getElementById("open-menu");
+      const closeMenuBtn = document.getElementById("close-menu");
+      const mobileMenu = document.getElementById("mobile-menu");
 
-        openMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.remove('translate-x-full');
-        });
+      openMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("translate-x-full");
+      });
 
-        closeMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.add('translate-x-full');
-        });
+      closeMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("translate-x-full");
+      });
     </script>
-</body></html>
+  </body>
+</html>
