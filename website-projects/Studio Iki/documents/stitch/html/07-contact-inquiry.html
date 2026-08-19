@@ -1,0 +1,232 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Studio IKI - Inquiry &amp; Contact</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&amp;family=EB+Garamond:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#d2c2cf",
+                        "on-primary-container": "#ccbcc9",
+                        "on-surface": "#1f1b17",
+                        "secondary-container": "#ffc9d7",
+                        "secondary-fixed": "#ffd9e2",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed": "#f0dcf5",
+                        "surface-container-high": "#f1e6e0",
+                        "on-background": "#1f1b17",
+                        "primary-fixed-dim": "#d2c2cf",
+                        "tertiary-fixed-dim": "#d3c0d8",
+                        "surface-container-low": "#fcf2eb",
+                        "surface-tint": "#675b66",
+                        "on-secondary-fixed": "#30121c",
+                        "outline": "#7c757a",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-surface-variant": "#4b454a",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed": "#231728",
+                        "on-secondary-fixed-variant": "#623c47",
+                        "surface-bright": "#fff8f5",
+                        "on-secondary-container": "#7b525d",
+                        "error": "#ba1a1a",
+                        "tertiary": "#403346",
+                        "inverse-on-surface": "#f9efe8",
+                        "primary-fixed": "#efddeb",
+                        "inverse-surface": "#352f2b",
+                        "on-tertiary-fixed-variant": "#504255",
+                        "secondary-fixed-dim": "#edb9c6",
+                        "primary-container": "#574b56",
+                        "surface-container": "#f6ece6",
+                        "background": "#fff8f5",
+                        "on-primary-fixed-variant": "#4f434e",
+                        "outline-variant": "#cdc4ca",
+                        "surface": "#fff8f5",
+                        "on-tertiary-container": "#cdbbd2",
+                        "surface-variant": "#ebe1da",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed": "#221822",
+                        "surface-dim": "#e2d8d2",
+                        "secondary": "#7c535f",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#ebe1da",
+                        "error-container": "#ffdad6",
+                        "primary": "#3f343f",
+                        "tertiary-container": "#584a5e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "base": "8px",
+                        "section-gap": "80px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Be Vietnam Pro", "sans-serif"],
+                        "body-md": ["Be Vietnam Pro", "sans-serif"],
+                        "headline-lg": ["Be Vietnam Pro", "sans-serif"],
+                        "body-lg": ["Be Vietnam Pro", "sans-serif"],
+                        "label-md": ["Be Vietnam Pro", "sans-serif"],
+                        "headline-lg-mobile": ["Be Vietnam Pro", "sans-serif"],
+                        "philosophy-accent": ["EB Garamond", "serif"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+                        "philosophy-accent": ["24px", { "lineHeight": "32px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: theme('colors.surface'); color: theme('colors.on-surface'); }
+        .ghost-input {
+            border: 1px solid theme('colors.outline-variant');
+            background-color: transparent;
+            transition: border-color 0.3s ease;
+        }
+        .ghost-input:focus {
+            outline: none;
+            border-color: theme('colors.primary');
+            box-shadow: none;
+        }
+        .custom-radio:checked + label {
+            background-color: theme('colors.primary');
+            color: theme('colors.on-primary');
+            border-color: theme('colors.primary');
+        }
+        .tactile-btn {
+            transition: transform 0.15s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        .tactile-btn:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body class="font-body-md bg-surface min-h-screen flex flex-col antialiased">
+<!-- TopNavBar (Web) -->
+<header class="hidden md:flex w-full bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline z-40 sticky top-0">
+<div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-screen-2xl mx-auto">
+<div class="font-display-lg text-display-lg tracking-tight text-primary dark:text-inverse-primary">
+                Studio IKI
+            </div>
+<nav class="flex gap-8 items-center">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300" href="#">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300" href="#">Seminar</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300" href="#">Therapies</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300" href="#">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300" href="#">Events</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300" href="#">FAQ</a>
+</nav>
+<div class="flex gap-4 items-center">
+<button class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300">Contact</button>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-DEFAULT tactile-btn shadow-[0px_4px_20px_rgba(87,75,86,0.08)]">Join a Seminar</button>
+</div>
+</div>
+</header>
+<!-- SideNavBar (Mobile) -->
+<div class="md:hidden fixed bottom-0 w-full bg-surface-container border-t border-outline-variant z-50 flex justify-around py-3 px-margin-mobile pb-6">
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined" data-weight="regular">home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary pb-1 border-b-2 border-primary" href="#">
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">mail</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined" data-weight="regular">self_care</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined" data-weight="regular">menu</span>
+</a>
+</div>
+<!-- Main Canvas -->
+<main class="flex-grow w-full max-w-screen-2xl mx-auto px-margin-mobile md:px-margin-desktop py-section-gap flex flex-col md:flex-row gap-16">
+<!-- Left Column: Context & Direct Contact -->
+<div class="w-full flex flex-col gap-12 mx-auto max-w-2xl">
+<section class="flex flex-col gap-6">
+<h1 class="font-display-lg text-display-lg md:text-display-lg text-primary">Begin the Dialogue</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                    Whether you are seeking guidance on a specific therapy, inquiring about an upcoming seminar, or simply wishing to connect, we are here to listen. Please share your intentions below.
+                </p>
+<div class="h-[1px] w-full bg-outline-variant my-2"></div>
+</section>
+<section class="flex flex-col gap-8 bg-surface-container-low p-8 rounded-xl border border-outline-variant">
+<div class="flex items-center gap-6">
+<img class="w-24 h-24 rounded-full object-cover shadow-sm" data-alt="Portrait of Nongnapat Neuman, a serene woman with a kind smile, set against a warm, wood-paneled architectural background, reflecting a grounded, holistic aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACxeo19oYi6Nz5pe_QiH6nWoQtpGsfMFX3X1MO16XEUWBIl7R08E7bcKJlFrL1y3EXGec0dPSxFnWClmptGok1R6IgX-05isEVml78fLQ4dz2tDg30ohJLXMZ8zMPabeh6CYwSvCKWvqhjXTQwyu92ovHP66rQHjkI_3z_I0QYh4167rl518cfhMOsDsVnn-8o9EIybMdOGSFmvbdLW4yT7SQPW9eAig1_mWP5IA_lxeyvxqWjaKuD">
+<div>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Nongnapat Neuman</h3>
+<p class="font-label-md text-label-md text-on-surface-variant mt-1">Founder &amp; Practitioner</p>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<a class="flex items-center gap-4 text-on-surface hover:text-primary transition-colors" href="mailto:nongnapatr@gmail.com">
+<span class="material-symbols-outlined text-outline">mail</span>
+<span class="font-body-md text-body-md">nongnapatr@gmail.com</span>
+</a>
+<div class="flex items-center gap-4 text-on-surface-variant opacity-70">
+<span class="material-symbols-outlined text-outline">call</span>
+<span class="font-body-md text-body-md italic">Phone details pending</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant opacity-70">
+<span class="material-symbols-outlined text-outline">location_on</span>
+<span class="font-body-md text-body-md italic">Location details pending</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Inquiry Form -->
+
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-low dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap max-w-screen-2xl mx-auto">
+<div class="flex flex-col gap-4">
+<div class="font-display-lg text-display-lg text-primary dark:text-inverse-primary mb-4">Studio IKI</div>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Studio IKI. Built with intention.</p>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-label-md text-label-md text-primary font-bold hover:text-secondary underline transition-all" href="#">Inquiry</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all" href="#">Social</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all" href="#">Credentials</a>
+</div>
+</div>
+</footer>
+<script>
+        function showSuccess() {
+            document.getElementById('success-state').classList.remove('hidden');
+            document.getElementById('success-state').classList.add('flex');
+            // Small delay to allow display block to register before opacity transition (if we were using one)
+        }
+
+        function resetForm() {
+            document.getElementById('inquiry-form').reset();
+            document.getElementById('success-state').classList.add('hidden');
+            document.getElementById('success-state').classList.remove('flex');
+            // Reset radio to default
+            document.getElementById('purpose-seminar').checked = true;
+        }
+    </script>
+
+
+</body></html>

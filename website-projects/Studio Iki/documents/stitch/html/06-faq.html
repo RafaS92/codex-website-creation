@@ -1,0 +1,326 @@
+<!DOCTYPE html><html lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Studio IKI - FAQ</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&amp;family=EB+Garamond:wght@400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "inverse-primary": "#d2c2cf",
+                            "on-primary-container": "#ccbcc9",
+                            "on-surface": "#1f1b17",
+                            "secondary-container": "#ffc9d7",
+                            "secondary-fixed": "#ffd9e2",
+                            "surface-container-lowest": "#ffffff",
+                            "tertiary-fixed": "#f0dcf5",
+                            "surface-container-high": "#f1e6e0",
+                            "on-background": "#1f1b17",
+                            "primary-fixed-dim": "#d2c2cf",
+                            "tertiary-fixed-dim": "#d3c0d8",
+                            "surface-container-low": "#fcf2eb",
+                            "surface-tint": "#675b66",
+                            "on-secondary-fixed": "#30121c",
+                            "outline": "#7c757a",
+                            "on-secondary": "#ffffff",
+                            "on-error": "#ffffff",
+                            "on-surface-variant": "#4b454a",
+                            "on-tertiary": "#ffffff",
+                            "on-tertiary-fixed": "#231728",
+                            "on-secondary-fixed-variant": "#623c47",
+                            "surface-bright": "#fff8f5",
+                            "on-secondary-container": "#7b525d",
+                            "error": "#ba1a1a",
+                            "tertiary": "#403346",
+                            "inverse-on-surface": "#f9efe8",
+                            "primary-fixed": "#efddeb",
+                            "inverse-surface": "#352f2b",
+                            "on-tertiary-fixed-variant": "#504255",
+                            "secondary-fixed-dim": "#edb9c6",
+                            "primary-container": "#574b56",
+                            "surface-container": "#f6ece6",
+                            "background": "#fff8f5",
+                            "on-primary-fixed-variant": "#4f434e",
+                            "outline-variant": "#cdc4ca",
+                            "surface": "#fff8f5",
+                            "on-tertiary-container": "#cdbbd2",
+                            "surface-variant": "#ebe1da",
+                            "on-primary": "#ffffff",
+                            "on-primary-fixed": "#221822",
+                            "surface-dim": "#e2d8d2",
+                            "secondary": "#7c535f",
+                            "on-error-container": "#93000a",
+                            "surface-container-highest": "#ebe1da",
+                            "error-container": "#ffdad6",
+                            "primary": "#3f343f",
+                            "tertiary-container": "#584a5e"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                    },
+                    "spacing": {
+                            "margin-mobile": "20px",
+                            "gutter": "24px",
+                            "margin-desktop": "64px",
+                            "base": "8px",
+                            "section-gap": "80px"
+                    },
+                    "fontFamily": {
+                            "display-lg": ["beVietnamPro"],
+                            "body-md": ["beVietnamPro"],
+                            "headline-lg": ["beVietnamPro"],
+                            "body-lg": ["beVietnamPro"],
+                            "label-md": ["beVietnamPro"],
+                            "headline-lg-mobile": ["beVietnamPro"],
+                            "philosophy-accent": ["ebGaramond"]
+                    },
+                    "fontSize": {
+                            "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                            "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                            "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+                            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                            "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                            "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
+                            "philosophy-accent": ["24px", {"lineHeight": "32px", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #fff8f5; color: #1f1b17; }
+        .accordion-content {
+            transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+        .accordion-item.active .accordion-content {
+            max-height: 500px; /* Adjust as needed */
+            opacity: 1;
+        }
+        .accordion-item.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+        .accordion-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar (Desktop) -->
+<header class="hidden md:flex justify-between items-center w-full px-margin-desktop py-4 max-w-screen-2xl mx-auto bg-surface border-b border-outline-variant z-50 sticky top-0">
+<div class="font-display-lg text-display-lg tracking-tight text-primary">Studio IKI</div>
+<nav class="flex gap-6 items-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Seminar</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Therapies</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Events</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-label-md text-label-md scale-95 transition-transform duration-200" href="#">FAQ</a>
+</nav>
+<div class="flex gap-4 items-center">
+<button class="px-4 py-2 border border-outline-variant rounded text-primary hover:bg-surface-variant transition-colors font-label-md text-label-md">Contact</button>
+<button class="px-4 py-2 bg-primary-container text-on-primary-container rounded hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md">Join a Seminar</button>
+</div>
+</header>
+<!-- SideNavBar (Mobile) -->
+<div class="md:hidden flex justify-between items-center w-full px-margin-mobile py-4 bg-surface border-b border-outline-variant z-50 sticky top-0">
+<div class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Studio IKI</div>
+<button class="text-primary p-2" id="mobile-menu-btn">
+<span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
+</button>
+</div>
+<aside class="hidden md:hidden flex flex-col h-full w-80 fixed right-0 top-0 z-50 bg-surface-container shadow-2xl p-margin-mobile transform translate-x-full transition-transform duration-500 ease-in-out" id="mobile-menu">
+<div class="flex justify-between items-center mb-8">
+<div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Studio IKI</h2>
+<p class="text-on-surface-variant text-sm">Holistic Wellness</p>
+</div>
+<button class="text-primary" id="close-menu-btn">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-2 flex-grow">
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 rounded-lg hover:bg-surface-container-high transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined">home</span> Home
+            </a>
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 rounded-lg hover:bg-surface-container-high transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined">school</span> Seminar
+            </a>
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 rounded-lg hover:bg-surface-container-high transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined">self_care</span> Therapies
+            </a>
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 rounded-lg hover:bg-surface-container-high transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined">info</span> About
+            </a>
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 rounded-lg hover:bg-surface-container-high transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined">calendar_today</span> Events
+            </a>
+<a class="bg-secondary-container text-on-secondary-container rounded-lg px-4 py-3 flex items-center gap-3 font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined">quiz</span> FAQ
+            </a>
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 rounded-lg hover:bg-surface-container-high transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined">mail</span> Contact
+            </a>
+</nav>
+<div class="mt-auto pt-8">
+<button class="w-full py-3 bg-primary-container text-on-primary-container rounded-lg hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md">Join Seminar</button>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-screen-xl mx-auto px-margin-mobile md:px-margin-desktop py-section-gap">
+<!-- Header Section -->
+<section class="mb-16 text-center max-w-2xl mx-auto">
+<h1 class="font-display-lg text-display-lg text-primary mb-4">Frequently Asked Questions</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Find answers to common questions about our seminars, therapies, and practical details to help you prepare for your visit to Studio IKI.</p>
+</section>
+<div class="flex flex-col items-center w-full gap-gutter">
+<!-- Navigation Sidebar (Desktop) -->
+
+<!-- FAQ Content -->
+<div class="w-full max-w-4xl space-y-16">
+<!-- Seminar Group -->
+<section class="scroll-mt-32" id="seminar">
+<div class="mb-8 border-b border-outline-variant pb-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">school</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Seminar Questions</h2>
+</div>
+<div class="space-y-4">
+<!-- Accordion Item 1 -->
+<div class="accordion-item bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden">
+<button class="w-full px-6 py-5 flex justify-between items-center text-left hover:bg-surface-variant/50 transition-colors focus:outline-none">
+<span class="font-body-lg text-body-lg font-medium text-primary">What should I bring to a seminar?</span>
+<span class="material-symbols-outlined accordion-icon text-on-surface-variant">expand_more</span>
+</button>
+<div class="accordion-content bg-surface-container-lowest px-6">
+<div class="py-4 border-t border-outline-variant/30 text-on-surface-variant font-body-md text-body-md">
+<p class="">Please bring comfortable, loose-fitting clothing suitable for movement and extended periods of sitting. We provide all necessary props, including mats, cushions, and blankets. A water bottle and a notebook for personal reflections are also recommended.</p>
+</div>
+</div>
+</div>
+<!-- Accordion Item 2 -->
+<div class="accordion-item bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden">
+<button class="w-full px-6 py-5 flex justify-between items-center text-left hover:bg-surface-variant/50 transition-colors focus:outline-none">
+<span class="font-body-lg text-body-lg font-medium text-primary">Do I need prior experience to attend?</span>
+<span class="material-symbols-outlined accordion-icon text-on-surface-variant">expand_more</span>
+</button>
+<div class="accordion-content bg-surface-container-lowest px-6">
+<div class="py-4 border-t border-outline-variant/30 text-on-surface-variant font-body-md text-body-md">
+<p class="">Most of our introductory seminars welcome beginners with no prior experience. We clearly mark advanced seminars that require foundational knowledge. If you are unsure which level is appropriate for you, please contact us for guidance.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Therapy Group -->
+<section class="scroll-mt-32" id="therapy">
+<div class="mb-8 border-b border-outline-variant pb-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">self_care</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Therapy Questions</h2>
+</div>
+<div class="space-y-4">
+<div class="accordion-item bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden">
+<button class="w-full px-6 py-5 flex justify-between items-center text-left hover:bg-surface-variant/50 transition-colors focus:outline-none">
+<span class="font-body-lg text-body-lg font-medium text-primary">What happens during a typical therapy session?</span>
+<span class="material-symbols-outlined accordion-icon text-on-surface-variant">expand_more</span>
+</button>
+<div class="accordion-content bg-surface-container-lowest px-6">
+<div class="py-4 border-t border-outline-variant/30 text-on-surface-variant font-body-md text-body-md">
+<p class="">A typical session begins with a brief consultation to understand your current physical and emotional state. This is followed by the therapy itself, which may involve energy work, guided meditation, or somatic practices, depending on the modality chosen. We conclude with time for grounding and integration.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Medical Note (Important Banner) -->
+<section class="scroll-mt-32 my-12" id="medical">
+<div class="bg-surface-container border-l-4 border-secondary p-6 rounded-r-lg flex gap-4 items-start">
+<span class="material-symbols-outlined text-secondary mt-1">health_and_safety</span>
+<div>
+<h3 class="font-label-md text-label-md text-primary uppercase tracking-wider mb-2">Important Medical Note</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Our therapies and seminars are designed to support holistic well-being and are complementary practices. They do not substitute for professional medical advice, diagnosis, or treatment. If you have severe physical or psychological conditions, please consult your healthcare provider before participating.</p>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Contact CTA Section -->
+<section class="mt-24 bg-surface-container-high rounded-2xl p-12 text-center max-w-4xl mx-auto border border-outline-variant/50">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Still have questions?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-xl mx-auto">If you couldn't find the answer you were looking for, please don't hesitate to reach out to our team directly.</p>
+<button class="px-8 py-4 bg-primary-container text-on-primary-container rounded-lg hover:bg-primary hover:text-on-primary transition-all shadow-sm hover:shadow-md font-label-md text-label-md">Contact Us Directly</button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="mt-auto bg-surface-container-low border-t border-outline-variant w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap max-w-screen-2xl mx-auto">
+<div class="col-span-1 md:col-span-4 mb-4">
+<div class="font-display-lg text-display-lg text-primary mb-4">Studio IKI</div>
+</div>
+<div class="flex flex-col gap-2">
+<a class="text-on-surface-variant hover:text-secondary underline transition-all font-body-md text-body-md opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-secondary underline transition-all font-body-md text-body-md opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="text-on-surface-variant hover:text-secondary underline transition-all font-body-md text-body-md opacity-80 hover:opacity-100" href="#">Inquiry</a>
+<a class="text-on-surface-variant hover:text-secondary underline transition-all font-body-md text-body-md opacity-80 hover:opacity-100" href="#">Social</a>
+<a class="text-on-surface-variant hover:text-secondary underline transition-all font-body-md text-body-md opacity-80 hover:opacity-100" href="#">Credentials</a>
+</div>
+<div class="col-span-1 md:col-span-4 mt-8 pt-8 border-t border-outline-variant/30 text-on-surface-variant font-label-md text-label-md">
+                © 2024 Studio IKI. Built with intention.
+            </div>
+</div>
+</footer>
+<script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+            // Small delay to allow display:block to apply before animating transform
+            setTimeout(() => {
+                mobileMenu.classList.remove('translate-x-full');
+            }, 10);
+        });
+
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+            // Wait for transition to finish before hiding
+            setTimeout(() => {
+                mobileMenu.classList.add('hidden');
+            }, 500);
+        });
+
+        // Accordion Logic
+        const accordionItems = document.querySelectorAll('.accordion-item');
+
+        accordionItems.forEach(item => {
+            const button = item.querySelector('button');
+            button.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+                // Close all other items (optional, for exclusive accordion behavior)
+                // accordionItems.forEach(otherItem => otherItem.classList.remove('active'));
+                
+                if (isActive) {
+                    item.classList.remove('active');
+                } else {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+
+</body></html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Studio IKI - Holistic Wellness &amp; Reiki</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&amp;family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#d2c2cf",
+                        "on-primary-container": "#ccbcc9",
+                        "on-surface": "#1f1b17",
+                        "secondary-container": "#ffc9d7",
+                        "secondary-fixed": "#ffd9e2",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed": "#f0dcf5",
+                        "surface-container-high": "#f1e6e0",
+                        "on-background": "#1f1b17",
+                        "primary-fixed-dim": "#d2c2cf",
+                        "tertiary-fixed-dim": "#d3c0d8",
+                        "surface-container-low": "#fcf2eb",
+                        "surface-tint": "#675b66",
+                        "on-secondary-fixed": "#30121c",
+                        "outline": "#7c757a",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-surface-variant": "#4b454a",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed": "#231728",
+                        "on-secondary-fixed-variant": "#623c47",
+                        "surface-bright": "#fff8f5",
+                        "on-secondary-container": "#7b525d",
+                        "error": "#ba1a1a",
+                        "tertiary": "#403346",
+                        "inverse-on-surface": "#f9efe8",
+                        "primary-fixed": "#efddeb",
+                        "inverse-surface": "#352f2b",
+                        "on-tertiary-fixed-variant": "#504255",
+                        "secondary-fixed-dim": "#edb9c6",
+                        "primary-container": "#574b56",
+                        "surface-container": "#f6ece6",
+                        "background": "#fff8f5",
+                        "on-primary-fixed-variant": "#4f434e",
+                        "outline-variant": "#cdc4ca",
+                        "surface": "#fff8f5",
+                        "on-tertiary-container": "#cdbbd2",
+                        "surface-variant": "#ebe1da",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed": "#221822",
+                        "surface-dim": "#e2d8d2",
+                        "secondary": "#7c535f",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#ebe1da",
+                        "error-container": "#ffdad6",
+                        "primary": "#3f343f",
+                        "tertiary-container": "#584a5e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "base": "8px",
+                        "section-gap": "80px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Be Vietnam Pro"],
+                        "body-md": ["Be Vietnam Pro"],
+                        "headline-lg": ["Be Vietnam Pro"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "label-md": ["Be Vietnam Pro"],
+                        "headline-lg-mobile": ["Be Vietnam Pro"],
+                        "philosophy-accent": ["EB Garamond"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+                        "philosophy-accent": ["24px", { "lineHeight": "32px", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { background-color: theme('colors.surface'); color: theme('colors.on-surface'); }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-body-md text-body-md">
+<!-- Top Navigation (Desktop) -->
+<nav class="hidden md:flex justify-between items-center w-full px-margin-desktop py-4 max-w-screen-2xl mx-auto border-b border-outline-variant bg-surface sticky top-0 z-40">
+<div class="font-display-lg text-display-lg tracking-tight text-primary">Studio IKI</div>
+<div class="flex items-center gap-6">
+<a class="text-primary border-b-2 border-primary pb-1 font-label-md text-label-md transition-transform duration-200 scale-95" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Seminar</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Therapies</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Events</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">FAQ</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="font-label-md text-label-md text-primary hover:text-primary-fixed-dim transition-colors">Contact</button>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-6 py-2 rounded-lg hover:scale-98 transition-transform shadow-sm">Join a Seminar</button>
+</div>
+</nav>
+<!-- Side Navigation Shell (Mobile) -->
+<div class="md:hidden fixed inset-y-0 right-0 z-50 w-80 bg-surface-container shadow-2xl transform translate-x-full transition-transform duration-500 ease-in-out flex flex-col p-margin-mobile" id="mobile-nav">
+<div class="flex items-center justify-between mb-8">
+<div class="flex flex-col">
+<span class="font-display-lg text-display-lg text-primary text-2xl">Studio IKI</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">Holistic Wellness</span>
+</div>
+<button class="text-on-surface p-2 rounded hover:bg-surface-variant" id="close-nav">
+<span class="material-symbols-outlined" style='font-variation-settings: "FILL" 0;'>close</span>
+</button>
+</div>
+<div class="flex flex-col gap-2 flex-grow">
+<a class="bg-secondary-container text-on-secondary-container rounded-lg px-4 py-3 flex items-center gap-3 font-label-md text-label-md" href="#"><span class="material-symbols-outlined" style='font-variation-settings: "FILL" 0;'>home</span>Home</a>
+<a class="text-on-surface-variant hover:bg-surface-container-high transition-colors px-4 py-3 flex items-center gap-3 font-label-md text-label-md rounded-lg" href="#"><span class="material-symbols-outlined" style='font-variation-settings: "FILL" 0;'>school</span>Seminar</a>
+<a class="text-on-surface-variant hover:bg-surface-container-high transition-colors px-4 py-3 flex items-center gap-3 font-label-md text-label-md rounded-lg" href="#"><span class="material-symbols-outlined" style='font-variation-settings: "FILL" 0;'>self_care</span>Therapies</a>
+<a class="text-on-surface-variant hover:bg-surface-container-high transition-colors px-4 py-3 flex items-center gap-3 font-label-md text-label-md rounded-lg" href="#"><span class="material-symbols-outlined" style='font-variation-settings: "FILL" 0;'>info</span>About</a>
+<a class="text-on-surface-variant hover:bg-surface-container-high transition-colors px-4 py-3 flex items-center gap-3 font-label-md text-label-md rounded-lg" href="#"><span class="material-symbols-outlined" style='font-variation-settings: "FILL" 0;'>calendar_today</span>Events</a>
+<a class="text-on-surface-variant hover:bg-surface-container-high transition-colors px-4 py-3 flex items-center gap-3 font-label-md text-label-md rounded-lg" href="#"><span class="material-symbols-outlined" style='font-variation-settings: "FILL" 0;'>quiz</span>FAQ</a>
+<a class="text-on-surface-variant hover:bg-surface-container-high transition-colors px-4 py-3 flex items-center gap-3 font-label-md text-label-md rounded-lg" href="#"><span class="material-symbols-outlined" style='font-variation-settings: "FILL" 0;'>mail</span>Contact</a>
+</div>
+<button class="mt-auto bg-primary-container text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg hover:scale-98 transition-transform w-full">Join Seminar</button>
+</div>
+<!-- Mobile Header Bar -->
+<div class="md:hidden flex items-center justify-between p-margin-mobile border-b border-outline-variant bg-surface sticky top-0 z-30">
+<span class="font-display-lg text-display-lg text-primary text-3xl">Studio IKI</span>
+<button class="text-on-surface p-2" id="open-nav">
+<span class="material-symbols-outlined" style='font-variation-settings: "FILL" 0;'>menu</span>
+</button>
+</div>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="max-w-screen-2xl mx-auto px-margin-mobile md:px-margin-desktop py-section-gap grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-6">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary">Authentic Japanese Reiki training and personalised holistic therapies</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">Led by Nongnapat Neuman, a dedicated practitioner with over 20 years of experience guiding individuals toward profound physical and spiritual alignment.</p>
+<div class="flex gap-4 mt-4">
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-8 py-3 rounded-lg hover:scale-98 transition-transform shadow-sm">Join a Seminar</button>
+<button class="border border-outline text-primary font-label-md text-label-md px-8 py-3 rounded-lg hover:bg-surface-variant transition-colors">Explore Therapies</button>
+</div>
+</div>
+<div class="relative h-[500px] rounded-xl overflow-hidden bg-surface-container-high p-4 flex items-center justify-center border border-outline-variant">
+<img alt="Nongnapat Neuman providing a holistic therapy session" class="w-full h-full object-cover rounded-lg shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwLHMJgVyuiCEpPochknzajI5pCKFppr7EhPWi9MMnLNeYa3tzZAq6hEKGLK9l71eiNQu1ypR-dxOCeBYb8OEkawEN_fMgb_tgWTMn456XqIfWRAWrTf3eMV0Fpyq6b9LzT8XY24-RFTjJEG6UAFFOQTdtHyQPIgBY7v89ixLoFoyG0ALC9rVj0YP4zj-Ufns8EUpYQ5qWPzTsIo9gVJwipBzU-ID42Acuz_C2Z2KvLtk3rq7QvoaUGurxw4_5UtTnPw"/>
+</div>
+</section>
+<!-- 3. Jikiden Reiki Seminar Feature -->
+<section class="bg-surface-container py-section-gap border-y border-outline-variant">
+<div class="max-w-screen-2xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Jikiden Reiki Seminars</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">Experience the authentic teachings of Jikiden Reiki, rooted in its original Japanese lineage. Our seminars follow the official curriculum established in Kyoto, focusing on practical learning and the preservation of its traditional form.</p>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-8 py-3 rounded-lg hover:scale-98 transition-transform shadow-sm">Join a Jikiden Reiki Seminar</button>
+</div>
+<div class="bg-surface-variant aspect-video rounded-xl flex items-center justify-center border border-outline-variant text-on-surface-variant">
+                    [Seminar Feature Image Pending]
+                </div>
+</div>
+</section>
+<!-- 4. Therapy Overview -->
+<section class="py-section-gap max-w-screen-2xl mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-12 text-center">Holistic Therapies</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="bg-surface-container-high p-6 rounded-xl border border-outline-variant flex flex-col h-full">
+<h3 class="font-body-lg text-body-lg text-primary mb-3 font-medium">Jikiden Reiki</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Traditional Japanese hands-on healing supporting physical and psychological balance.</p>
+</div>
+<div class="bg-surface-container-high p-6 rounded-xl border border-outline-variant flex flex-col h-full">
+<h3 class="font-body-lg text-body-lg text-primary mb-3 font-medium">Biodynamic CranioSacral Therapy (BCST)</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">A gentle, non-invasive approach working with the body's natural rhythms to relieve tension.</p>
+</div>
+<div class="bg-surface-container-high p-6 rounded-xl border border-outline-variant flex flex-col h-full">
+<h3 class="font-body-lg text-body-lg text-primary mb-3 font-medium">Chi Nei Tsang</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Taoist abdominal massage to detoxify, release emotional blockages, and improve organ function.</p>
+</div>
+<div class="bg-surface-container-high p-6 rounded-xl border border-outline-variant flex flex-col h-full">
+<h3 class="font-body-lg text-body-lg text-primary mb-3 font-medium">Crystal Energy Healing</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Utilizing the vibrational frequencies of crystals to restore harmony to the energy body.</p>
+</div>
+</div>
+</section>
+<!-- 5. About Nongnapat -->
+<section class="bg-surface-container py-section-gap border-y border-outline-variant">
+<div class="max-w-screen-2xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="relative h-[600px] rounded-xl overflow-hidden bg-surface-container-highest p-2 border border-outline-variant">
+<img alt="Portrait of Nongnapat Neuman" class="w-full h-full object-cover rounded-lg shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBgOdLUatjE8dAsgZK6JP5FlbH4ptX45CLCA2xTXyV_afdQ-NgWC3uVT3tA11XOm6UFRbflOk3voowVvhrdpvexuaP9ktfk0IdvQUMFaVYr-RCz9mVKnx1Vr9abfNHnqNjBIKTjendjGkiJSaY1VjyIkjCbpd2qPle8Z0Upl5IfG147v5dAI7XqxlGTLtujnV2W_JzHxFzwi_Mo3Vz7vS-YBl9MkMt8rl4oOnZWJdlOejMYAxBfI9DvZPgXzUmgH-Lwg"/>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">About Nongnapat Neuman</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">With over 20 years of dedicated practice, Nongnapat Neuman brings a wealth of experience to her holistic healing approach. Her journey is marked by rigorous training and a deep commitment to guiding others toward profound physical and spiritual alignment.</p>
+<ul class="list-disc list-inside font-body-md text-body-md text-on-surface-variant space-y-2 mb-8">
+<li class="">Certified Jikiden Reiki Shihan (Teacher)</li>
+<li class="">Registered BCST Practitioner</li>
+<li class="">Chi Nei Tsang Practitioner</li>
+<li class="">Extensive experience in international holistic centers</li>
+</ul>
+<button class="border border-outline text-primary font-label-md text-label-md px-8 py-3 rounded-lg hover:bg-surface-variant transition-colors">Read Full Bio</button>
+</div>
+</div>
+</section>
+<!-- 6. Healing Garden -->
+<section class="py-section-gap max-w-screen-2xl mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="bg-surface-container-high rounded-2xl p-8 md:p-16 border border-outline-variant text-center">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Studio Iki</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto mb-8">Nestled in the lush nature sanctuary of Chiang Dao, our healing garden provides a serene backdrop for your wellness journey. The tranquil environment plays an integral role in the healing experience, inviting you to connect with nature's restorative rhythms.</p>
+<div class="bg-surface-variant aspect-video rounded-xl flex items-center justify-center border border-outline-variant text-on-surface-variant max-w-4xl mx-auto"><img alt="The Healing Garden in Chiang Dao" class="w-full h-full object-cover rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7kXZ86VZ1cqLOyIGa-V1wss3JUq1j2fTGHiDNa4EFCdAf27Ax3TZIJt1-HG3tdcdW63MzOBLGi7dJV0xJRUlXZSKcRJxSFNJMiib5GDPw0Y1SfUNocRdFEB4B3htLQz6MJ9-SvIo9KjH0ZU6y9VSDznqplBnTEUEreSBOVyCkGeI4oykzplzlUB2s8Xihon2VRBXe9dFG3uiMASslrZ0yEMzBPoanp-tr-oq_WUIUOW0ngwsHrI8-"/></div>
+</div>
+</section>
+<!-- 7. Healing Philosophy -->
+<section class="bg-surface-container-low py-section-gap border-y border-outline-variant text-center">
+<div class="max-w-4xl mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-philosophy-accent text-philosophy-accent text-primary italic text-3xl md:text-4xl leading-relaxed">"Healing begins with safety, slowing down, listening, and supporting the body’s innate capacity."</h2>
+</div>
+</section>
+<!-- 8. Upcoming Events Preview -->
+<section class="py-section-gap max-w-screen-2xl mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex justify-between items-end mb-12">
+<h2 class="font-headline-lg text-headline-lg text-primary">Upcoming Gatherings</h2>
+<a class="text-secondary font-label-md text-label-md hover:underline" href="#">View All Events</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Event Card 1 -->
+<div class="bg-surface-container rounded-lg overflow-hidden border border-outline-variant flex flex-col group cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="relative h-48 bg-surface-variant overflow-hidden">
+<img alt="Mindful Movement Retreat" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-Qr9cVpFKYXnvKAQt6UWhdG4hOJXrpCl-uZOotUvsfwqFT3B2pGCrJ7rC74Vxvl_pKGi5oI2zW0njVghFsXclo56g08yrKp4p9Cit6EhE6Tg4G8h2X4Hv8_sdkuBTmvW6AntTxd74yGLEsiw8rI1pFr7ndOptXBLQ7FIzaF7i8hqJVlDeOGS9MQkjfN80DwLHjAr1Ew-v3phM8HfKPI0nkR7ReFmsEc0Z-OPPraC0FLdM0JvkBb3T1jmGzz48GDn4tw"/>
+<div class="absolute top-4 left-4 bg-surface/90 backdrop-blur-sm text-on-surface px-3 py-1 rounded-md font-label-md text-xs shadow-sm">Upcoming</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="font-label-md text-label-md text-secondary mb-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span> [Date &amp; Time Pending]
+<span class="material-symbols-outlined text-sm ml-2">location_on</span> Studio IKI
+</div>
+<h3 class="font-headline-lg text-headline-lg-mobile text-primary mb-3">Mindful Movement Retreat</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">[Event description pending...]</p>
+</div>
+</div>
+<!-- Event Card 2 -->
+<div class="bg-surface-container rounded-lg overflow-hidden border border-outline-variant flex flex-col group cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="relative h-48 bg-surface-variant overflow-hidden">
+<img alt="Autumn Tea Ceremony" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7Gyjgk6fz5pCDe8t7kxuYLgSoTP9m_s-TQjbgPjRIgBzRU0Fk0Nri0BpRGwvqsJsKN4uwCCpz5bcOw506geIyReL_uskyvZHBatBticjIUkFh0LsEyEJSYguyt2gtuiafUsERv609zmPhXdnOeJwJjlyJoNnEcExbz45TzYHMzkBS_tPp0_Hkd0XaOjyfNu-0WarrMns56S_Bu1zxdGR2HU1nlaqaPeCDq4-Ls4ImdtVpViAg1w_ubNBgCHeybfi6ww"/>
+<div class="absolute top-4 left-4 bg-surface/90 backdrop-blur-sm text-on-surface px-3 py-1 rounded-md font-label-md text-xs shadow-sm">Upcoming</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="font-label-md text-label-md text-secondary mb-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span> [Date &amp; Time Pending]
+<span class="material-symbols-outlined text-sm ml-2">location_on</span> Studio IKI
+</div>
+<h3 class="font-headline-lg text-headline-lg-mobile text-primary mb-3">Autumn Tea Ceremony</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">[Event description pending...]</p>
+</div>
+</div>
+<!-- Event Card 3 -->
+<div class="bg-surface-container rounded-lg overflow-hidden border border-outline-variant flex flex-col group cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="relative h-48 bg-surface-variant overflow-hidden">
+<img alt="Full Moon Sound Bath" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7LUrFrBmtNptWo733iNg52Uof1LBvzt11mvlPa-er9fed5dFUQizf3rOQ4mkWExkvjbmWIKZCmSg8AM6HU7ffOH4XvJxwUtWH6W8el409MHCreTwGy2eyeV1mWWgsrWaaVMSzdLdYSr9r5ZSHsB4wTVg69Wgd7bOneojulyKsMuhv5-EHWvkYKG452e8rZm93M1zA3PP5d4T-vdT_1XZnnTpU8YoLm7KjkI0G8f4Cw6fgNFHwzigwmCWG2YpF27o8qg"/>
+<div class="absolute top-4 left-4 bg-surface/90 backdrop-blur-sm text-on-surface px-3 py-1 rounded-md font-label-md text-xs shadow-sm">Upcoming</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="font-label-md text-label-md text-secondary mb-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span> [Date &amp; Time Pending]
+<span class="material-symbols-outlined text-sm ml-2">location_on</span> Studio IKI
+</div>
+<h3 class="font-headline-lg text-headline-lg-mobile text-primary mb-3">Full Moon Sound Bath</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">[Event description pending...]</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. Testimonials -->
+<section class="bg-surface-container py-section-gap border-y border-outline-variant">
+<div class="max-w-screen-xl mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-12">Client Experiences</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant text-left">
+<p class="font-body-lg text-body-lg text-on-surface-variant italic mb-6">"[Testimonial Content Pending]"</p>
+<p class="font-label-md text-label-md text-primary">- [Name Pending]</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant text-left">
+<p class="font-body-lg text-body-lg text-on-surface-variant italic mb-6">"[Testimonial Content Pending]"</p>
+<p class="font-label-md text-label-md text-primary">- [Name Pending]</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 10. FAQ Preview -->
+<section class="py-section-gap max-w-3xl mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-12">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Frequently Asked Questions</h2>
+<a class="text-secondary font-label-md text-label-md hover:underline" href="#">Read Full FAQ</a>
+</div>
+<div class="space-y-4">
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-6">
+<h3 class="font-body-lg text-body-lg font-medium text-primary mb-2">What should I bring to a seminar?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Please bring comfortable, loose-fitting clothing suitable for movement and extended periods of sitting. We provide all necessary props.</p>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-6">
+<h3 class="font-body-lg text-body-lg font-medium text-primary mb-2">Do I need prior experience to attend?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Most of our introductory seminars welcome beginners with no prior experience. We clearly mark advanced seminars.</p>
+</div>
+</div>
+</section>
+<!-- 11. Final Inquiry CTA -->
+<section class="bg-surface-container-high py-section-gap border-t border-outline-variant text-center">
+<div class="max-w-2xl mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Begin Your Healing Journey</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Whether you seek to learn the authentic art of Jikiden Reiki or wish to experience our holistic therapies, we are here to support you.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded-lg hover:bg-surface-tint transition-colors shadow-md">Inquire About Seminars</button>
+<button class="border border-outline text-primary font-label-md text-label-md px-8 py-4 rounded-lg hover:bg-surface-variant transition-colors">Book a Therapy Session</button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-outline-variant grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-screen-2xl mx-auto w-full mt-section-gap">
+<div class="col-span-1 md:col-span-4 flex justify-between items-center mb-8 border-b border-outline-variant pb-8">
+<div class="font-display-lg text-display-lg text-primary">Studio IKI</div>
+<div class="text-on-surface-variant font-body-md text-body-md">© 2024 Studio IKI. Built with intention.</div>
+</div>
+<div class="flex flex-col gap-4">
+<a class="text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 font-label-md text-label-md" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 font-label-md text-label-md" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 font-label-md text-label-md" href="#">Inquiry</a>
+<a class="text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 font-label-md text-label-md" href="#">Social</a>
+<a class="text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 font-label-md text-label-md" href="#">Credentials</a>
+</div>
+</footer>
+</main>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileNav = document.getElementById('mobile-nav');
+            const openNavBtn = document.getElementById('open-nav');
+            const closeNavBtn = document.getElementById('close-nav');
+
+            if(openNavBtn && closeNavBtn && mobileNav) {
+                openNavBtn.addEventListener('click', () => {
+                    mobileNav.classList.remove('translate-x-full');
+                });
+                closeNavBtn.addEventListener('click', () => {
+                    mobileNav.classList.add('translate-x-full');
+                });
+            }
+        });
+    </script>
+</body></html>

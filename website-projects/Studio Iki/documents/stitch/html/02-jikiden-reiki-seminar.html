@@ -1,0 +1,304 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Jikiden Reiki Seminar - Studio IKI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&amp;family=EB+Garamond:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#d2c2cf",
+                        "on-primary-container": "#ccbcc9",
+                        "on-surface": "#1f1b17",
+                        "secondary-container": "#ffc9d7",
+                        "secondary-fixed": "#ffd9e2",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed": "#f0dcf5",
+                        "surface-container-high": "#f1e6e0",
+                        "on-background": "#1f1b17",
+                        "primary-fixed-dim": "#d2c2cf",
+                        "tertiary-fixed-dim": "#d3c0d8",
+                        "surface-container-low": "#fcf2eb",
+                        "surface-tint": "#675b66",
+                        "on-secondary-fixed": "#30121c",
+                        "outline": "#7c757a",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-surface-variant": "#4b454a",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed": "#231728",
+                        "on-secondary-fixed-variant": "#623c47",
+                        "surface-bright": "#fff8f5",
+                        "on-secondary-container": "#7b525d",
+                        "error": "#ba1a1a",
+                        "tertiary": "#403346",
+                        "inverse-on-surface": "#f9efe8",
+                        "primary-fixed": "#efddeb",
+                        "inverse-surface": "#352f2b",
+                        "on-tertiary-fixed-variant": "#504255",
+                        "secondary-fixed-dim": "#edb9c6",
+                        "primary-container": "#574b56",
+                        "surface-container": "#f6ece6",
+                        "background": "#fff8f5",
+                        "on-primary-fixed-variant": "#4f434e",
+                        "outline-variant": "#cdc4ca",
+                        "surface": "#fff8f5",
+                        "on-tertiary-container": "#cdbbd2",
+                        "surface-variant": "#ebe1da",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed": "#221822",
+                        "surface-dim": "#e2d8d2",
+                        "secondary": "#7c535f",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#ebe1da",
+                        "error-container": "#ffdad6",
+                        "primary": "#3f343f",
+                        "tertiary-container": "#584a5e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "base": "8px",
+                        "section-gap": "80px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["beVietnamPro"],
+                        "body-md": ["beVietnamPro"],
+                        "headline-lg": ["beVietnamPro"],
+                        "body-lg": ["beVietnamPro"],
+                        "label-md": ["beVietnamPro"],
+                        "headline-lg-mobile": ["beVietnamPro"],
+                        "philosophy-accent": ["ebGaramond"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+                        "philosophy-accent": ["24px", { "lineHeight": "32px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .ghost-border { border: 1px solid var(--tw-colors-outline-variant); }
+        .ghost-border-interactive:hover { border-color: var(--tw-colors-primary-container); }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-screen-2xl mx-auto">
+<a class="font-display-lg text-display-lg tracking-tight text-primary dark:text-inverse-primary" href="#">Studio IKI</a>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300" href="#">Home</a>
+<a class="font-label-md text-label-md text-primary dark:text-inverse-primary border-b-2 border-primary dark:border-inverse-primary pb-1 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 scale-95 transition-transform duration-200" href="#">Seminar</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300" href="#">Therapies</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300" href="#">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300" href="#">Events</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300" href="#">FAQ</a>
+</nav>
+<div class="hidden md:flex items-center gap-4">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+<a class="bg-primary-container text-on-primary rounded px-6 py-2 font-label-md text-label-md hover:scale-[0.98] transition-transform shadow-[0_4px_20px_rgba(87,75,86,0.08)]" href="#seminar-dates">Join a Seminar</a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary" id="mobile-menu-btn">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<!-- SideNavBar (Mobile) -->
+<div class="fixed inset-y-0 right-0 w-80 bg-surface-container shadow-2xl z-[60] transform translate-x-full transition-transform duration-500 ease-in-out md:hidden flex flex-col p-margin-mobile" id="mobile-nav">
+<div class="flex justify-between items-center mb-8">
+<div>
+<h2 class="font-display-lg text-2xl text-primary">Studio IKI</h2>
+<p class="font-label-md text-label-md text-on-surface-variant">Holistic Wellness</p>
+</div>
+<button class="text-primary" id="close-menu-btn">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-2 flex-grow">
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 rounded-lg hover:bg-surface-container-high transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span> Home
+            </a>
+<a class="bg-secondary-container text-on-secondary-container rounded-lg px-4 py-3 flex items-center gap-3 font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="school">school</span> Seminar
+            </a>
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 rounded-lg hover:bg-surface-container-high transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="self_care">self_care</span> Therapies
+            </a>
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 rounded-lg hover:bg-surface-container-high transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="info">info</span> About
+            </a>
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 rounded-lg hover:bg-surface-container-high transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span> Events
+            </a>
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 rounded-lg hover:bg-surface-container-high transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="quiz">quiz</span> FAQ
+            </a>
+<a class="text-on-surface-variant px-4 py-3 flex items-center gap-3 rounded-lg hover:bg-surface-container-high transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span> Contact
+            </a>
+</nav>
+<a class="mt-auto bg-primary-container text-on-primary text-center rounded-lg py-3 font-label-md text-label-md shadow-[0_4px_20px_rgba(87,75,86,0.08)]" href="#seminar-dates">Join Seminar</a>
+</div>
+<!-- Overlay for Mobile Nav -->
+<div class="fixed inset-0 bg-on-background/20 z-[55] hidden transition-opacity" id="mobile-overlay"></div>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-5 flex flex-col gap-6">
+<span class="text-secondary font-label-md text-label-md tracking-widest uppercase">Education</span>
+<h1 class="font-display-lg text-display-lg text-primary">Jikiden Reiki Seminar</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Learn the original, unedited teachings of Reiki exactly as they were passed down in Japan. A direct lineage focused on simplicity, physical healing, and deep intention.
+                    </p>
+<div class="pt-4">
+<a class="inline-flex items-center gap-2 bg-primary-container text-on-primary rounded px-8 py-3 font-label-md text-label-md hover:scale-[0.98] transition-transform shadow-[0_4px_20px_rgba(87,75,86,0.08)]" href="#seminar-dates">
+                            View Upcoming Dates <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-7 mt-8 lg:mt-0 relative h-[500px] rounded-lg overflow-hidden ghost-border">
+<img class="w-full h-full object-cover" data-alt="A serene outdoor pavilion with wooden floors and lush green surroundings. A female teacher in a dark blue linen top gently holds her hands over a student lying comfortably on a massage table. The mood is calm, grounded, and focused on healing in a natural light setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlXONhvsqYJ_xW0w2NmgMcLdRE8nxLih8cPW6NntXK9qm6bVp2ekXrubrjB88oUL3ztprBAxIdVKKgmdj5IADFCZwWt6eFx87kuSOpQmp6PjHevhvCl3msyhLod8rJt7uExJtFwMk7eFvHHhRSD1mugWgglsSiAYurYt2Jfaf8kZp4pndF9GDrBwIPDqxfa_SWwxkq_XC8p8DtMGSatBKkuVLMbFUyiR3K5O3AH-lkps2pKaAzlalP">
+</div>
+</div>
+</section>
+<!-- Definition & Lineage (Philosophy Block Style) -->
+<section class="py-section-gap bg-surface-container px-margin-mobile md:px-margin-desktop">
+<div class="max-w-4xl mx-auto text-center flex flex-col items-center gap-8 py-12 px-6">
+<span class="material-symbols-outlined text-secondary text-4xl" data-icon="spa">spa</span>
+<p class="font-philosophy-accent text-philosophy-accent text-primary leading-relaxed">
+                    "Jikiden" translates to 'directly passed down'. We teach Reiki without Western modifications, preserving the cultural and spiritual context of its origins in 1920s Japan. It is not just an energy practice; it is a profound tool for physical restoration and mental clarity.
+                </p>
+<div class="h-px w-24 bg-outline-variant mt-4"></div>
+<p class="font-label-md text-label-md text-on-surface-variant">The Authentic Japanese Lineage</p>
+</div>
+</section>
+<!-- Bento Grid: Who / What / Experience -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter auto-rows-[minmax(300px,_auto)]">
+<!-- Who it is for -->
+<div class="md:col-span-4 bg-surface p-8 rounded-lg ghost-border flex flex-col gap-4">
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">For Whom</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                        Designed for beginners seeking a grounded healing method, healthcare professionals wanting complementary skills, or existing practitioners looking for the traditional roots of Reiki.
+                    </p>
+<ul class="flex flex-col gap-3 mt-auto font-label-md text-label-md text-on-surface-variant">
+<li class="flex items-start gap-2 border-t border-outline-variant pt-3"><span class="material-symbols-outlined text-secondary text-sm" data-icon="check">check</span> No prior experience needed</li>
+<li class="flex items-start gap-2 border-t border-outline-variant pt-3"><span class="material-symbols-outlined text-secondary text-sm" data-icon="check">check</span> Medical professionals</li>
+<li class="flex items-start gap-2 border-t border-outline-variant pt-3"><span class="material-symbols-outlined text-secondary text-sm" data-icon="check">check</span> Holistic therapists</li>
+</ul>
+</div>
+<!-- What students learn -->
+<div class="md:col-span-8 bg-surface-container-low p-8 rounded-lg flex flex-col gap-6">
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">The Curriculum</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-4">
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-2">Shoden (Level 1)</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Focuses on physical healing. You will learn the history, the concept of Byosen (finding toxic areas), the first symbol, and practical hands-on treatment techniques.</p>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-2">Okuden (Level 2)</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Focuses on mental/psychological healing and distant healing. You will learn specific techniques for habit breaking and emotional blockages.</p>
+</div>
+</div>
+<div class="mt-auto pt-6">
+<div class="h-48 rounded overflow-hidden ghost-border">
+<img class="w-full h-full object-cover" data-alt="A close up of hands resting gently on a shoulder in a bright, minimalist room with warm greige walls. The lighting is soft and natural, emphasizing tactile textures of linen clothing and a calm, restorative atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVjMyy8l6jkxXzMCHXjW6b8AmEZb-AvrN4yIJY1baSdMmf8EdcAg2aNbklF7QVnZ3J7CzWuI2yMygVxCDc2rbxm55F0CuxmVQLKPtk6rcP2Lr1LygX2n1C36Y0hL0gJm2MRscHTRy2nLLOG_A5bCIcLo87H964qWPQqO62eBhy6jZdHlAIL6vV017vzoay1kPpAfaWkdGzLR4P8GmiRa1cmZN-hhk-oEHfNEB9Dqt9ibzmrE0Yvhvf">
+</div>
+</div>
+</div>
+<!-- Seminar Experience -->
+<div class="md:col-span-12 bg-surface p-8 rounded-lg ghost-border flex flex-col md:flex-row gap-8 items-center">
+<div class="md:w-1/2 flex flex-col gap-4">
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">The Environment</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                            Seminars are held in small, intimate groups to ensure personalized attention and ample practice time. The space is designed to be quiet, uncluttered, and conducive to deep focus and energetic sensitivity.
+                        </p>
+</div>
+<div class="md:w-1/2 w-full h-64 rounded bg-surface-variant">
+<img class="w-full h-full object-cover rounded" data-alt="An organized, minimalist indoor studio space ready for a workshop. Several massage tables are neatly arranged. Natural light streams in through large windows revealing a garden outside. The aesthetic is warm greige and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSxyEF7eKZWRo8eVghnR5731oEu3gzwUY4BOO4hwOQBsusuhfIdgAvWYcBEskEXCRh58cFG32mAgcNO-u73vuM_EDyJepUdA2w6nDlel8GUFisYJCGe8ATGZcyebd55eHBEZ1q5Jtm2WpeAZd8UFhsHRjt5cOwZcFE9Gprl5QAKfKQrRTDPXLE11LncEqm_dLGHzAC6IBRhqFQRi3fUD9W7rd4SvpZyQBWaX_riKmhno7U3AU3J9FW">
+</div>
+</div>
+</div>
+</section>
+<!-- Kyoto Credential Context -->
+<section class="py-section-gap bg-surface-container-low px-margin-mobile md:px-margin-desktop">
+<div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1 h-96 rounded-lg overflow-hidden ghost-border">
+<img class="w-full h-full object-cover object-top" data-alt="A portrait of a smiling female holistic teacher with grey hair in an elegant traditional Japanese wooden room. She wears a dark blue top and a delicate necklace. The mood is warm, welcoming, and deeply authentic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZEH9ra37LleUWciN3CXy9wOX82IHMmq1m_EdgMhWr9LlVspZVpeXRrwLWBcOn7UIix81EHjTbFnt04GaHluYPMhXnb-TzcgQyUObIaCOmNgsWdXVtKf6qIxILAFQQfs9Cip3Sf6gtMX-oUAyUZGJee31XWieApoX8fZWcEQ5EiLrVko2ZEbRtN7kBx6Us4iYeeloQ_7CDaEqYh6KfMiH4pZoN7EgkEbg8CeY54tTSRcE9cRQmE3Jc">
+</div>
+<div class="order-1 md:order-2 flex flex-col gap-6">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="verified">verified</span>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Global Certification</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Upon completion, you will receive English and Japanese certificates directly from the Jikiden Reiki Institute in Kyoto, Japan. This credential is internationally recognized and signifies your training in the authentic lineage.
+                    </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline full-width bottom mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-screen-2xl mx-auto">
+<div class="col-span-1 md:col-span-2">
+<h2 class="font-display-lg text-display-lg text-primary dark:text-inverse-primary mb-4">Studio IKI</h2>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-secondary-fixed-variant mb-6">
+                    © 2024 Studio IKI. Built with intention.
+                </p>
+</div>
+<div class="flex flex-col gap-3">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim underline transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim underline transition-all opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim underline transition-all opacity-80 hover:opacity-100" href="#">Inquiry</a>
+</div>
+<div class="flex flex-col gap-3">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim underline transition-all opacity-80 hover:opacity-100" href="#">Social</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed-dim underline transition-all opacity-80 hover:opacity-100" href="#">Credentials</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        const overlay = document.getElementById('mobile-overlay');
+
+        function toggleMenu() {
+            const isClosed = mobileNav.classList.contains('translate-x-full');
+            if (isClosed) {
+                mobileNav.classList.remove('translate-x-full');
+                overlay.classList.remove('hidden');
+                setTimeout(() => overlay.classList.remove('opacity-0'), 10);
+            } else {
+                mobileNav.classList.add('translate-x-full');
+                overlay.classList.add('opacity-0');
+                setTimeout(() => overlay.classList.add('hidden'), 300);
+            }
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMenu);
+        closeMenuBtn.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', toggleMenu);
+    </script>
+</body></html>

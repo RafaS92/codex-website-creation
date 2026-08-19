@@ -5,7 +5,7 @@ Use this prompt when you want Codex to run the website workflow from scratch or 
 Copy the full prompt below into Codex and replace the placeholder values.
 
 ```text
-Run the named workflow: website_creation_workflow.
+Run the named workflow: workflow.md
 
 Project name:
 [PROJECT_NAME]
