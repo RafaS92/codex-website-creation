@@ -72,7 +72,7 @@ export const faqGroups = [
     title: 'Practical questions',
     items: [
       ['Where is Healing Garden?', 'Healing Garden is in Chiang Dao, Thailand. Complete directions and arrival details are still pending confirmation.'],
-      ['How do I book?', 'Use the inquiry form and choose the purpose that best fits your request. Booking mechanics and availability are confirmed personally.'],
+      ['How do I book?', 'Email Nongnapat directly with your request. Booking mechanics and availability are confirmed personally.'],
     ],
   },
 ]

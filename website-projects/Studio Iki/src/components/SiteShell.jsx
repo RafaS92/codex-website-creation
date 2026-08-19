@@ -32,7 +32,7 @@ function Header() {
   return (
     <header className="site-header">
       <div className="shell site-header__inner">
-        <Link className="wordmark" to="/" aria-label="Studio IKI home">Studio IKI</Link>
+        <Link className="wordmark" to="/" aria-label="Studio IKI home">Studio IKI 息</Link>
         <nav className="desktop-nav" aria-label="Primary navigation">
           {navigation.map((item) => (
             <NavLink key={item.to} to={item.to} end={item.to === '/'}>{item.label}</NavLink>
@@ -40,7 +40,7 @@ function Header() {
         </nav>
         <div className="site-header__actions">
           <Link className="text-link desktop-contact" to="/contact">Contact</Link>
-          <Link className="button button--primary desktop-cta" to="/contact?purpose=seminar">Join a Seminar</Link>
+          <Link className="button button--primary desktop-cta" to="/contact">Join a Seminar</Link>
           <button
             ref={triggerRef}
             className="menu-toggle"
@@ -59,7 +59,7 @@ function Header() {
           <NavLink key={item.to} to={item.to} end={item.to === '/'} onClick={() => setOpen(false)}>{item.label}</NavLink>
         ))}
         <NavLink to="/contact" onClick={() => setOpen(false)}>Contact</NavLink>
-        <Link className="button button--primary" to="/contact?purpose=seminar" onClick={() => setOpen(false)}>Join a Seminar</Link>
+        <Link className="button button--primary" to="/contact" onClick={() => setOpen(false)}>Join a Seminar</Link>
       </nav>
     </header>
   )
@@ -69,7 +69,7 @@ function Footer() {
   return (
     <footer className="site-footer">
       <div className="shell site-footer__top">
-        <Link className="wordmark" to="/">Studio IKI</Link>
+        <Link className="wordmark" to="/">Studio IKI 息</Link>
         <p>© {new Date().getFullYear()} Studio IKI. Built with intention.</p>
       </div>
       <div className="shell site-footer__links">
