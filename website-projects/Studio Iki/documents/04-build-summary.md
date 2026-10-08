@@ -150,8 +150,8 @@ Final production bundle at build time:
 
 The workflow-specified skill could not be loaded because neither of these configured files exists on this machine:
 
-- `/Users/athenanexis/.codex/skills/senior-frontend-qa/SKILL.md`
-- `/Users/rafaelvaldez/.codex/skills/senior-frontend-qa/SKILL.md`
+- `~/.codex/skills/senior-frontend/SKILL.md`
+- `/Users/rafaelvaldez/.codex/skills/senior-frontend/SKILL.md`
 
 The required senior frontend QA scope was therefore performed manually using lint, production compilation, in-app browser checks, responsive breakpoint checks, interaction testing, console inspection, WCAG-focused review, and direct Stitch fidelity comparison. This missing skill file is an environment limitation, not a failed application check.
 

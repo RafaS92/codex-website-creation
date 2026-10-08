@@ -22,10 +22,10 @@ Use this workflow when the user asks Codex to create a website through an approv
 Use these globally installed skills when their stage is active:
 
 ```text
-/Users/athenanexis/.codex/skills/senior-frontend-qa/SKILL.md
+~/.codex/skills/senior-frontend/SKILL.md
 ```
 
-- Use `senior-frontend-qa` during the Website Build stage after implementation and before writing the build summary.
+- Use `senior-frontend` during the Website Build stage after implementation and before writing the build summary.
 
 ## Project Structure
 
@@ -194,10 +194,10 @@ Before building, verify that `02-design.md` has `Stitch Fidelity Source Status: 
 Required QA skill for this stage:
 
 ```text
-/Users/athenanexis/.codex/skills/senior-frontend-qa/SKILL.md
+~/.codex/skills/senior-frontend/SKILL.md
 ```
 
-After implementation, use `senior-frontend-qa` to check functionality, code quality, UI accuracy, responsive behavior, accessibility, performance, maintainability, and production readiness before finalizing the build summary. Include a visual fidelity check against the Stitch screenshots/exports in `documents/stitch/` when those files exist.
+After implementation, use `senior-frontend` to check functionality, code quality, UI accuracy, responsive behavior, accessibility, performance, maintainability, and production readiness before finalizing the build summary. Include a visual fidelity check against the Stitch screenshots/exports in `documents/stitch/` when those files exist.
 
 After building, save a summary here:
 

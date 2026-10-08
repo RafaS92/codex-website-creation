@@ -1,13 +1,20 @@
+import biodynamicCraniosacralImage from "../assets/services/biodynamic-craniosacral.jpg";
+import chiNeiTsangImage from "../assets/services/chi-nei-tsang.jpg";
+import crystalEnergyHealingImage from "../assets/services/crystal-energy-healing.jpg";
+import jikidenReikiImage from "../assets/services/jikiden-reiki.jpg";
+import japaneseStudioImage from "../assets/services/japaneseStudio.png";
+
 export const navigation = [
   { label: "Home", to: "/" },
+  { label: "About", to: "/about" },
   { label: "Seminar", to: "/jikiden-reiki-seminar" },
   { label: "Therapies", to: "/therapies" },
-  { label: "About", to: "/about" },
   { label: "Events", to: "/events" },
   { label: "FAQ", to: "/faq" },
 ];
 
 export const imagery = {
+  japaneseStudio: japaneseStudioImage,
   treatment:
     "https://lh3.googleusercontent.com/aida-public/AB6AXuBwLHMJgVyuiCEpPochknzajI5pCKFppr7EhPWi9MMnLNeYa3tzZAq6hEKGLK9l71eiNQu1ypR-dxOCeBYb8OEkawEN_fMgb_tgWTMn456XqIfWRAWrTf3eMV0Fpyq6b9LzT8XY24-RFTjJEG6UAFFOQTdtHyQPIgBY7v89ixLoFoyG0ALC9rVj0YP4zj-Ufns8EUpYQ5qWPzTsIo9gVJwipBzU-ID42Acuz_C2Z2KvLtk3rq7QvoaUGurxw4_5UtTnPw",
   portrait:
@@ -26,13 +33,18 @@ export const services = [
   {
     id: "jikiden-reiki",
     title: "Jikiden Reiki",
+    image: jikidenReikiImage,
+    imageAlt: "Jikiden Reiki treatment in a calm wellness setting",
     short:
       "Traditional Japanese hands-on care supporting relaxation, balance, and well-being.",
     body: "A gentle, hands-on treatment offered while you remain fully clothed. Jikiden Reiki supports deep relaxation and can complement conventional healthcare as part of a wider well-being journey.",
   },
   {
     id: "bcst",
-    title: "Biodynamic CranioSacral Therapy (BCST)",
+    title: "CranioSacral Therapy",
+    centerCardTitle: true,
+    image: biodynamicCraniosacralImage,
+    imageAlt: "Biodynamic CranioSacral Therapy head support treatment",
     short:
       "Light, still touch that listens to the body’s rhythms and supports nervous-system balance.",
     body: "This non-manipulative approach originated in British osteopathy. It offers quiet support for resilience, release of held tension, and deep restoration while you rest fully clothed.",
@@ -40,6 +52,8 @@ export const services = [
   {
     id: "chi-nei-tsang",
     title: "Chi Nei Tsang",
+    image: chiNeiTsangImage,
+    imageAlt: "Chi Nei Tsang abdominal wellness treatment",
     short:
       "Mindful Taoist abdominal therapy supporting circulation, digestion, and connection to the centre.",
     body: "Gentle abdominal massage and breathing techniques are tailored to each person, creating space to release tension and reconnect with the body.",
@@ -47,6 +61,8 @@ export const services = [
   {
     id: "crystal-energy",
     title: "Crystal Energy Healing",
+    image: crystalEnergyHealingImage,
+    imageAlt: "Healing crystals arranged with a candle on cream fabric",
     short:
       "A quiet session combining selected crystals with gentle hands-on or hands-off care.",
     body: "Crystals are placed on and around the body in a peaceful setting to support relaxation, reflection, clarity, and a sense of energetic harmony.",
@@ -59,6 +75,15 @@ export const credentials = [
   "Certified Chi Nei Tsang Practitioner through Tao Garden, Chiang Mai",
   "Former Wellness Development Manager and teacher at Kamalaya Wellness Sanctuary",
   "International independent teacher for Chiva-Som International Academy",
+];
+
+export const aboutHighlights = [
+  "Authentic Japanese Reiki",
+  "20+ years of experience",
+  "Personalised holistic therapies",
+  "Calm, personal approach",
+  "Jikiden Reiki Shihan",
+  "Deep listening",
 ];
 
 export const faqGroups = [

@@ -1,12 +1,20 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 import { navigation } from "../data/content";
+import { ButtonLink } from "./ButtonLink";
 
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
   useEffect(() => {
+    if (hash) {
+      const target = document.getElementById(hash.slice(1));
+      if (target) {
+        target.scrollIntoView({ block: "start" });
+        return;
+      }
+    }
     window.scrollTo({ top: 0, left: 0 });
-  }, [pathname]);
+  }, [pathname, hash]);
   return null;
 }
 
@@ -43,9 +51,9 @@ function Header() {
           ))}
         </nav>
         <div className="site-header__actions">
-          <Link className="button button--primary desktop-cta" to="/contact">
+          <ButtonLink className="desktop-cta" to="/contact">
             Contact
-          </Link>
+          </ButtonLink>
           <button
             ref={triggerRef}
             className="menu-toggle"
@@ -78,13 +86,12 @@ function Header() {
         <NavLink to="/contact" onClick={() => setOpen(false)}>
           Contact
         </NavLink>
-        <Link
-          className="button button--primary"
+        <ButtonLink
           to="/contact"
           onClick={() => setOpen(false)}
         >
           Join a Seminar
-        </Link>
+        </ButtonLink>
       </nav>
     </header>
   );
@@ -131,25 +138,6 @@ function FooterIcon({ name }) {
   );
 }
 
-function LotusMark() {
-  return (
-    <span className="site-footer__mark" aria-hidden="true">
-      <svg
-        viewBox="0 0 64 64"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="M32 14c-8 8-10 18 0 30 10-12 8-22 0-30Z" />
-        <path d="M31 24c-9-7-18-8-18-8-1 14 5 23 19 28M33 24c9-7 18-8 18-8 1 14-5 23-19 28" />
-        <path d="M14 30c-5 2-9 6-9 6 8 11 17 14 27 8M50 30c5 2 9 6 9 6-8 11-17 14-27 8M15 48h34" />
-      </svg>
-    </span>
-  );
-}
-
 function Footer() {
   const links = [
     { to: "/privacy", label: "Privacy Policy", icon: "privacy" },
@@ -165,15 +153,14 @@ function Footer() {
           <div className="site-footer__main">
             <div className="site-footer__brand-panel">
               <div className="site-footer__brand">
-                <LotusMark />
                 <div className="site-footer__brand-copy">
                   <Link className="wordmark" to="/">
                     Studio IKI 息
                   </Link>
                   <p>
-                    Authentic Japanese Reiki training
+                    Japanese Reiki training
                     <br />
-                    and personalised holistic therapies.
+                    and holistic therapies.
                   </p>
                 </div>
               </div>

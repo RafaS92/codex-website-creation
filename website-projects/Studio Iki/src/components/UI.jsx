@@ -1,25 +1,39 @@
 import { useId, useState } from "react";
-import { Link } from "react-router-dom";
-
-export function ButtonLink({ to, variant = "primary", children }) {
-  return (
-    <Link className={`button button--${variant}`} to={to}>
-      {children}
-    </Link>
-  );
-}
 
 export function Hero({
   eyebrow,
   title,
   body,
+  backgroundImage,
+  backgroundPosition = "center",
   image,
   imageAlt = "",
   actions,
   centered = false,
+  className = "",
 }) {
+  const classes = [
+    "hero",
+    "section",
+    centered && "hero--centered",
+    backgroundImage && "hero--image",
+    className,
+  ]
+    .filter(Boolean)
+    .join(" ");
+
   return (
-    <section className={`hero section ${centered ? "hero--centered" : ""}`}>
+    <section
+      className={classes}
+      style={
+        backgroundImage
+          ? {
+              "--hero-image": `url("${backgroundImage}")`,
+              "--hero-position": backgroundPosition,
+            }
+          : undefined
+      }
+    >
       <div className={`shell ${image ? "split" : ""}`}>
         <div className="hero__copy" data-aos="fade-up">
           {eyebrow && <p className="eyebrow">{eyebrow}</p>}
@@ -53,18 +67,9 @@ export function SectionHeading({ eyebrow, title, body, centered = false }) {
       data-aos="fade-up"
     >
       {eyebrow && <p className="eyebrow">{eyebrow}</p>}
-      <h2>{title}</h2>
+      {title && <h2>{title}</h2>}
       {body && <p>{body}</p>}
     </header>
-  );
-}
-
-export function ServiceCard({ service }) {
-  return (
-    <article className="card service-card" data-aos="fade-up">
-      <h3>{service.title}</h3>
-      <p>{service.short}</p>
-    </article>
   );
 }
 
@@ -88,6 +93,29 @@ export function FAQItem({ question, answer }) {
         <p>{answer}</p>
       </div>
     </article>
+  );
+}
+
+export function QuoteSection({
+  quote,
+  author,
+  framed = false,
+  variant = "tinted",
+}) {
+  const backgroundVariant = variant === "white" ? "white" : "tinted";
+
+  return (
+    <blockquote
+      className={`philosophy-quote philosophy-quote--${backgroundVariant}${framed ? " philosophy-quote--framed" : ""}`}
+    >
+      <p>“{quote}”</p>
+      {author && (
+        <>
+          <span className="philosophy-quote__rule" aria-hidden="true" />
+          <cite>— {author}</cite>
+        </>
+      )}
+    </blockquote>
   );
 }
 

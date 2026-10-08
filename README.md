@@ -117,10 +117,10 @@ Before running the complete workflow, you need:
 - A globally available **senior frontend QA skill** for the build stage, or an equivalent QA process configured for your environment
 - Client input such as a questionnaire, project notes, content, links, logos, screenshots, or moodboards
 
-The workflow currently references this QA skill path:
+The workflow currently references this skill path:
 
 ```text
-/Users/athenanexis/.codex/skills/senior-frontend-qa/SKILL.md
+~/.codex/skills/senior-frontend/SKILL.md
 ```
 
 That path is environment-specific. Update it in `workflow.md` and the workflow prompt template if your skill is installed elsewhere.
@@ -400,15 +400,6 @@ To add a new stage:
 4. Add an approval stop after its output.
 5. Update the reusable workflow prompt.
 6. Document how later stages consume the new artifact.
-
-### Change the QA Skill
-
-Replace the environment-specific `senior-frontend-qa` path in both:
-
-- `workflow.md`
-- `templates/codex-website-workflow-prompt.md`
-
-The replacement should still cover functionality, code quality, responsive behavior, accessibility, performance, maintainability, production readiness, and comparison with saved Stitch references.
 
 ## Troubleshooting
 

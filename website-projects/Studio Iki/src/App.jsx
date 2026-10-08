@@ -2,17 +2,16 @@ import { useEffect } from "react";
 import AOS from "aos";
 import { Route, Routes, useLocation } from "react-router-dom";
 import SiteShell from "./components/SiteShell";
-import {
-  AboutPage,
-  ContactPage,
-  EventsPage,
-  FAQPage,
-  HomePage,
-  LegalPage,
-  NotFoundPage,
-  SeminarPage,
-  TherapiesPage,
-} from "./pages/Pages";
+import { AboutPage } from "./pages/AboutPage";
+import { ContactPage } from "./pages/ContactPage";
+import { EventsPage } from "./pages/EventsPage";
+import { FAQPage } from "./pages/FAQPage";
+import { HomePage } from "./pages/HomePage";
+import { NotFoundPage } from "./pages/NotFoundPage";
+import { PrivacyPage } from "./pages/PrivacyPage";
+import { SeminarPage } from "./pages/SeminarPage";
+import { TermsPage } from "./pages/TermsPage";
+import { TherapiesPage } from "./pages/TherapiesPage";
 
 const titles = {
   "/": "Studio IKI | Jikiden Reiki & Holistic Therapies",
@@ -58,8 +57,8 @@ export default function App() {
           <Route path="events" element={<EventsPage />} />
           <Route path="faq" element={<FAQPage />} />
           <Route path="contact" element={<ContactPage />} />
-          <Route path="privacy" element={<LegalPage type="privacy" />} />
-          <Route path="terms" element={<LegalPage type="terms" />} />
+          <Route path="privacy" element={<PrivacyPage />} />
+          <Route path="terms" element={<TermsPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>

@@ -85,7 +85,7 @@ Start or continue logic:
 - Use the approved handoff as the main source of truth.
 - Before building, verify 02-design.md still has `Stitch Fidelity Source Status: SCREEN_LEVEL_READY` or `Stitch Fidelity Source Status: USER_EXPORT_READY`.
 - After implementation, use the global senior frontend QA skill before finalizing the build summary:
-  /Users/athenanexis/.codex/skills/senior-frontend-qa/SKILL.md
+  ~/.codex/skills/senior-frontend/SKILL.md
 - Include visual fidelity QA against files in website-projects/[PROJECT_NAME]/documents/stitch/ when those files exist.
 - Save a build summary to:
   website-projects/[PROJECT_NAME]/documents/04-build-summary.md
